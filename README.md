@@ -1,4 +1,4 @@
-![Home Assistant][hass.png]
+![Home Assistant][https://github.com/brianjking/hass-config/blob/master/hass.png]
 
 
 # Home Assistant Configuration
