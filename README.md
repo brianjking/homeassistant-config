@@ -1,3 +1,6 @@
+![Home Assistant][hass.png]
+
+
 # Home Assistant Configuration
 
 Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](https://twitter.com/real_kinna) [HomeAssistant](https://home-assistant.io).
