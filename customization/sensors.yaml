@@ -1,0 +1,11 @@
+sensor.speedtest_download:
+  friendly_name: 'Down (Speedtest)'
+  icon: mdi:download
+
+sensor.speedtest_upload:
+  friendly_name: 'Up (Speedtest)'
+  icon: mdi:upload
+
+sensor.speedtest_ping:
+  friendly_name: 'Ping (Speedtest)'
+  icon: mdi:speedometer

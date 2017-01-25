@@ -1,0 +1,14 @@
+view: yes
+entities: 
+   - sensor.speedtest_ping
+   - sensor.speedtest_download
+   - sensor.speedtest_upload
+   - sun.sun
+   - sensor.forecastio_humidity
+   - sensor.forecastio_temperature
+   - sensor.forecastio_apparent_temperature
+   - sensor.forecastio_icon
+   - sensor.forecastio_summary
+   - light.sleepbot
+   - light.color
+   - light.couchbot

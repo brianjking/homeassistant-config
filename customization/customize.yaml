@@ -1,0 +1,4 @@
+input_boolean.restart_hass:
+  friendly_name: Restart HASS
+  initial: off
+  icon: mdi:recycle

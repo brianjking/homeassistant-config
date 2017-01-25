@@ -1,0 +1,9 @@
+- alias: Turn on light when sun sets
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: sun
+    event: sunset
+  action:
+    service: light.turn_on
+    entity_id: light.couchbot

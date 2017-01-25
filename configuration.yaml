@@ -1,0 +1,221 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: AUTOMATE ALL THE THINGS!
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude 
+  longitude: !secret longitude
+  elevation: 179  
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/Chicago
+  customize: !include_dir_merge_named customization
+
+http:
+  api_password: !secret http_password
+  ssl_certificate: /etc/letsencrypt/live/raptorbot.ddns.net/fullchain.pem
+  ssl_key: /etc/letsencrypt/live/raptorbot.ddns.net/privkey.pem
+  use_x_forwarded_for: True
+
+recorder:
+  db_url: !secret db_url 
+
+history:  
+# Enables the frontend
+frontend:
+updater:
+
+# Discover some devices automatically
+discovery:
+
+# View all events in a logbook
+logbook:
+
+
+###########################
+# GROUP
+###########################
+
+group: 
+  default_view:
+    view: yes
+    entities: 
+      - group.all_devices
+      - group.weather
+      - group.system
+      - media_player.raptor
+      - media_player.google_play__macbook_pro
+      - group.all_lights
+      - light.couchbot
+   
+  office:
+    name: Office
+    view: yes
+    entities: 
+      - group.internets
+      - group.system
+      - light.officebot
+      - light.officebotfloor
+      - media_player.google_play__macbook_pro
+      - group.all_devices
+      - switch.fluxer
+      - switch.wake_on_lan 
+  
+  living room:
+    name: Living Room
+    view: yes
+    entities:
+      - light.couchbot
+      - group.weather
+      - media_player.raptor
+      - media_player.google_play__macbook_pro
+      - group.all_lights  
+  
+  bedroom:
+      name: Bedroom
+      view: yes
+      entities:
+        - light.sleepbot
+        - group.weather
+
+  rooms:
+    name: Rooms
+    view: yes
+    entities: 
+      - group.office
+      - group.living_room
+      - group.bedroom
+      - group.allrooms
+      
+  internets: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
+  weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sensor.weather_minutely_summary, sun.sun
+  system: sensor.cpu_use, sensor.ram_free, sensor.ram_use
+  let there be light: light.couchbot, light.officebot, light.officebotfloor, light.sleepbot
+  
+################################################################          
+# Inputs
+################################################################
+
+switch:
+  platform: flux
+  lights:
+    - light.officebot
+    - light.officebotfloor
+  name: Fluxer
+  start_time: '7:00'
+  stop_time: '23:30'
+  start_colortemp: 4000
+  sunset_colortemp: 3000
+  stop_colortemp: 1900
+  brightness: 200
+  mode: xy
+  
+switch 2:
+  - platform: wake_on_lan
+    mac_address: "d8-cb-8a-e2-03-a2"
+    host: 192.168.1.114
+################################################################          
+# Sensors/Components
+################################################################
+
+# Lifx
+light:
+  - platform: lifx
+  
+# MacBook Pro Media Player
+media_player 2:
+  platform: gpmdp
+  host: 192.168.1.102
+  name: Google Play - MacBook Pro
+  
+# Track the sun
+sun:
+
+sensor:
+  - platform: darksky
+    name: Weather
+    api_key: !secret skydark 
+    monitored_conditions:
+      - apparent_temperature
+      - temperature
+      - humidity
+      - icon
+      - precip_intensity
+      - precip_probability
+      - summary
+      - wind_speed
+      - hourly_summary
+      - daily_summary
+      - minutely_summary
+
+sensor 2:
+  - platform: speedtest
+    name: Internets
+    monitored_conditions:
+      - ping
+      - download
+      - upload
+    minute:
+      - 0
+      - 15
+      - 30
+      - 45
+      
+sensor 3:
+  - platform: systemmonitor
+    resources:
+      - type: memory_free
+      - type: memory_use_percent
+      - type: processor_use
+
+sensor 4:
+  - platform: usps
+    username: !secret usps_username
+    password: !secret usps_password
+
+zwave:
+  usb_path: /dev/ttyACM0
+  debug: true
+
+###############################
+# Device Tracker
+###############################
+
+device_tracker:
+  - platform: tplink
+    host: 192.168.1.1
+    username: !secret router_username
+    password: !secret router_password 
+    interval_seconds: 10
+    consider_home: 180
+    track_new_devices: yes
+
+################################################################
+# Panels
+################################################################
+# These are broken due to HTTP loading on HTTPS connection.
+panel_iframe:
+  router:
+    title: 'Router'
+    icon: mdi:router-wireless
+    url: 'http://192.168.1.1'
+  modem:
+    title: 'Modem Admin'
+    icon: mdi:router-wireless
+    url: 'http://192.168.100.1'
+
+################################################################          
+# Includes
+################################################################
+automation: !include automation.yaml
+
+####################################
+# ZONES
+####################################
+
+#zone:
+#  name: Home
+#  latitude: !secret latitude 
+#  longitude: !secret longitude 
+#  radius: 100
+#  icon: mdi:home
+

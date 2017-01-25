@@ -1,0 +1,10 @@
+platform: speedtest
+monitored_conditions:
+  - ping
+  - download
+  - upload
+minute:
+  - 0
+  - 15
+  - 30
+  - 45
