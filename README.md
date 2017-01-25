@@ -7,7 +7,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 
 ## Current Configuration
 
-* Raspberry Pi 3 using All-in-one installer method
+* RaspberryPi 3 using [Fabric All-In-One Installer](https://github.com/home-assistant/fabric-home-assistant) method.
 
 ### Devices
 
