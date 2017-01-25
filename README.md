@@ -1,5 +1,4 @@
-![Home Assistant][https://github.com/brianjking/hass-config/blob/master/hass.png]
-
+![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/hass.png "Home Assistant Logo")
 
 # Home Assistant Configuration
 
