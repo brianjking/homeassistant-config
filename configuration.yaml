@@ -1,12 +1,9 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
-  name: AUTOMATE ALL THE THINGS!
-  # Location required to calculate the time the sun rises and sets
+  name: Home
   latitude: !secret latitude 
   longitude: !secret longitude
   elevation: 179  
   unit_system: imperial
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Chicago
   customize: !include_dir_merge_named customization
 
@@ -55,6 +52,7 @@ group:
       - group.weather
   bedroom:
     name: Bedroom
+    view: yes
     entities:
       - light.sleepbot
       - group.weather
