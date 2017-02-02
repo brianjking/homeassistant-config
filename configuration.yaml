@@ -18,7 +18,8 @@ http:
 
 recorder:
 #  db_url: !secret db_url 
-
+  db_url: postgres://@/homeassistant
+  
 history:  
 # Enables the frontend
 frontend:
