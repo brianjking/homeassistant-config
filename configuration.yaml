@@ -87,10 +87,10 @@ group:
       - group.bedroom
       - group.allrooms
       
-  internets: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
-  weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sensor.weather_minutely_summary, sun.sun
-  system: sensor.cpu_use, sensor.ram_free, sensor.ram_use
-  let there be light: light.couchbot, light.officebot, light.officebotfloor, light.sleepbot
+  #internets: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
+  #weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sensor.weather_minutely_summary, sun.sun
+  #system: sensor.cpu_use, sensor.ram_free, sensor.ram_use
+  #let there be light: light.couchbot, light.officebot, light.officebotfloor, light.sleepbot
   
 ################################################################          
 # Inputs
@@ -173,9 +173,9 @@ sensor 4:
     username: !secret usps_username
     password: !secret usps_password
 
-zwave:
-  usb_path: /dev/ttyACM0
-  debug: true
+#zwave:
+  #usb_path: /dev/ttyACM0
+  #debug: true
 
 ###############################
 # Device Tracker
@@ -188,7 +188,7 @@ device_tracker:
     password: !secret router_password 
     interval_seconds: 10
     consider_home: 180
-    track_new_devices: yes
+    track_new_devices: no
 
 ################################################################
 # Panels
