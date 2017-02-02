@@ -36,61 +36,13 @@ logbook:
 # GROUP
 ###########################
 
-group: 
-  default_view:
-    view: yes
-    entities: 
-      - group.all_devices
-      - group.weather
-      - group.system
-      - media_player.raptor
-      - media_player.google_play__macbook_pro
-      - group.all_lights
-      - light.couchbot
-   
-  office:
-    name: Office
-    view: yes
-    entities: 
-      - group.internets
-      - group.system
-      - light.officebot
-      - light.officebotfloor
-      - media_player.google_play__macbook_pro
-      - group.all_devices
-      - switch.fluxer
-      - switch.wake_on_lan 
-  
-  living room:
-    name: Living Room
-    view: yes
-    entities:
-      - light.couchbot
-      - group.weather
-      - media_player.raptor
-      - media_player.google_play__macbook_pro
-      - group.all_lights  
-  
-  bedroom:
-      name: Bedroom
-      view: yes
-      entities:
-        - light.sleepbot
-        - group.weather
 
-  rooms:
-    name: Rooms
-    view: yes
-    entities: 
-      - group.office
-      - group.living_room
-      - group.bedroom
-      - group.allrooms
+ 
       
-  #internets: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
-  #weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sensor.weather_minutely_summary, sun.sun
-  #system: sensor.cpu_use, sensor.ram_free, sensor.ram_use
-  #let there be light: light.couchbot, light.officebot, light.officebotfloor, light.sleepbot
+  internets: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
+  weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sensor.weather_minutely_summary, sun.sun
+  system: sensor.cpu_use, sensor.ram_free, sensor.ram_use
+  let there be light: light.couchbot, light.officebot, light.officebotfloor, light.sleepbot
   
 ################################################################          
 # Inputs
