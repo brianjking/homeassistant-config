@@ -50,6 +50,7 @@ group:
       - light.officebot
       - group.internets
       - group.weather
+      - sensor.usps
   bedroom:
     name: Bedroom
     view: yes
