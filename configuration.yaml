@@ -42,6 +42,7 @@ group:
       - group.system
       - group.weather
       - group.internets 
+      - sensor.uber
   office:
     name: Office
     view: yes
