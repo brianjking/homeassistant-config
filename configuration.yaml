@@ -142,6 +142,7 @@ sensor 4:
   - platform: usps
     username: !secret usps_username
     password: !secret usps_password
+    name: packages
 
 #zwave:
   #usb_path: /dev/ttyACM0
