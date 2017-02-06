@@ -43,6 +43,7 @@ group:
       - group.weather
       - group.internets 
       - sensor.uber
+      - switch.tplink
   office:
     name: Office
     view: yes
@@ -85,6 +86,10 @@ switch 2:
   - platform: wake_on_lan
     mac_address: "d8-cb-8a-e2-03-a2"
     host: 192.168.1.114
+
+switch 3:
+  - platform: tplink
+    host: 192.168.1.116
 ################################################################          
 # Sensors/Components
 ################################################################
@@ -121,7 +126,7 @@ sensor:
 
 sensor 2:
   - platform: speedtest
-    name: Internets
+    name: Internet
     monitored_conditions:
       - ping
       - download
