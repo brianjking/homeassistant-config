@@ -43,7 +43,7 @@ group:
       - group.weather
       - group.internets 
       - sensor.uber
-      - switch.tplink
+      - switch.tribot
   office:
     name: Office
     view: yes
