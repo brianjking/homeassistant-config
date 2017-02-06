@@ -28,7 +28,8 @@ discovery:
 # View all events in a logbook
 logbook:
 
-
+emulated_hue:
+  expose_by_default: true
 ###########################
 # GROUP
 ###########################
