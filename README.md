@@ -21,6 +21,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [SanDisk 32gb MicroSD Card](http://amzn.to/2l1qCjd)
 * [Playstation Eye Webcam - Used with OctoPrint/3D Printer](http://amzn.to/2kYYZbm)
 * [TP-Link Archer C7 AC1750 Router](http://amzn.to/2l1rfJB)
+* [TP-Link HS-100 Smart Plug](http://amzn.to/2kxkzDR)
 
 ### Sensors
 
