@@ -43,7 +43,8 @@ group:
       - sensor.uber
       - switch.tribot
   living_room:
-    name: Living Room 
+    name: Living Room
+    view: yes 
     entities: 
       - light.couchbot
       - switch.tribot 
