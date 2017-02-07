@@ -103,11 +103,11 @@ switch 3:
 light:
   - platform: lifx
   
-# MacBook Pro Media Player
+# Google Play Music - Brian Desktop
 media_player 2:
   platform: gpmdp
-  host: 192.168.1.102
-  name: Google Play - MacBook Pro
+  host: 192.168.1.114
+  name: Google Play - Blackbox
   
 # Track the sun
 sun:
