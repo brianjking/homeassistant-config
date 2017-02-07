@@ -39,7 +39,7 @@ group:
       - media_player.raptor
       - group.system
       - group.weather
-      - group.internets 
+      - group.internet
       - sensor.uber
       - switch.tribot
   living_room:
@@ -55,7 +55,7 @@ group:
     entities:
       - light.officebotfloor
       - light.officebot
-      - group.internets
+      - group.internet
       - group.weather
       - group.ship
   bedroom:
