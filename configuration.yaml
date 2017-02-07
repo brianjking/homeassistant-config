@@ -58,6 +58,7 @@ group:
       - group.weather
       - group.ship
       - media_player.google_play__blackbox
+      - group.all_devices
   bedroom:
     name: Bedroom
     view: yes
