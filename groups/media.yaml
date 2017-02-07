@@ -1,7 +1,0 @@
-name: Media
-view: yes
-entities: 
-   - media_player.google_play__macbook_pro
-   - media_player.raptor
-   - media_player.google_play__bk_desktop
-   - automation.restart_hass
