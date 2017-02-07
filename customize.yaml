@@ -1,0 +1,11 @@
+- entity_id: sensor.speedtest_download
+  friendly_name: 'Down (Speedtest)'
+  icon: mdi:download
+- entity_id: sensor.speedtest_upload
+  friendly_name: 'Up (Speedtest)'
+  icon: mdi:upload
+- entity_id: sensor.speedtest_ping
+  friendly_name: 'Ping (Speedtest)'
+  icon: mdi:speedometer
+- entity_id: group.all_lights
+  hidden: false
