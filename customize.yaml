@@ -9,3 +9,7 @@
   icon: mdi:speedometer
 - entity_id: group.all_lights
   hidden: false
+  icon: mdi:lightbulb-on
+- entity_id: group.livingroom_lights
+  friendly_name: Living Room Lights 
+  icon: mdi:lightbulb
