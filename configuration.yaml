@@ -106,6 +106,7 @@ switch 3:
 # Lifx
 light:
   - platform: lifx
+    broadcast: 192.168.1.255
   
 # Google Play Music - Brian Desktop
 media_player 2:
