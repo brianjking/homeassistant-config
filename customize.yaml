@@ -10,6 +10,9 @@
 - entity_id: group.all_lights
   hidden: false
   icon: mdi:lightbulb-on
+  friendly_name: All Lights 
 - entity_id: group.livingroom_lights
   friendly_name: Living Room Lights 
+  icon: mdi:lightbulb
+- entity_id: switch.tribot
   icon: mdi:lightbulb
