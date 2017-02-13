@@ -8,10 +8,8 @@ homeassistant:
   customize: !include customize.yaml
 
 http:
-  #api_password: !secret http_password
-  #ssl_certificate: /etc/letsencrypt/live/raptorbot.ddns.net/fullchain.pem
-  #ssl_key: /etc/letsencrypt/live/raptorbot.ddns.net/privkey.pem
-
+  api_password: !secret http_password
+  
 recorder:
 #  db_url: !secret db_url 
   #db_url: postgres://@/homeassistant
