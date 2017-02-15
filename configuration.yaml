@@ -167,9 +167,9 @@ sensor 5:
     start_latitude: !secret latitude 
     start_longitude: !secret longitude 
 
-#zwave:
-  #usb_path: /dev/ttyACM0
-  #debug: true
+zwave:
+  usb_path: /dev/ttyACM0
+  debug: true
 
 ###############################
 # Device Tracker
