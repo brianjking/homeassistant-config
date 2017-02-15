@@ -168,7 +168,7 @@ sensor 5:
     start_longitude: !secret longitude 
 
 zwave:
-  usb_path: /dev/ttyACM0
+  usb_path: /dev/ttyACM1
   debug: true
 
 ###############################
