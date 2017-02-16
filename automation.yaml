@@ -11,19 +11,9 @@
 - alias: Turn on office lights when there is movement
   trigger:
     platform: state
-      entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
-      to: 'on'
+    entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
+    to: 'on'
     action:
     service: homeassistant.turn_on
     entity_id: light.officebot
 
-  - alias: Turn off lights when there is no motion
-    trigger:
-      - platform: state
-        entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
-        state: 'off'
-        for:
-          minutes: 10
-    action:
-      service: homeassistant.turn_off
-      entity_id: light.officebot
