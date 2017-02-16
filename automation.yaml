@@ -9,13 +9,13 @@
     entity_id: light.couchbot
 
 - alias: Turn on office lights when there is movement
-    trigger:
-      - platform: state
-        entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
-        to: 'on'
+  trigger:
+    platform: state
+      entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
+      to: 'on'
     action:
-      service: homeassistant.turn_on
-      entity_id: light.officebot
+    service: homeassistant.turn_on
+    entity_id: light.officebot
 
   - alias: Turn off lights when there is no motion
     trigger:
