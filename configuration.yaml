@@ -41,7 +41,7 @@ group:
       - group.weather
       - group.internet
       - media_player.google_play__blackbox
-      - sensor.uber
+      - group.all_automations
   living_room:
     name: Living Room
     view: yes 
