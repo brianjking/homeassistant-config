@@ -74,6 +74,7 @@ group:
   System: sensor.cpu_use, sensor.ram_free, sensor.ram_use
   Ship: sensor.packages
   livingroom_lights: switch.tribot, light.couchbot 
+  office_lights: light.officebot, light.officebotfloor
 ################################################################          
 # Inputs
 ################################################################

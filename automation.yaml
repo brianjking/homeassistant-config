@@ -15,7 +15,7 @@
     to: 'on'
   action:
     service: homeassistant.turn_on
-    entity_id: light.officebot
+    entity_id: group.office_lights
 
 - alias: Light off after 90 sec when motion off
   trigger:
@@ -27,4 +27,4 @@
         seconds: 30
   action:
     - service_template: homeassistant.turn_off
-      entity_id: light.officebot
+      entity_id: group.office_lights
