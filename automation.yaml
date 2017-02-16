@@ -17,3 +17,13 @@
     service: homeassistant.turn_on
     entity_id: light.officebot
 
+- alias: Turn off lights when there is no motion
+  trigger:
+    platform: state
+    entity_id: sensor.motion_sensor
+    state: 'off'
+    for:
+    minutes: 10
+  action:
+    service: homeassistant.turn_off
+    entity_id: light.officebot
