@@ -20,4 +20,6 @@
   hidden: false
 - entity_id: binary_sensor.__sensor_2_0
   friendly_name: Motion Sensor 
+- entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
+  friendly_name: Motion Sensor Ecolink 
 
