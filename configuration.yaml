@@ -12,8 +12,7 @@ http:
   server_host: 127.0.0.1
 
 recorder:
-#  db_url: !secret db_url 
-  #db_url: postgres://@/homeassistant
+  db_url: !secret db_url 
   
 history:  
 # Enables the frontend
