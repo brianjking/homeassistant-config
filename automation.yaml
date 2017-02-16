@@ -13,7 +13,7 @@
     platform: state
     entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
     to: 'on'
-    action:
+  action:
     service: homeassistant.turn_on
     entity_id: light.officebot
 
