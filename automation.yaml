@@ -26,5 +26,5 @@
         minutes: 1
         seconds: 30
   action:
-    - service_template: homeassistant.turn_off
+    - service: homeassistant.turn_off
       entity_id: group.office_lights
