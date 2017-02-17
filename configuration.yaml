@@ -30,6 +30,10 @@ emulated_hue:
 
 tts: 
   - platform: google
+
+octoprint:
+  host: 192.168.1.111
+  api_key: !secret octoprint 
 ###########################
 # VIEWS
 ###########################
@@ -169,8 +173,20 @@ sensor 5:
   - platform: uber
     server_token: !secret uber_token
     start_latitude: !secret latitude 
-    start_longitude: !secret longitude 
+    start_longitude: !secret longitude
 
+
+sensor:
+  - platform: octoprint
+    name: OctoPrint
+    monitored_conditions:
+      - Current State
+      - Temperatures
+      - Job Percentage 
+
+################################
+# Z-WAVE #######################
+################################
 zwave:
   usb_path: /dev/ttyACM1
   debug: true
