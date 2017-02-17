@@ -176,7 +176,7 @@ sensor 5:
     start_longitude: !secret longitude
 
 
-sensor:
+sensor 6:
   - platform: octoprint
     name: OctoPrint
     monitored_conditions:
