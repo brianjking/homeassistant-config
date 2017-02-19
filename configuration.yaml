@@ -35,13 +35,7 @@ octoprint:
   host: 192.168.1.111
   api_key: !secret octoprint 
 
-###########################
-# HARMONY REMOTE
-###########################
-remote:
-  - platform: harmony
-    name: TV 
-    host: 192.168.1.117
+
 
 ###########################
 # VIEWS
@@ -64,7 +58,6 @@ group:
     entities: 
       - group.livingroom_lights
       - media_player.raptor
-      - remote.tv
   office:
     name: Office
     view: yes
