@@ -64,6 +64,7 @@ group:
     entities: 
       - group.livingroom_lights
       - media_player.raptor
+      - remote.tv
   office:
     name: Office
     view: yes
