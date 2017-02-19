@@ -34,6 +34,15 @@ tts:
 octoprint:
   host: 192.168.1.111
   api_key: !secret octoprint 
+
+###########################
+# HARMONY REMOTE
+###########################
+remote:
+  - platform: harmony
+    name: TV 
+    host: 192.168.1.117
+
 ###########################
 # VIEWS
 ###########################
@@ -72,6 +81,10 @@ group:
     entities:
       - light.sleepbot
       - group.weather
+  printer:
+    name: 3D
+    view: yes
+    entities: 
   
 ###########################
 # GROUPS
