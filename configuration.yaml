@@ -52,6 +52,7 @@ group:
       - group.internet
       - media_player.google_play__blackbox
       - group.all_automations
+      - switch.wake_on_lan
   living_room:
     name: Living Room
     view: yes 
