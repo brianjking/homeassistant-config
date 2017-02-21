@@ -111,7 +111,8 @@ switch:
   
 switch 2:
   - platform: wake_on_lan
-    mac_address: "D8-CB-8A-E2-03-A2"
+    mac_address: "D8:CB:8A:E2:03:A2"
+    name: "blackbox"
     host: 192.168.1.114
 
 switch 3:
@@ -197,7 +198,7 @@ sensor 6:
 # Z-WAVE #######################
 ################################
 zwave:
-  usb_path: /dev/ttyACM1
+  usb_path: /dev/ttyACM0
   debug: true
 
 ###############################
