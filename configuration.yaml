@@ -71,6 +71,7 @@ group:
       - media_player.google_play__blackbox
       - group.all_devices
       - switch.wake_on_lan
+      - switch.fluxer
   bedroom:
     name: Bedroom
     view: yes
