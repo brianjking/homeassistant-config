@@ -41,6 +41,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 #### Getting Help
 
 * [Open an issue](https://github.com/brianjking/hass-config/issues/new)
+* [Read The Docs](https://github.com/brianjking/hass-config/tree/master/docs)
 * [Message @brianjking on Twitter](https://twitter.com/brianjking)
 * [Home Assistant Homepage](https://home-assistant.io/)
 * [Home Assistant Forums](https://community.home-assistant.io/)
