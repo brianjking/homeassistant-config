@@ -31,6 +31,9 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [Raspberry Pi System Resources](https://home-assistant.io/components/sensor.systemmonitor/)
 * [USPS Packages](https://home-assistant.io/components/sensor.usps/)
 
+### Preview
+![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/home-assistant.gif "Home Assistant Preview")
+
 #### To-Do
 
 * Check the [issues](https://github.com/brianjking/hass-config/issues) for anything not working properly in my config or that I plan to implement. 
