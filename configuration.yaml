@@ -81,7 +81,7 @@ group:
     name: 3D
     view: yes
     entities: 
-
+      - group.3d_print
 
   
 ###########################
