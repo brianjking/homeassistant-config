@@ -81,6 +81,8 @@ group:
     name: 3D
     view: yes
     entities: 
+
+
   
 ###########################
 # GROUPS
@@ -91,6 +93,7 @@ group:
   Ship: sensor.packages
   livingroom_lights: switch.tribot, light.couchbot 
   office_lights: light.officebot, light.officebotfloor
+  3D_print: sensor.octoprint_actual_bed_temp, sensor.octoprint_actual_tool0_temp, sensor.octoprint_current_state, sensor.octoprint_job_percentage, sensor.octoprint_target_bed_temp, sensor.octoprint_target_tool0_temp
 ################################################################          
 # Inputs
 ################################################################
