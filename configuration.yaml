@@ -203,7 +203,7 @@ sensor 6:
 ################################
 zwave:
   usb_path: /dev/ttyACM0
-  debug: true
+
 
 ###############################
 # Device Tracker
