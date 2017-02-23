@@ -14,8 +14,8 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 
 ### Devices
 
-* [LIFX White Lightbulbs](https://www.amazon.com/gp/product/B00XUW0ZFU/ref=as_li_tl?ie=UTF8&tag=brianjking-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B00XUW0ZFU&linkId=fadb8e924229106921d989898ccd153a) (Quantity: 3)
-* [LIFX Color Lightbulbs](https://www.amazon.com/gp/product/B0161IJ5F0/ref=as_li_tl?ie=UTF8&tag=brianjking-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B0161IJ5F0&linkId=aeb96f7004a9d233ffe1b99833e0b185) (Quantity: 1)
+* [LIFX White 800 Lightbulbs](http://lifx.refr.cc/F6NXQNK) (Quantity: 3)
+* [LIFX Color 1000 Lightbulbs](http://lifx.refr.cc/F6NXQNK) (Quantity: 1)
 * [Google Chromecast](https://www.google.com/intl/en_us/chromecast/?utm_source=chromecast.com)
 * OctoPrint & [Monoprice Select Mini 3D Printer](https://www.amazon.com/gp/product/B01FL49VZE/ref=as_li_tl?ie=UTF8&tag=brianjking-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01FL49VZE&linkId=76e68ae7b7e1da100d3b710dd8ac260e)
 * [Amazon Echo Dot](https://www.amazon.com/gp/product/B01DFKC2SO/ref=as_li_tl?ie=UTF8&tag=brianjking-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01DFKC2SO&linkId=fd530006c93e95bccfdc671a5422be7a)
