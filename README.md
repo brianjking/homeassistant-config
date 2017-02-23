@@ -4,6 +4,10 @@
 
 Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](https://twitter.com/real_kinna) [HomeAssistant](https://home-assistant.io).
 
+## Build Status (Travis-CI)
+
+[![Build Status](https://travis-ci.org/brianjking/hass-config.svg?branch=master)](https://travis-ci.org/brianjking/hass-config)
+
 ## Current Configuration
 
 * RaspberryPi 3 using [Fabric All-In-One Installer](https://github.com/home-assistant/fabric-home-assistant) method.
