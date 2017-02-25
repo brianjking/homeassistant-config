@@ -111,7 +111,7 @@ switch:
   sunset_colortemp: 2500
   stop_colortemp: 1900
   disable_brightness_adjust: True 
-  mode: xy
+  mode: mired
   
 switch 2:
   - platform: wake_on_lan
