@@ -81,6 +81,7 @@ group:
   printer:
     name: 3D
     view: yes
+    icon: printer-3d
     entities: 
       - group.3d_print
 
