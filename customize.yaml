@@ -1,27 +1,26 @@
-- entity_id: sensor.speedtest_download
-  friendly_name: 'Down (Speedtest)'
-  icon: mdi:download
-- entity_id: sensor.speedtest_upload
-  friendly_name: 'Up (Speedtest)'
-  icon: mdi:upload
-- entity_id: sensor.speedtest_ping
-  friendly_name: 'Ping (Speedtest)'
-  icon: mdi:speedometer
-- entity_id: group.all_lights
-  hidden: false
-  icon: mdi:lightbulb-on
-  friendly_name: All Lights 
-- entity_id: group.livingroom_lights
-  friendly_name: Living Room Lights 
-  icon: mdi:lightbulb
-- entity_id: switch.tribot
-  icon: mdi:lightbulb
-- entity_id: group.all_devices
-  hidden: false
-- entity_id: binary_sensor.__sensor_2_0
-  friendly_name: Motion Sensor 
-- entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
-  friendly_name: Motion Sensor Ecolink 
-- entity_id: group.all_automations
-  hidden: false
-
+    sensor.speedtest_download:
+      friendly_name: Down (Speedtest)
+      icon: 'mdi:download'
+    sensor.speedtest_upload:
+      friendly_name: Up (Speedtest)
+      icon: 'mdi:upload'
+    sensor.speedtest_ping:
+      friendly_name: Ping (Speedtest)
+      icon: 'mdi:speedometer'
+    group.all_lights:
+      hidden: false
+      icon: 'mdi:lightbulb-on'
+      friendly_name: All Lights
+    group.livingroom_lights:
+      friendly_name: Living Room Lights
+      icon: 'mdi:lightbulb'
+    switch.tribot:
+      icon: 'mdi:lightbulb'
+    group.all_devices:
+      hidden: false
+    binary_sensor.__sensor_2_0:
+      friendly_name: Motion Sensor
+    binary_sensor.ecolink_pir_motion_sensor_sensor_2_0:
+      friendly_name: Motion Sensor Ecolink
+    group.all_automations:
+      hidden: false
