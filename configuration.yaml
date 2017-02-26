@@ -80,7 +80,6 @@ group:
       - group.weather
   printer:
     name: 3D
-    icon: mdi:printer-3d
     view: yes
     entities: 
       - group.3d_print
