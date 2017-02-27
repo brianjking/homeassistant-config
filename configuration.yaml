@@ -18,7 +18,7 @@ history:
 # Enables the frontend
 frontend:
 updater:
-
+config:
 # Discover some devices automatically
 discovery:
 
