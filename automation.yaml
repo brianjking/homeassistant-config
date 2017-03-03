@@ -1,14 +1,14 @@
-- alias: Turn on light when sun sets
+- alias: Living Room Sunset Lights
   initial_state: True
   hide_entity: False
   trigger:
     platform: sun
     event: sunset
   action:
-    service: light.turn_on
-    entity_id: light.couchbot
+    service: homeassistant.turn_on
+    entity_id: group.livingroom
 
-- alias: Turn on office lights when there is movement
+- alias: Office Lights Motion (On)
   trigger:
     platform: state
     entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
@@ -17,7 +17,7 @@
     service: homeassistant.turn_on
     entity_id: group.office_lights
 
-- alias: Light off after time when motion off
+- alias: Office Lights Motion (Off)
   trigger:
     - platform: state
       entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
