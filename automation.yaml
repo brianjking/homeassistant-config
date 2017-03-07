@@ -8,6 +8,14 @@
     service: homeassistant.turn_on
     entity_id: group.livingroom
 
+- alias: Fluxer Switch On By Default
+  trigger: 
+    platform: event
+    event_type: homeassistant_start
+  action: 
+    service: homeassistant.turn_on
+    entity_id: switch.fluxer  
+
 - alias: Office Lights Motion (On)
   trigger:
     platform: state

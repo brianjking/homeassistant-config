@@ -35,8 +35,11 @@ octoprint:
   host: 192.168.1.111
   api_key: !secret octoprint 
 
-
-
+logger:
+  default: error
+  logs:
+    homeassistant.components.light.lifx: debug
+    homeassistant.components.switch.flux: info                     
 ###########################
 # VIEWS
 ###########################
@@ -111,10 +114,10 @@ switch:
     - light.officebotfloor
   name: Fluxer
   start_time: '7:00'
-  stop_time: '00:30'
-  start_colortemp: 3000
-  sunset_colortemp: 2500
-  stop_colortemp: 1900
+  stop_time: '23:59'
+  start_colortemp: 3200
+  sunset_colortemp: 2600
+  stop_colortemp: 2500
   disable_brightness_adjust: True 
   mode: mired
   
