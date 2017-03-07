@@ -141,6 +141,9 @@ media_player 2:
   platform: gpmdp
   host: 192.168.1.114
   name: Google Play - Blackbox
+
+media_player 3:
+  platform: cast
   
 # Track the sun
 sun:
