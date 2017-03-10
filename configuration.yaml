@@ -52,8 +52,8 @@ octoprint:
 logger:
   default: error
   logs:
-    homeassistant.components.light.lifx: debug
-    homeassistant.components.switch.flux: info                     
+    #homeassistant.components.light.lifx: debug
+    #homeassistant.components.switch.flux: info                     
 ###########################
 # VIEWS
 ###########################
