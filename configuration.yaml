@@ -53,7 +53,13 @@ logger:
   default: error
   #logs:
     #homeassistant.components.light.lifx: debug
-    #homeassistant.components.switch.flux: info                     
+    #homeassistant.components.switch.flux: info
+
+notify:
+  - name: simplepush
+    platform: simplepush
+    device_key: n4NeZK
+
 ###########################
 # VIEWS
 ###########################
