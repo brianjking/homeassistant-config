@@ -1,4 +1,4 @@
-- alias: Living Room Sunset Lights
+- alias: Living Room Lights On At Sunset
   initial_state: True
   hide_entity: False
   trigger:
@@ -6,7 +6,7 @@
     event: sunset
   action:
     service: homeassistant.turn_on
-    entity_id: group.livingroom
+    entity_id: group.livingroom_lights
 
 - alias: Fluxer Switch On By Default
   trigger: 
