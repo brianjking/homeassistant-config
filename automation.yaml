@@ -8,6 +8,16 @@
     service: homeassistant.turn_on
     entity_id: group.livingroom_lights
 
+- alias: Kitchen Light on at Sunset
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: sun
+    event: sunset
+  action:
+    service: homeassistant.turn_on
+    entity_id: light.kitchen
+
 - alias: Fluxer Switch On By Default
   trigger: 
     platform: event
