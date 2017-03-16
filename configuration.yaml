@@ -95,6 +95,9 @@ group:
       - group.all_devices
       - switch.wake_on_lan
       - switch.fluxer
+      - automation.fluxer_switch_on_by_default
+      - automation.office_lights_motion_off
+      - automation.office_lights_motion_on
   bedroom:
     name: Bedroom
     view: yes
