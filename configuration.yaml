@@ -82,6 +82,8 @@ group:
     entities: 
       - group.livingroom_lights
       - media_player.raptor
+      - automation.living_room_lights_on_at_sunset
+      - automation.living_room_lights_on
   office:
     name: Office
     view: yes
@@ -108,7 +110,8 @@ group:
     name: Kitchen
     view: yes
     entities: 
-      - light.kitchen     
+      - light.kitchen
+      - automation.kitchen_light_on_at_sunset     
   printer:
     name: 3D
     view: yes
