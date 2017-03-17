@@ -149,8 +149,7 @@ switch:
   
 switch 2:
   - platform: wake_on_lan
-    mac_address: "D8:CB:8A:E2:03:A2"
-    name: "blackbox"
+    mac_address: "D8-CB-8A-E2-03-A2"
     host: 192.168.1.114
 
 #switch 3:
