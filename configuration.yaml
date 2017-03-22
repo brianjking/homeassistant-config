@@ -257,7 +257,7 @@ device_tracker:
 device_tracker 2:
   - platform: mqtt
     devices: 
-      brian_oneplus: /location/brianphone
+      brian_oneplus: /zanzito/brian_oneplus/location
       kinna_galaxy: /location/kinnagalaxy
 
 #########################################
