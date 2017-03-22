@@ -266,7 +266,7 @@ device_tracker 2:
 
 mqtt:
   broker: !secret mqttbroker
-  port: 39742
+  port: 19742
   username: !secret mqttuser
   password: !secret mqttpassword
 ################################################################
