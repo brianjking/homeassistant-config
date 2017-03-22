@@ -259,6 +259,16 @@ device_tracker 2:
     devices: 
       brian_oneplus: /location/brianphone
       kinna_galaxy: /location/kinnagalaxy
+
+#########################################
+# MQTT
+##########################################
+
+mqtt:
+  broker: !secret mqttbroker
+  port: 29742
+  username: !secret mqttuser
+  password: !secret mqttpassword
 ################################################################
 # Panels
 ################################################################
