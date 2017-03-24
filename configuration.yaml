@@ -51,8 +51,8 @@ octoprint:
 
 logger:
   default: error
-  #logs:
-    #homeassistant.components.light.lifx: debug
+  logs:
+    homeassistant.components.device_tracker.mqtt: debug
     #homeassistant.components.switch.flux: info
 
 notify:
@@ -246,10 +246,8 @@ zwave:
 ###############################
 
 device_tracker:
-  - platform: mqtt
-    devices: 
-      brian_oneplus: /location/brian_oneplus/
-      kinna_galaxy: /location/kinnagalaxy
+  - platform: owntracks
+
 
 #########################################
 # MQTT
