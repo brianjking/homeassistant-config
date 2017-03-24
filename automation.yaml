@@ -55,3 +55,12 @@
   action:
     service: homeassistant.turn_on
     entity_id: group.livingroom_lights
+
+- alias: New Home Assistant Version Notifier
+    trigger:
+      - platform: state
+        entity_id: updater.updater
+    action:
+      service: notify.simplepush
+      data:
+        message: 'There is a new Home Assistant release available.'
