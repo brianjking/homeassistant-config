@@ -18,12 +18,13 @@
       icon: 'mdi:lightbulb'
     group.all_devices:
       hidden: false
-      friendly_name: Who is Where
+      friendly_name: Occupancy Tracker
     binary_sensor.__sensor_2_0:
       friendly_name: Motion Sensor
     binary_sensor.ecolink_pir_motion_sensor_sensor_2_0:
       friendly_name: Motion Sensor Ecolink
     group.all_automations:
       hidden: false
+      friendly_name: All Automations 
     binary_sensor.ecolink_unknown_type0004_id0001_sensor_3_0:
       friendly_name: Motion Sensor Ecolink Living Room

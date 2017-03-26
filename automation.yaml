@@ -62,5 +62,5 @@
     entity_id: updater.updater
   action:
     service: notify.simplepush
-    data:
-      message: 'There is a new Home Assistant release available.'
+    data_template:
+      message: "Home Assistant  {{ states.updater.updater.state }}  is now available."
