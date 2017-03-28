@@ -1,5 +1,7 @@
 # Graph Your Configuration
 
+Thank you to [happyleavesaoc](https://github.com/happyleavesaoc/home-assistant-graph) for building this amazing addition to Home Assistant.
+
 ![Graphing Your Configuration](https://cloud.githubusercontent.com/assets/6786817/24412044/08d423fc-139d-11e7-8efb-abca6d3c882f.png "Graphing Your Configuration")
 
 ## Demo
@@ -69,10 +71,10 @@ automation:
 </html>
 ```
 
-* NOTE: Be sure to get [svg-pan-zoom.min.js](https://github.com/ariutta/svg-pan-zoom) as well.
+* *NOTE: Be sure to get [svg-pan-zoom.min.js](https://github.com/ariutta/svg-pan-zoom) as well. Instructions are below.*
 
 * From your `/home/homeassistant/.homeassistant/www` directory the easiest way to download the `svg-pan-zoom.min.js` file is to use `wget`.
-	* ```sh wget http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.min.js```
+	* `wget http://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.min.js`
 
 ### Getting Help with Graphing Your Configuration
 
