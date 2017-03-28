@@ -1,6 +1,6 @@
 # Graph Your Configuration
 
-Thank you to [happyleavesaoc](https://github.com/happyleavesaoc/home-assistant-graph) for building this amazing addition to Home Assistant.
+Thank you to [happyleavesaoc](https://github.com/happyleavesaoc/home-assistant-graph) for building this amazing addition to [Home Assistant](https://home-assistant.io).
 
 ![Graphing Your Configuration](https://cloud.githubusercontent.com/assets/6786817/24412044/08d423fc-139d-11e7-8efb-abca6d3c882f.png "Graphing Your Configuration")
 
@@ -21,6 +21,7 @@ Thank you to [happyleavesaoc](https://github.com/happyleavesaoc/home-assistant-g
 ### Implementing HA Graph in Home Assistant
 
 * This can be placed in your `configuration.yaml` or split into separate `yaml` files based on however you [split up your configuration files](https://home-assistant.io/docs/configuration/splitting_configuration/).
+	* I personally have mine split into [configuration.yaml](https://github.com/brianjking/hass-config/blob/master/configuration.yaml) for my `panel_iframe` and `shell_command` entities and [automation.yaml](https://github.com/brianjking/hass-config/blob/master/automation.yaml) for my `automation` entries at the time of this writing.
 
 ```yaml
 panel_iframe:
