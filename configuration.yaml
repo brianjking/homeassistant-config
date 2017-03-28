@@ -265,6 +265,14 @@ mqtt:
   port: 19742
   username: !secret mqttuser
   password: !secret mqttpassword
+
+############################################
+# SHELL COMMANDS (EVENTUALLY SPLIT THIS OUT)
+#############################################
+
+shell_command:
+  generate_graph: "python3 -m hagraph -i /home/homeassistant/.homeassistant/configuration.yaml -o /home/homeassistant/.homeassistant/www/graph.svg"
+
 ################################################################
 # Panels
 ################################################################
@@ -278,7 +286,10 @@ panel_iframe:
     title: 'Modem Admin'
     icon: mdi:router-wireless
     url: 'http://192.168.100.1'
-
+  graph:
+    title: Graph
+    icon: mdi:vector-polyline
+    url: "https://raptorbot.ddns.net/local/graph.html"
 ################################################################          
 # Automation
 ################################################################
