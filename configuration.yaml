@@ -58,7 +58,7 @@ logger:
 notify:
   - name: simplepush
     platform: simplepush
-    device_key: n4NeZK
+    device_key: !secret simplepushkey
 
 ###########################
 # VIEWS
