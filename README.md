@@ -1,4 +1,4 @@
-![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/hass.png "Home Assistant Logo")
+![Home Assistant Logo](https://github.com/brianjking/hass-config/images/blob/master/hass.png "Home Assistant Logo")
 
 # Home Assistant Configuration
 
@@ -36,7 +36,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [USPS Packages](https://home-assistant.io/components/sensor.usps/)
 
 ### Preview
-![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/home-assistant.gif "Home Assistant Preview")
+![Home Assistant Logo](https://github.com/brianjking/hass-config/images/blob/master/home-assistant.gif "Home Assistant Preview")
 
 #### To-Do
 
