@@ -64,3 +64,10 @@
     service: notify.simplepush
     data_template:
       message: "Home Assistant  {{ states.updater.updater.state }}  is now available."
+
+- alias: Generate Configuration Graph 
+  trigger:
+    platform: event
+    event_type: homeassistant_start
+  action:
+    service: shell_command.generate_graph
