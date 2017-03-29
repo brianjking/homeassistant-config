@@ -52,7 +52,7 @@ octoprint:
 logger:
   default: error
   logs:
-    homeassistant.components.device_tracker.mqtt: debug
+    homeassistant.components.automation: info
     #homeassistant.components.switch.flux: info
 
 notify:
