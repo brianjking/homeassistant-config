@@ -100,6 +100,7 @@ group:
       - automation.fluxer_switch_on_by_default
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
+      - group.all_scripts
   bedroom:
     name: Bedroom
     view: yes
