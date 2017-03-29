@@ -1,0 +1,1 @@
+bash /home/homeassistant/.homeassistant/bin/update_new_commits_sensor.sh #TODO: feed password

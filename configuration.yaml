@@ -294,3 +294,6 @@ panel_iframe:
 # Automation
 ################################################################
 automation: !include automation.yaml
+
+script: !include_dir_named script/
+shell_command: !include_dir_named shell_command/
