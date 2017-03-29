@@ -270,8 +270,8 @@ mqtt:
 # SHELL COMMANDS (EVENTUALLY SPLIT THIS OUT)
 #############################################
 
-shell_command:
-  generate_graph: "python3 -m hagraph -i /home/homeassistant/.homeassistant/configuration.yaml -o /home/homeassistant/.homeassistant/www/graph.svg"
+
+  
 
 ################################################################
 # Panels
