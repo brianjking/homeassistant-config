@@ -28,3 +28,5 @@
       friendly_name: All Automations 
     binary_sensor.ecolink_unknown_type0004_id0001_sensor_3_0:
       friendly_name: Motion Sensor Ecolink Living Room
+    group.all_scripts:
+      hidden: false
