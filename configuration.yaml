@@ -106,6 +106,7 @@ group:
       - automation.office_lights_motion_on
       - group.all_scripts
       - sensor.new_commits
+      - calendar.appointments_private
   bedroom:
     name: Bedroom
     view: yes
@@ -130,7 +131,7 @@ group:
 ###########################    
   Internet: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
   Weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sun.sun
-  System: sensor.cpu_use, sensor.ram_free, sensor.ram_use
+  System: sensor.cpu_use, sensor.ram_free, sensor.ram_use, sensor.load_5m, sensor.load_5m, sensor.memory_use, sensor.memory_free, sensor.disk_free
   Ship: sensor.packages
   livingroom_lights: light.tribot, light.couchbot 
   office_lights: light.officebot, light.officebotfloor
