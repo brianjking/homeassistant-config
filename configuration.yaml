@@ -60,6 +60,10 @@ notify:
     platform: simplepush
     device_key: !secret simplepushkey
 
+
+google:
+  client_id: !secret googleclientid
+  client_secret: !secret googleclientsecret
 ###########################
 # VIEWS
 ###########################
