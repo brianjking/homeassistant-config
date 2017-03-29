@@ -101,6 +101,7 @@ group:
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
       - group.all_scripts
+      - sensor.new_commits
   bedroom:
     name: Bedroom
     view: yes
