@@ -1,0 +1,1 @@
+"python3 -m hagraph -i /home/homeassistant/.homeassistant/configuration.yaml -o /home/homeassistant/.homeassistant/www/graph.svg"
