@@ -233,9 +233,10 @@ sensor 5:
 
 sensor 6:
   - platform: template
-    new_commits:
-    value_template: >
-      {{ states("sensor.new_commits") }}
+    sensors: 
+      new_commits:
+        value_template: >
+          {{ states("sensor.new_commits") }}
 
 ################################
 # Z-WAVE #######################
