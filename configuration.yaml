@@ -225,13 +225,6 @@ sensor 4:
     name: packages
     
 sensor 5:
-  - platform: uber
-    server_token: !secret uber_token
-    start_latitude: !secret latitude 
-    start_longitude: !secret longitude
-
-
-sensor 6:
   - platform: octoprint
     name: OctoPrint
     monitored_conditions:
