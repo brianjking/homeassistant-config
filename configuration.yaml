@@ -105,7 +105,6 @@ group:
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
       - group.all_scripts
-      - sensor.new_commits
       - calendar.appointments_private
   bedroom:
     name: Bedroom
@@ -231,6 +230,12 @@ sensor 5:
       - Current State
       - Temperatures
       - Job Percentage 
+
+sensor 6:
+  - platform: template
+    new_commits:
+    value_template: >
+      {{ states("sensor.new_commits") }}
 
 ################################
 # Z-WAVE #######################
