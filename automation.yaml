@@ -48,7 +48,6 @@
       to: 'off'
       for:
         minutes: 30
-        seconds: 30
   action:
     - service: homeassistant.turn_off
       entity_id: group.office_lights
