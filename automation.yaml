@@ -31,6 +31,10 @@
     platform: state
     entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
     to: 'on'
+  condition: 
+    platform: time
+    after: '07:30'
+    before: '23:30'
   action:
     service: homeassistant.turn_on
     entity_id: group.office_lights
