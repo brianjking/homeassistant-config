@@ -1,0 +1,5 @@
+- platform: systemmonitor
+  resources:
+    - type: memory_free
+    - type: memory_use_percent
+    - type: processor_use
