@@ -62,9 +62,9 @@ notify:
     device_key: !secret simplepushkey
 
 
-google:
-  client_id: !secret googleclientid
-  client_secret: !secret googleclientsecret
+#google:
+  #client_id: !secret googleclientid
+  #client_secret: !secret googleclientsecret
 ###########################
 # VIEWS
 ###########################
@@ -76,13 +76,7 @@ google:
 ###########################
 # GROUPS
 ###########################    
-  Internet: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
-  Weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sun.sun
-  System: sensor.cpu_use, sensor.ram_free, sensor.ram_use, sensor.load_5m, sensor.load_5m, sensor.memory_use, sensor.memory_free, sensor.disk_free
-  Ship: sensor.packages
-  livingroom_lights: light.tribot, light.couchbot 
-  office_lights: light.officebot, light.officebotfloor
-  3D_print: sensor.octoprint_actual_bed_temp, sensor.octoprint_actual_tool0_temp, sensor.octoprint_current_state, sensor.octoprint_job_percentage, sensor.octoprint_target_bed_temp, sensor.octoprint_target_tool0_temp
+  
 
 
 
