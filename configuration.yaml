@@ -135,24 +135,9 @@ group:
   livingroom_lights: light.tribot, light.couchbot 
   office_lights: light.officebot, light.officebotfloor
   3D_print: sensor.octoprint_actual_bed_temp, sensor.octoprint_actual_tool0_temp, sensor.octoprint_current_state, sensor.octoprint_job_percentage, sensor.octoprint_target_bed_temp, sensor.octoprint_target_tool0_temp
-################################################################          
-# Inputs
-################################################################
 
-switch:
-  platform: flux
-  lights:
-    - light.officebot
-    - light.officebotfloor
-  name: Fluxer
-  start_time: '7:00'
-  stop_time: '23:59'
-  start_colortemp: 3200
-  sunset_colortemp: 2600
-  stop_colortemp: 2500
-  disable_brightness_adjust: True 
-  mode: mired
-  
+
+
 switch 2:
   - platform: wake_on_lan
     mac_address: "D8-CB-8A-E2-03-A2"
