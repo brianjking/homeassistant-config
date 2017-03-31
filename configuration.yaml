@@ -31,14 +31,15 @@ recorder:
 history:  
 # Enables the frontend
 frontend:
+# Enables the HASS Updater
 updater:
+# Enables frontend configuration assistance
 config:
 # Discover some devices automatically
 discovery:
-
 # View all events in a logbook
 logbook:
-
+# Make a fake Hue for Alexa
 emulated_hue:
   expose_by_default: true
 
@@ -68,61 +69,8 @@ google:
 # VIEWS
 ###########################
 
-group:
-  default_view:
-    view: yes
-    entities:
-      - group.all_lights
-      - media_player.raptor
-      - group.system
-      - group.weather
-      - group.internet
-      - media_player.google_play__blackbox
-      - group.all_automations
-      - switch.wake_on_lan
-  living_room:
-    name: Living Room
-    view: yes 
-    entities: 
-      - group.livingroom_lights
-      - media_player.raptor
-      - automation.living_room_lights_on_at_sunset
-      - automation.living_room_lights_on
-  office:
-    name: Office
-    view: yes
-    entities:
-      - light.officebotfloor
-      - light.officebot
-      - group.internet
-      - group.weather
-      - group.ship
-      - media_player.google_play__blackbox
-      - group.all_devices
-      - switch.wake_on_lan
-      - switch.fluxer
-      - automation.fluxer_switch_on_by_default
-      - automation.office_lights_motion_off
-      - automation.office_lights_motion_on
-      - group.all_scripts
-      - calendar.appointments_private
-  bedroom:
-    name: Bedroom
-    view: yes
-    entities:
-      - light.sleepbot
-      - group.weather
-  kitchen: 
-    name: Kitchen
-    view: yes
-    entities: 
-      - light.kitchen
-      - automation.kitchen_light_on_at_sunset     
-  printer:
-    name: 3D
-    view: yes
-    entities: 
-      - group.3d_print
+
+  
 
   
 ###########################
@@ -229,3 +177,5 @@ sensor: !include_dir_merge_list sensor
 switch: !include_dir_merge_list switch
 script: !include_dir_named script/
 shell_command: !include_dir_named shell_command/
+group: !include groups.yaml
+
