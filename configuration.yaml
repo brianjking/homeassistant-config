@@ -7,10 +7,12 @@ homeassistant:
   time_zone: America/Chicago
   customize: !include customize.yaml
 
+# FRONTEND HTTP PASSWORD PROTECTION SETUP
 http:
   api_password: !secret http_password
   server_host: 127.0.0.1
 
+# DATABASE SETUP USING MySQL
 recorder:
   db_url: !secret db_url
   purge_days: 7
@@ -61,40 +63,20 @@ notify:
     platform: simplepush
     device_key: !secret simplepushkey
 
-
 #google:
   #client_id: !secret googleclientid
   #client_secret: !secret googleclientsecret
-###########################
-# VIEWS
-###########################
 
-
-  
-
-  
-###########################
-# GROUPS
-###########################    
-  
-
-
-
-switch 2:
-  - platform: wake_on_lan
-    mac_address: "D8-CB-8A-E2-03-A2"
-    host: 192.168.1.114
-
-
-################################################################          
-# Sensors/Components
-################################################################
-
-
+############################################
+# LIGHT
+############################################
 light:
   - platform: lifx
     broadcast: 192.168.1.255
-  
+############################################
+# MEDIA PLAYERS
+############################################
+
 # Google Play Music - Brian Desktop
 media_player 2:
   platform: gpmdp
@@ -119,12 +101,9 @@ sensor 6:
 ################################
 zwave:
   usb_path: /dev/zwave
-
-
-###############################
+############################################
 # Device Tracker
-###############################
-
+############################################
 device_tracker:
   - platform: owntracks
   - platform: tplink
@@ -134,21 +113,17 @@ device_tracker:
     interval_seconds: 10
     consider_home: 180
     track_new_devices: no
-
-
 #########################################
 # MQTT
 ##########################################
-
 mqtt:
   broker: !secret mqttbroker
   port: 19742
   username: !secret mqttuser
   password: !secret mqttpassword
-
-################################################################
+############################################
 # Panels
-################################################################
+############################################
 # These are broken due to HTTP loading on HTTPS connection.
 panel_iframe:
   router:
@@ -163,13 +138,12 @@ panel_iframe:
     title: Graph
     icon: mdi:vector-polyline
     url: "https://raptorbot.ddns.net/local/graph.html"
-################################################################          
+############################################       
 # Includes
-################################################################
+############################################
 automation: !include automation.yaml
 sensor: !include_dir_merge_list sensor
 switch: !include_dir_merge_list switch
 script: !include_dir_named script/
 shell_command: !include_dir_named shell_command/
 group: !include groups.yaml
-
