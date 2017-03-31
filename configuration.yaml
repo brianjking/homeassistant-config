@@ -196,19 +196,6 @@ sensor:
       - hourly_summary
       - daily_summary
     update_interval: '00:30'
-
-sensor 2:
-  - platform: speedtest
-    name: Internet
-    monitored_conditions:
-      - ping
-      - download
-      - upload
-    minute:
-      - 0
-      - 15
-      - 30
-      - 45
       
 sensor 3:
   - platform: systemmonitor
@@ -291,7 +278,7 @@ panel_iframe:
 # Includes
 ################################################################
 automation: !include automation.yaml
-sensor: !include_dir_list sensor/
+sensor: !include_dir_merge_list sensor
 switch: !include_dir_merge_list switch
 script: !include_dir_named script/
 shell_command: !include_dir_named shell_command/
