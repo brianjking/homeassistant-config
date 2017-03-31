@@ -1,0 +1,95 @@
+  default_view:
+    view: yes
+    entities:
+      - group.all_lights
+      - media_player.raptor
+      - group.system
+      - group.weather
+      - group.internet
+      - media_player.google_play__blackbox
+      - group.all_automations
+      - switch.wake_on_lan
+  living_room:
+    name: Living Room
+    view: yes 
+    entities: 
+      - group.livingroom_lights
+      - media_player.raptor
+      - automation.living_room_lights_on_at_sunset
+      - automation.living_room_lights_on
+  office:
+    name: Office
+    view: yes
+    entities:
+      - light.officebotfloor
+      - light.officebot
+      - group.internet
+      - group.weather
+      - group.ship
+      - media_player.google_play__blackbox
+      - group.all_devices
+      - switch.wake_on_lan
+      - switch.fluxer
+      - automation.fluxer_switch_on_by_default
+      - automation.office_lights_motion_off
+      - automation.office_lights_motion_on
+      - group.all_scripts
+      - calendar.appointments_private
+  bedroom:
+    name: Bedroom
+    view: yes
+    entities:
+      - light.sleepbot
+      - group.weather
+  kitchen: 
+    name: Kitchen
+    view: yes
+    entities: 
+      - light.kitchen
+      - automation.kitchen_light_on_at_sunset     
+  printer:
+    name: 3D
+    view: yes
+    entities: 
+      - group.3d_print
+  Internet: 
+    - sensor.speedtest_download
+    - sensor.speedtest_upload
+    - sensor.speedtest_ping
+
+  Weather: 
+    - sensor.weather_apparent_temperature
+    - sensor.weather_humidity
+    - sensor.weather_icon
+    - sensor.weather_precip_intensity
+    - sensor.weather_precip_probability
+    - sensor.weather_summary
+    - sensor.weather_temperature
+    - sensor.weather_hourly_summary
+    - sensor.weather_daily_summary
+    - sensor.weather_wind_speed
+    - sun.sun
+  System: 
+    - sensor.cpu_use
+    - sensor.ram_free
+    - sensor.ram_use
+    - sensor.load_5m
+    - sensor.load_5m
+    - sensor.memory_use
+    - sensor.memory_free
+    - sensor.disk_free
+  Ship: 
+    - sensor.packages
+  livingroom_lights: 
+    - light.tribot
+    - light.couchbot 
+  office_lights: 
+    - light.officebot
+    - light.officebotfloor
+  3D_print: 
+    - sensor.octoprint_actual_bed_temp
+    - sensor.octoprint_actual_tool0_temp
+    - sensor.octoprint_current_state
+    - sensor.octoprint_job_percentage
+    - sensor.octoprint_target_bed_temp
+    - sensor.octoprint_target_tool0_temp

@@ -7,10 +7,12 @@ homeassistant:
   time_zone: America/Chicago
   customize: !include customize.yaml
 
+# FRONTEND HTTP PASSWORD PROTECTION SETUP
 http:
   api_password: !secret http_password
   server_host: 127.0.0.1
 
+# DATABASE SETUP USING MySQL
 recorder:
   db_url: !secret db_url
   purge_days: 7
@@ -31,14 +33,15 @@ recorder:
 history:  
 # Enables the frontend
 frontend:
+# Enables the HASS Updater
 updater:
+# Enables frontend configuration assistance
 config:
 # Discover some devices automatically
 discovery:
-
 # View all events in a logbook
 logbook:
-
+# Make a fake Hue for Alexa
 emulated_hue:
   expose_by_default: true
 
@@ -60,114 +63,20 @@ notify:
     platform: simplepush
     device_key: !secret simplepushkey
 
+#google:
+  #client_id: !secret googleclientid
+  #client_secret: !secret googleclientsecret
 
-google:
-  client_id: !secret googleclientid
-  client_secret: !secret googleclientsecret
-###########################
-# VIEWS
-###########################
-
-group:
-  default_view:
-    view: yes
-    entities:
-      - group.all_lights
-      - media_player.raptor
-      - group.system
-      - group.weather
-      - group.internet
-      - media_player.google_play__blackbox
-      - group.all_automations
-      - switch.wake_on_lan
-  living_room:
-    name: Living Room
-    view: yes 
-    entities: 
-      - group.livingroom_lights
-      - media_player.raptor
-      - automation.living_room_lights_on_at_sunset
-      - automation.living_room_lights_on
-  office:
-    name: Office
-    view: yes
-    entities:
-      - light.officebotfloor
-      - light.officebot
-      - group.internet
-      - group.weather
-      - group.ship
-      - media_player.google_play__blackbox
-      - group.all_devices
-      - switch.wake_on_lan
-      - switch.fluxer
-      - automation.fluxer_switch_on_by_default
-      - automation.office_lights_motion_off
-      - automation.office_lights_motion_on
-      - group.all_scripts
-      - calendar.appointments_private
-  bedroom:
-    name: Bedroom
-    view: yes
-    entities:
-      - light.sleepbot
-      - group.weather
-  kitchen: 
-    name: Kitchen
-    view: yes
-    entities: 
-      - light.kitchen
-      - automation.kitchen_light_on_at_sunset     
-  printer:
-    name: 3D
-    view: yes
-    entities: 
-      - group.3d_print
-
-  
-###########################
-# GROUPS
-###########################    
-  Internet: sensor.speedtest_download, sensor.speedtest_upload, sensor.speedtest_ping
-  Weather: sensor.weather_apparent_temperature, sensor.weather_humidity, sensor.weather_icon, sensor.weather_precip_intensity, sensor.weather_precip_probability, sensor.weather_summary, sensor.weather_temperature, sensor.weather_hourly_summary, sensor.weather_daily_summary, sensor.weather_wind_speed, sun.sun
-  System: sensor.cpu_use, sensor.ram_free, sensor.ram_use, sensor.load_5m, sensor.load_5m, sensor.memory_use, sensor.memory_free, sensor.disk_free
-  Ship: sensor.packages
-  livingroom_lights: light.tribot, light.couchbot 
-  office_lights: light.officebot, light.officebotfloor
-  3D_print: sensor.octoprint_actual_bed_temp, sensor.octoprint_actual_tool0_temp, sensor.octoprint_current_state, sensor.octoprint_job_percentage, sensor.octoprint_target_bed_temp, sensor.octoprint_target_tool0_temp
-################################################################          
-# Inputs
-################################################################
-
-switch:
-  platform: flux
-  lights:
-    - light.officebot
-    - light.officebotfloor
-  name: Fluxer
-  start_time: '7:00'
-  stop_time: '23:59'
-  start_colortemp: 3200
-  sunset_colortemp: 2600
-  stop_colortemp: 2500
-  disable_brightness_adjust: True 
-  mode: mired
-  
-switch 2:
-  - platform: wake_on_lan
-    mac_address: "D8-CB-8A-E2-03-A2"
-    host: 192.168.1.114
-
-
-################################################################          
-# Sensors/Components
-################################################################
-
-# Lifx
+############################################
+# LIGHT
+############################################
 light:
   - platform: lifx
     broadcast: 192.168.1.255
-  
+############################################
+# MEDIA PLAYERS
+############################################
+
 # Google Play Music - Brian Desktop
 media_player 2:
   platform: gpmdp
@@ -179,57 +88,6 @@ media_player 3:
   
 # Track the sun
 sun:
-
-sensor:
-  - platform: darksky
-    name: Weather
-    api_key: !secret skydark 
-    monitored_conditions:
-      - apparent_temperature
-      - temperature
-      - humidity
-      - icon
-      - precip_intensity
-      - precip_probability
-      - summary
-      - wind_speed
-      - hourly_summary
-      - daily_summary
-    update_interval: '00:30'
-
-sensor 2:
-  - platform: speedtest
-    name: Internet
-    monitored_conditions:
-      - ping
-      - download
-      - upload
-    minute:
-      - 0
-      - 15
-      - 30
-      - 45
-      
-sensor 3:
-  - platform: systemmonitor
-    resources:
-      - type: memory_free
-      - type: memory_use_percent
-      - type: processor_use
-
-sensor 4:
-  - platform: usps
-    username: !secret usps_username
-    password: !secret usps_password
-    name: packages
-    
-sensor 5:
-  - platform: octoprint
-    name: OctoPrint
-    monitored_conditions:
-      - Current State
-      - Temperatures
-      - Job Percentage 
 
 sensor 6:
   - platform: template
@@ -243,12 +101,9 @@ sensor 6:
 ################################
 zwave:
   usb_path: /dev/zwave
-
-
-###############################
+############################################
 # Device Tracker
-###############################
-
+############################################
 device_tracker:
   - platform: owntracks
   - platform: tplink
@@ -258,28 +113,17 @@ device_tracker:
     interval_seconds: 10
     consider_home: 180
     track_new_devices: no
-
-
 #########################################
 # MQTT
 ##########################################
-
 mqtt:
   broker: !secret mqttbroker
   port: 19742
   username: !secret mqttuser
   password: !secret mqttpassword
-
 ############################################
-# SHELL COMMANDS (EVENTUALLY SPLIT THIS OUT)
-#############################################
-
-
-  
-
-################################################################
 # Panels
-################################################################
+############################################
 # These are broken due to HTTP loading on HTTPS connection.
 panel_iframe:
   router:
@@ -294,10 +138,12 @@ panel_iframe:
     title: Graph
     icon: mdi:vector-polyline
     url: "https://raptorbot.ddns.net/local/graph.html"
-################################################################          
-# Automation
-################################################################
+############################################       
+# Includes
+############################################
 automation: !include automation.yaml
-
+sensor: !include_dir_merge_list sensor
+switch: !include_dir_merge_list switch
 script: !include_dir_named script/
 shell_command: !include_dir_named shell_command/
+group: !include groups.yaml

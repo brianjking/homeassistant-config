@@ -1,0 +1,15 @@
+- platform: darksky
+  name: Weather
+  api_key: !secret skydark 
+  monitored_conditions:
+    - apparent_temperature
+    - temperature
+    - humidity
+    - icon
+    - precip_intensity
+    - precip_probability
+    - summary
+    - wind_speed
+    - hourly_summary
+    - daily_summary
+  update_interval: '00:30'

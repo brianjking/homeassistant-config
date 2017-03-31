@@ -1,0 +1,12 @@
+  platform: flux
+  lights:
+    - light.officebot
+    - light.officebotfloor
+  name: Fluxer
+  start_time: '7:00'
+  stop_time: '23:59'
+  start_colortemp: 3200
+  sunset_colortemp: 2600
+  stop_colortemp: 2500
+  disable_brightness_adjust: True 
+  mode: mired
