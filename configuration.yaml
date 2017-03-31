@@ -180,44 +180,6 @@ media_player 3:
 # Track the sun
 sun:
 
-sensor:
-  - platform: darksky
-    name: Weather
-    api_key: !secret skydark 
-    monitored_conditions:
-      - apparent_temperature
-      - temperature
-      - humidity
-      - icon
-      - precip_intensity
-      - precip_probability
-      - summary
-      - wind_speed
-      - hourly_summary
-      - daily_summary
-    update_interval: '00:30'
-      
-sensor 3:
-  - platform: systemmonitor
-    resources:
-      - type: memory_free
-      - type: memory_use_percent
-      - type: processor_use
-
-sensor 4:
-  - platform: usps
-    username: !secret usps_username
-    password: !secret usps_password
-    name: packages
-    
-sensor 5:
-  - platform: octoprint
-    name: OctoPrint
-    monitored_conditions:
-      - Current State
-      - Temperatures
-      - Job Percentage 
-
 sensor 6:
   - platform: template
     sensors: 
