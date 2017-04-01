@@ -12,7 +12,26 @@ The `yaml` configuration files and `shell scripts` for [Home Assistant](https://
 ### Assumptions
 
 * Your Home Assistant configuration path is the `/home/homeassistant/.homeassistant/` directory.
-* Your Home Assistant configuration
+* Your Home Assistant configuration files on your Raspberry Pi are in a `git` repository.
+* You edit your `yaml` files from another computer, commit them to GitHub and then `git pull` your updates to your Raspberry Pi. 
+
+### Configurations 
+
+* You may need to adjust the path of the various files based on where your Home Assistant is configured.
+* If using the `api_password` in the [http component](https://home-assistant.io/components/http/) you will need to adjust the [update_new_commits_sensor.sh](https://github.com/brianjking/hass-config/blob/master/bin/update_new_commits_sensor.sh) command. **FILE FROM REPOSITORY IS BELOW** 
+```bash
+#!/bin/bash
+
+cd "/home/homeassistant/.homeassistant"
+git fetch
+commits="$(git rev-list --count master..origin/master)"
+
+curl -X POST -H "x-ha-access: $1" -H "Content-Type: application/json" http://127.0.0.1:8123/api/states/sensor.new_commits -d "{\"state\": \"$commits\"}"
+```
+	* If using the `api_password` option once you create the `update_new_commits_sensor.sh` on your Raspberry Pi it you should edit the `curl` command accordingly. Example:
+```bash
+curl -X POST -H "x-ha-access: $1" -H "Content-Type: application/json" https://my.domain.com/api/states/sensor.new_commits?api_password=MyPassword -d "{\"state\": \"$commits\"}"
+```
 
 
 ### YAML & Shell Scripts for Home Assistant
@@ -22,4 +41,24 @@ The `yaml` configuration files and `shell scripts` for [Home Assistant](https://
 * [Create update_config_from_github.sh](https://github.com/brianjking/hass-config/blob/master/bin/update_config_from_github.sh)
 * [Create update_new_commits_sensor.sh](https://github.com/brianjking/hass-config/blob/master/bin/update_new_commits_sensor.sh)
 * [Create get_latest_config.yaml](https://github.com/brianjking/hass-config/blob/master/script/get_latest_config.yaml)
+
+### Using The Update From GitHub Service
+
+![Travis-CI Octocat](https://github.com/brianjking/hass-config/blob/master/images/get-from-github.png "Travis-CI Octocat")
+
+* Click the **ACTIVATE** button.
+* The [get_latest_config.yaml](https://github.com/brianjking/hass-config/blob/master/script/get_latest_config.yaml) will be executed and complete the following tasks:
+```yaml
+alias: "Get Latest Config"
+sequence:
+  - service: shell_command.update_new_commits_sensor
+  - condition: numeric_state
+    entity_id: sensor.new_commits
+    above: 1
+  - service: shell_command.update_config_from_github
+  - service: homeassistant.restart
+ ```
+* Checks for new commits, `git pull` new commits from GitHub, restart the Home Assistant service.
+
+
 
