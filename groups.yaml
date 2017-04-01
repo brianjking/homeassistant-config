@@ -76,7 +76,7 @@
     - sensor.memory_free
     - sensor.disk_free
   Packages: 
-    - sensor.packages
+    - sensor.usps
   livingroom_lights: 
     - light.tribot
     - light.couchbot 
