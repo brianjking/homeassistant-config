@@ -69,7 +69,7 @@ octoprint:
 
 logger:
   default: error
-  logs:
+  #logs:
     #homeassistant.components.automation: info
     #homeassistant.components.switch.flux: info
 
