@@ -28,7 +28,9 @@ commits="$(git rev-list --count master..origin/master)"
 
 curl -X POST -H "x-ha-access: $1" -H "Content-Type: application/json" http://127.0.0.1:8123/api/states/sensor.new_commits -d "{\"state\": \"$commits\"}"
 ```
-	* If using the `api_password` option once you create the `update_new_commits_sensor.sh` on your Raspberry Pi it you should edit the `curl` command accordingly. Example:
+
+* If using the `api_password` option once you create the `update_new_commits_sensor.sh` on your Raspberry Pi it you should edit the `curl` command accordingly. **Example:**
+
 ```bash
 curl -X POST -H "x-ha-access: $1" -H "Content-Type: application/json" https://my.domain.com/api/states/sensor.new_commits?api_password=MyPassword -d "{\"state\": \"$commits\"}"
 ```
