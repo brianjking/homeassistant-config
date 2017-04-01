@@ -15,7 +15,7 @@ http:
 # DATABASE SETUP USING MySQL
 recorder:
   db_url: !secret db_url
-  purge_days: 7
+  purge_days: 5
   exclude:
     entities:
       - sensor.weather_apparent_temperature
@@ -28,7 +28,16 @@ recorder:
       - sensor.weather_hourly_summary
       - sensor.weather_daily_summary
       - sensor.weather_wind_speed
-      - sun.sun 
+      - sun.sun
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.speedtest_ping
+      - sensor.cpu_use
+      - sensor.ram_free
+      - sensor.ram_use
+      - sensor.packages
+      - media_player.google_play__blackbox
+      - media_player.raptor 
   
 history:  
 # Enables the frontend
@@ -55,7 +64,7 @@ octoprint:
 logger:
   default: error
   logs:
-    homeassistant.components.automation: info
+    #homeassistant.components.automation: info
     #homeassistant.components.switch.flux: info
 
 notify:
