@@ -37,7 +37,13 @@ recorder:
       - sensor.ram_use
       - sensor.packages
       - media_player.google_play__blackbox
-      - media_player.raptor 
+      - media_player.raptor
+      - sensor.octoprint_actual_bed_temp
+      - sensor.octoprint_actual_tool0_temp
+      - sensor.octoprint_current_state
+      - sensor.octoprint_job_percentage
+      - sensor.octoprint_target_bed_temp
+      - sensor.octoprint_target_tool0_temp 
   
 history:  
 # Enables the frontend

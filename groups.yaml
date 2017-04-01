@@ -8,7 +8,6 @@
       - group.internet
       - media_player.google_play__blackbox
       - group.all_automations
-      - switch.wake_on_lan
   living_room:
     name: Living Room
     view: yes 
@@ -25,7 +24,7 @@
       - light.officebot
       - group.internet
       - group.weather
-      - group.ship
+      - group.packages
       - media_player.google_play__blackbox
       - group.all_devices
       - switch.wake_on_lan
@@ -34,7 +33,6 @@
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
       - group.all_scripts
-      - calendar.appointments_private
   bedroom:
     name: Bedroom
     view: yes
@@ -74,11 +72,10 @@
     - sensor.ram_free
     - sensor.ram_use
     - sensor.load_5m
-    - sensor.load_5m
     - sensor.memory_use
     - sensor.memory_free
     - sensor.disk_free
-  Ship: 
+  Packages: 
     - sensor.packages
   livingroom_lights: 
     - light.tribot
