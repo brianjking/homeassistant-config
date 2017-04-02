@@ -104,12 +104,7 @@ media_player 3:
 # Track the sun
 sun:
 
-sensor 6:
-  - platform: template
-    sensors: 
-      new_commits:
-        value_template: >
-          {{ states("sensor.new_commits") }}
+
 
 ################################
 # Z-WAVE #######################
