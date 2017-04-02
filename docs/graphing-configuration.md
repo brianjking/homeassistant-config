@@ -2,8 +2,8 @@
 
 Thank you to [happyleavesaoc](https://github.com/happyleavesaoc/home-assistant-graph) for building this amazing addition to [Home Assistant](https://home-assistant.io).
 
-![Graphing Your Configuration](https://cloud.githubusercontent.com/assets/6786817/24412044/08d423fc-139d-11e7-8efb-abca6d3c882f.png "Graphing Your Configuration") 
-* *Note: My graph is a bit broken at the moment. See [this](https://github.com/brianjking/hass-config/issues/53) for details.*
+![Graphing Your Configuration](https://cloud.githubusercontent.com/assets/6786817/24590036/d69cbb3a-17aa-11e7-852a-3181f3776fa5.png "Graphing Your Configuration") 
+
 
 ## Demo
 * Check out [happyleavesaoc's Home Assistant Graph Demo](https://happyleavesaoc.github.io/hagraph.html).
