@@ -55,7 +55,8 @@
     - sensor.speedtest_upload
     - sensor.speedtest_ping
 
-  Weather: 
+  Weather:
+    entities:  
     - sensor.weather_apparent_temperature
     - sensor.weather_humidity
     - sensor.weather_icon
@@ -67,7 +68,8 @@
     - sensor.weather_daily_summary
     - sensor.weather_wind_speed
     - sun.sun
-  System: 
+  System:
+    entities:  
     - sensor.cpu_use
     - sensor.ram_free
     - sensor.ram_use
@@ -75,15 +77,19 @@
     - sensor.memory_use
     - sensor.memory_free
     - sensor.disk_free
-  Packages: 
+  Packages:
+    entities:  
     - sensor.usps
-  livingroom_lights: 
+  livingroom_lights:
+    entities:  
     - light.tribot
     - light.couchbot 
-  office_lights: 
+  office_lights:
+    entities:  
     - light.officebot
     - light.officebotfloor
-  3D_print: 
+  3D_print:
+    entities:  
     - sensor.octoprint_actual_bed_temp
     - sensor.octoprint_actual_tool0_temp
     - sensor.octoprint_current_state
