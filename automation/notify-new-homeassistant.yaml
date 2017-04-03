@@ -1,0 +1,8 @@
+- alias: New Home Assistant Version Notifier
+  trigger:
+    platform: state
+    entity_id: updater.updater
+  action:
+    service: notify.simplepush
+    data_template:
+      message: "Home Assistant  {{ states.updater.updater.state }}  is now available."

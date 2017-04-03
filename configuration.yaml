@@ -82,6 +82,13 @@ notify:
   #client_id: !secret googleclientid
   #client_secret: !secret googleclientsecret
 
+sensor 6:
+  - platform: template
+    sensors: 
+      new_commits:
+        value_template: >
+          {{ states("sensor.new_commits") }}
+
 ############################################
 # LIGHT
 ############################################
@@ -103,8 +110,6 @@ media_player 3:
   
 # Track the sun
 sun:
-
-
 ################################
 # Z-WAVE #######################
 ################################
@@ -150,7 +155,7 @@ panel_iframe:
 ############################################       
 # Includes
 ############################################
-automation: !include automation.yaml
+automation: !include_dir_merge_list automation
 sensor: !include_dir_merge_list sensor
 switch: !include_dir_merge_list switch
 script: !include_dir_named script/
