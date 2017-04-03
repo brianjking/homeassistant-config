@@ -1,0 +1,7 @@
+- alias: Fluxer Switch On By Default
+  trigger: 
+    platform: event
+    event_type: homeassistant_start
+  action: 
+    service: homeassistant.turn_on
+    entity_id: switch.fluxer  
