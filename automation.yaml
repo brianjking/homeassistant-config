@@ -38,6 +38,7 @@
   action:
     service: homeassistant.turn_on
     entity_id: group.office_lights
+    transition: 30
 
 
 
@@ -47,10 +48,11 @@
       entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
       to: 'off'
       for:
-        minutes: 30
+        minutes: 15
   action:
     - service: homeassistant.turn_off
       entity_id: group.office_lights
+      transition: 30
 
 - alias: Living Room Lights (On)
   trigger:
@@ -76,3 +78,32 @@
     event_type: homeassistant_start
   action:
     service: shell_command.generate_graph
+
+- alias: Rainy Day
+  trigger:
+    platform: state
+    entity_id: sensor.precip_intensity
+    state: 'rain'
+    condition:
+      - platform: state
+        entity_id: group.all_devices
+        state: 'home'
+      - platform: time
+        after: '14:00'
+        before: '23:00'
+    action:
+      service: homeassistant.turn_on
+      entity_id: group.livingroom_lights
+
+- alias: Rain is over
+  trigger:
+    - platform: state
+      entity_id: sensor.precip_intensity
+      state: 'None'
+  condition:
+    - condition: sun
+      after: 'sunset'
+      offset: '-01:00:00'
+  action:
+    service: homeassistant.turn_off
+    entity_id: group.livingroom_lights 
