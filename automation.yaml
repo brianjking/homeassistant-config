@@ -103,7 +103,6 @@
   condition:
     - condition: sun
       after: 'sunset'
-      offset: '-01:00:00'
   action:
     service: homeassistant.turn_off
     entity_id: group.livingroom_lights 
