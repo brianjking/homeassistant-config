@@ -10,6 +10,8 @@
   action:
     service: homeassistant.turn_on
     entity_id: group.office_lights
+    data: 
+      transition: 30
 
 
 - alias: Office Lights Motion (Off)
