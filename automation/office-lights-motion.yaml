@@ -24,3 +24,5 @@
   action:
     - service: homeassistant.turn_off
       entity_id: group.office_lights
+      data: 
+        transition: 160
