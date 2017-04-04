@@ -18,6 +18,7 @@
       - automation.living_room_lights_on
   office:
     name: Office
+    icon: mdi:briefcase
     view: yes
     entities:
       - light.officebotfloor
@@ -35,6 +36,7 @@
       - script.get_latest_config
   bedroom:
     name: Bedroom
+    icon: mdi:hotel
     view: yes
     entities:
       - light.sleepbot
@@ -47,6 +49,7 @@
       - automation.kitchen_light_on_at_sunset     
   printer:
     name: 3D
+    icon: mdi:printer-3d
     view: yes
     entities: 
       - group.3d_print
