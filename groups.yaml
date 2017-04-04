@@ -32,7 +32,7 @@
       - automation.fluxer_switch_on_by_default
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
-      - group.all_scripts
+      - script.get_latest_config
       - sensor.new_commits
   bedroom:
     name: Bedroom
