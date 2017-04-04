@@ -33,7 +33,6 @@
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
       - script.get_latest_config
-      - sensor.new_commits
   bedroom:
     name: Bedroom
     view: yes
@@ -51,6 +50,16 @@
     view: yes
     entities: 
       - group.3d_print
+  control:
+    name: control
+    icon: mdi-robot
+    view: yes
+    entities: 
+      - script.get_latest_config
+      - sensor.new_commits
+      - group.all_devices
+      - group.internet 
+      - group.system
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
