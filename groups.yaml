@@ -52,7 +52,7 @@
       - group.3d_print
   control:
     name: control
-    icon: mdi-robot
+    icon: mdi:robot
     view: yes
     entities: 
       - script.get_latest_config
