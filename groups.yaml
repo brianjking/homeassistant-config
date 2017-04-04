@@ -10,6 +10,7 @@
       - group.all_automations
   living_room:
     name: Living Room
+    icon: mdi:account-multiple
     view: yes 
     entities: 
       - group.livingroom_lights
@@ -43,6 +44,7 @@
       - group.weather
   kitchen: 
     name: Kitchen
+    icon: mdi:stove
     view: yes
     entities: 
       - light.kitchen
