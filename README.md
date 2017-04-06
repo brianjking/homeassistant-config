@@ -6,7 +6,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 
 ## Build Status (Travis-CI)
 
-[![Build Status](https://travis-ci.org/brianjking/hass-config.svg?branch=master)](https://travis-ci.org/brianjking/hass-config)
+[![Build Status](https://travis-ci.org/brianjking/homeassistant-config.svg?branch=master)](https://travis-ci.org/brianjking/homeassistant-config)
 
 ## Current Configuration
 
@@ -34,6 +34,8 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [OctoPrint](https://github.com/foosel/OctoPrint)
 * [Raspberry Pi System Resources](https://home-assistant.io/components/sensor.systemmonitor/)
 * [USPS Packages](https://home-assistant.io/components/sensor.usps/)
+* Z-Wave Motion Sensors
+* Z-Wave Door Sensors
 
 ### Preview
 ![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/images/home-assistant.gif "Home Assistant Preview")
@@ -45,7 +47,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 #### Getting Help
 
 * [Open an issue](https://github.com/brianjking/hass-config/issues/new)
-* [Read The Docs](https://github.com/brianjking/hass-config/tree/master/docs)
+* [Read My Help Docs](https://github.com/brianjking/hass-config/tree/master/docs)
 * [Message @brianjking on Twitter](https://twitter.com/brianjking)
 * [Home Assistant Homepage](https://home-assistant.io/)
 * [Home Assistant Forums](https://community.home-assistant.io/)
