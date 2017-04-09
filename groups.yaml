@@ -61,7 +61,7 @@
     view: yes
     entities: 
       - script.get_latest_config
-      - group.new_commits
+      - group.commits
       - group.all_devices
       - group.internet 
       - group.system
