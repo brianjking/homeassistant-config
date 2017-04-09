@@ -61,11 +61,11 @@
     view: yes
     entities: 
       - script.get_latest_config
-      - sensor.new_commits
+      - group.new_commits
       - group.all_devices
       - group.internet 
       - group.system
-      - sensor.crimereports
+      - group.crime
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -115,3 +115,7 @@
   Crime:
     entities: 
     - sensor.crimereports
+  Commits:
+    entities:
+      - sensor.new_commits
+      - script.get_latest_config 
