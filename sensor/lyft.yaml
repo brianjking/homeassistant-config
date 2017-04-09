@@ -1,0 +1,10 @@
+- platform: lyft
+  client_id: CLIENT_ID
+  client_secret: CLIENT_SECRET
+  start_latitude: 37.8116380 
+  start_longitude: -122.2648050
+  end_latitude: 37.615223
+  end_longitude: -122.389977
+  product_ids:
+    - 'lyft'
+    - 'lyft_plus'
