@@ -4,7 +4,7 @@
   start_latitude: !secret latitude 
   start_longitude: !secret latitude 
   end_latitude: !secret endlatitudelyft
-  end_longitude: !secret endlogitudelyft
+  end_longitude: !secret endlongitudelyft
   product_ids:
     - 'lyft'
     - 'lyft_plus'
