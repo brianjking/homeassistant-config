@@ -65,6 +65,7 @@
       - group.all_devices
       - group.internet 
       - group.system
+      - sensor.crimereports
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
