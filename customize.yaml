@@ -41,3 +41,7 @@
       icon: 'mdi:ambulance'
     sensor.crimereports:
       icon: 'mdi:ambulance'
+    sensor.deliveries_today:
+      icon: 'mdi:package-variant'
+    sensor.packages_in_transit:
+      icon: 'mdi:truck-delivery'
