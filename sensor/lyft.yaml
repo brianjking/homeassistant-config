@@ -3,8 +3,8 @@
   client_secret: !secret lyftclientsecret
   start_latitude: !secret latitude 
   start_longitude: !secret latitude 
-  end_latitude: !secret endlatitudelyft
-  end_longitude: !secret endlongitudelyft
+  #end_latitude: !secret endlatitudelyft
+  #end_longitude: !secret endlongitudelyft
   product_ids:
     - 'lyft'
     - 'lyft_plus'
