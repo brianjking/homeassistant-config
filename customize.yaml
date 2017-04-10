@@ -30,3 +30,7 @@
       friendly_name: Motion Sensor Ecolink Living Room
     group.all_scripts:
       hidden: false
+    sensor.new_commits:
+      friendly_name: New Commits 
+    group.commits:
+      icon: 'mdi:github-circle'
