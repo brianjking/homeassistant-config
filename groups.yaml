@@ -8,6 +8,7 @@
       - group.internet
       - media_player.google_play__blackbox
       - group.all_automations
+      - group.lyft
   living_room:
     name: Living Room
     icon: mdi:account-multiple
@@ -118,4 +119,12 @@
   Commits:
     entities:
       - sensor.new_commits
-      - script.get_latest_config 
+      - script.get_latest_config
+  Lyft:
+    entities: 
+      - sensor.lyft_time
+      - sensor.lyft_price
+      - sensor.lyft_plus_time
+      - sensor.lyft_plus_price
+      - sensor.lyft_line_time
+      - sensor.lyft_line_price 
