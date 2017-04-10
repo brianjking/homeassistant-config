@@ -1,10 +1,11 @@
 - platform: lyft
   client_id: !secret lyftclientid
   client_secret: !secret lyftclientsecret
-  start_latitude: !secret latitude 
-  start_longitude: !secret latitude 
-  #end_latitude: !secret endlatitudelyft
-  #end_longitude: !secret endlongitudelyft
+  start_latitude: !secret lyftstartlatitude
+  start_longitude: !secret lyftstartlongitude
+  end_latitude: !secret endlatitudelyft
+  end_longitude: !secret endlongitudelyft
   product_ids:
     - 'lyft'
     - 'lyft_plus'
+    - 'lyft_line'
