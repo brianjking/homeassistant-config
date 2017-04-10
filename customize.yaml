@@ -31,6 +31,7 @@
     group.all_scripts:
       hidden: false
     sensor.new_commits:
-      friendly_name: New Commits 
+      friendly_name: New Commits
+      icon: 'mdi:github-circle' 
     group.commits:
       icon: 'mdi:github-circle'
