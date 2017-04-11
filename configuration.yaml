@@ -26,7 +26,6 @@ recorder:
       - sensor.weather_hourly_summary
       - sensor.weather_daily_summary
       - sensor.weather_wind_speed
-      - sun.sun
       - sensor.speedtest_download
       - sensor.speedtest_upload
       - sensor.speedtest_ping
@@ -65,7 +64,7 @@ octoprint:
   api_key: !secret octoprint 
 
 logger:
-  default: error
+  default: debug
   #logs:
     #homeassistant.components.automation: info
     #homeassistant.components.switch.flux: info

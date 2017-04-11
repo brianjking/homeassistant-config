@@ -9,6 +9,7 @@
       - media_player.google_play__blackbox
       - group.all_automations
       - group.lyft
+      - updater.updater
   living_room:
     name: Living Room
     icon: mdi:account-multiple
