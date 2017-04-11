@@ -1,7 +1,7 @@
 - alias: Rainy Day
   trigger:
     platform: state
-    entity_id: sensor.precip_intensity
+    entity_id: sensor.weather_precip_intensity
     state: 'rain'
   condition:
     - condition: state
@@ -17,7 +17,7 @@
 - alias: Rain is over
   trigger:
     - platform: state
-      entity_id: sensor.precip_intensity
+      entity_id: sensor.weather_precip_intensity
       state: 'None'
   condition:
     - condition: sun
