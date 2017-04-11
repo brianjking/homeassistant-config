@@ -7,5 +7,3 @@
   end_longitude: !secret endlongitudelyft
   product_ids:
     - 'lyft'
-    - 'lyft_plus'
-    - 'lyft_line'
