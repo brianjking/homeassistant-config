@@ -126,7 +126,3 @@
     entities: 
       - sensor.lyft_time
       - sensor.lyft_price
-      - sensor.lyft_plus_time
-      - sensor.lyft_plus_price
-      - sensor.lyft_line_time
-      - sensor.lyft_line_price 
