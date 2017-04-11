@@ -91,9 +91,11 @@
     - sensor.ram_free
     - sensor.ram_use
     - sensor.load_5m
+    - sensor.load_15m
     - sensor.memory_use
     - sensor.memory_free
     - sensor.disk_free
+    - updater.updater
   Packages:
     entities:  
     - sensor.usps
