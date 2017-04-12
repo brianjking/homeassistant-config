@@ -64,7 +64,7 @@ octoprint:
   api_key: !secret octoprint 
 
 logger:
-  default: debug
+  default: info
   #logs:
     #homeassistant.components.automation: info
     #homeassistant.components.switch.flux: info
