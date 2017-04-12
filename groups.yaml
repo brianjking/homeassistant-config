@@ -36,7 +36,6 @@
       - automation.fluxer_switch_on_by_default
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
-      - script.get_latest_config
   bedroom:
     name: Bedroom
     icon: mdi:hotel
