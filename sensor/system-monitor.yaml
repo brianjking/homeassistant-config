@@ -3,3 +3,7 @@
     - type: memory_free
     - type: memory_use_percent
     - type: processor_use
+    - type: load_5m
+    - type: load_15m
+    - type: disk_free
+      arg: /home    
