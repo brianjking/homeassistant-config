@@ -12,7 +12,7 @@
       - updater.updater
   living_room:
     name: Living Room
-    icon: mdi:account-multiple
+    icon: mdi:sofa
     view: yes 
     entities: 
       - group.livingroom_lights
@@ -46,7 +46,7 @@
       - group.weather
   kitchen: 
     name: Kitchen
-    icon: mdi:stove
+    icon: mdi:fridge
     view: yes
     entities: 
       - light.kitchen

@@ -36,7 +36,7 @@
     group.commits:
       icon: 'mdi:github-circle'
     script.get_latest_config:
-      icon: 'mdi:github-circle'
+      icon: 'mdi:console'
     group.crime:
       icon: 'mdi:ambulance'
     sensor.crimereports:
@@ -45,3 +45,5 @@
       icon: 'mdi:package-variant'
     sensor.packages_in_transit:
       icon: 'mdi:truck-delivery'
+    sensor.cpu_use:
+      icon: 'mdi:guage'
