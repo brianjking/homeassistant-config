@@ -47,3 +47,7 @@
       icon: 'mdi:truck-delivery'
     sensor.cpu_use:
       icon: 'mdi:gauge'
+    sensor.average_load_5m:
+      icon: 'mdi:gauge'
+    sensor.average_load_15m:
+      icon: 'mdi:gauge'
