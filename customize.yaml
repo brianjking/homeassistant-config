@@ -46,4 +46,4 @@
     sensor.packages_in_transit:
       icon: 'mdi:truck-delivery'
     sensor.cpu_use:
-      icon: 'mdi:guage'
+      icon: 'mdi:gauge'
