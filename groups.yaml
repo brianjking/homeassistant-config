@@ -67,6 +67,7 @@
       - group.internet 
       - group.system
       - group.crime
+      - group.battery 
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
