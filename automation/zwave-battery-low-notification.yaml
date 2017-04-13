@@ -1,0 +1,10 @@
+- alias: 'Battery Low Alert - Office Motion Sensors'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.office_motion_battery
+    below: 5
+  action:
+    service: notify.simplepush
+    data:
+      message: "Battery is low in office motion sensor."
+      title: "Z-Wave Battery Level"
