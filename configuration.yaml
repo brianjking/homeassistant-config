@@ -63,8 +63,12 @@ octoprint:
   host: 192.168.1.111
   api_key: !secret octoprint 
 
+digital_ocean:
+  access_token: !secret digitaloceantoken
+
+
 logger:
-  default: info
+  default: warning
   #logs:
     #homeassistant.components.automation: info
     #homeassistant.components.switch.flux: info
