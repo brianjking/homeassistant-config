@@ -67,7 +67,8 @@
       - group.internet 
       - group.system
       - group.crime
-      - group.battery 
+      - group.battery
+      - group.droplets  
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -129,4 +130,7 @@
       - sensor.lyft_price
   Battery:
     entities: 
-      - sensor.office_motion_battery  
+      - sensor.office_motion_battery
+  Droplets:
+    entities:
+      - switch.eebrianjkingcom  

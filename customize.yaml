@@ -53,3 +53,5 @@
       icon: 'mdi:gauge'
     sensor.office_motion_battery:
       icon: 'mdi:battery'
+    group.droplets:
+      icon: 'mdi:server'
