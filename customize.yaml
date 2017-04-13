@@ -51,3 +51,5 @@
       icon: 'mdi:gauge'
     sensor.average_load_15m:
       icon: 'mdi:gauge'
+    sensor.office_motion_battery:
+      icon: 'mdi:battery'
