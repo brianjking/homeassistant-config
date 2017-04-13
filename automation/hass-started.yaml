@@ -1,9 +1,9 @@
-- alias: Hass startup
+- alias: Home Assistant Startup
   trigger:
     platform: homeassistant
     event: start
   action:
     service: notify.simplepush
     data:
-      title: "HASS Startup"
-      message: "HASS Startup"
+      title: "HomeAssistant Startup"
+      message: "Home Assistant has started."
