@@ -133,4 +133,5 @@
       - sensor.office_motion_battery
   Droplets:
     entities:
-      - switch.eebrianjkingcom  
+      - switch.eebrianjkingcom
+      - binary_sensor.eebrianjkingcom  
