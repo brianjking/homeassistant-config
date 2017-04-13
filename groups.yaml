@@ -126,3 +126,6 @@
     entities: 
       - sensor.lyft_time
       - sensor.lyft_price
+  Battery:
+    entities: 
+      - sensor.office_motion_battery  
