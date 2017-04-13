@@ -1,4 +1,4 @@
-- alias: Announce package delivery
+- alias: SimplePush Package Delivery 
   trigger:
       platform: state
       entity_id: sensor.deliveries_today
@@ -9,7 +9,6 @@
         entity_id: group.all_devices
         state: 'home'
   action:
-      - service: tts.google_say
+      - service: notify.simplepush
         data_template:
-          entity_id: media_player.google_play__blackbox
           message: "A package was just delivered."
