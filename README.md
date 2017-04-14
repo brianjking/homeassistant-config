@@ -26,6 +26,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [Playstation Eye Webcam - Used with OctoPrint/3D Printer](http://amzn.to/2kYYZbm)
 * [TP-Link Archer C7 AC1750 Router](http://amzn.to/2l1rfJB)
 * [TP-Link HS-100 Smart Plug](http://amzn.to/2kxkzDR)
+* [Ecolink Z-Wave Door/Window Sensor](http://amzn.to/2outQ1r)
 
 ### Sensors
 
@@ -36,6 +37,9 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [USPS Packages](https://home-assistant.io/components/sensor.usps/)
 * Z-Wave Motion Sensors
 * Z-Wave Door Sensors
+* Digital Ocean Sensors
+* Flux Light Adjustment Sensors
+* Crime Reports Sensors
 
 ### Preview
 ![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/images/home-assistant.gif "Home Assistant Preview")

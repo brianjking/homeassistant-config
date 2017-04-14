@@ -1,21 +1,20 @@
 - platform: template
   sensors:
-      front_door_status:
-        value_template: '{% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_4_0.state %}
-          {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_4_0.state == "on" %}
-            Open
-          {% else %}
-            Closed
-          {% endif %}
-          {% else %}
-          n/a
-          {% endif %}'
-        icon_template: >-
-          {%- if states.binary_sensor.ecolink_doorwindow_sensor_sensor_4_0 == "Open" -%}
-            mdi:window-open
-          {% else %}
-            mdi:logout
-          {%- endif -%}
-        friendly_name: 'Front Door'
-
-
+    front_door_status:
+      entity_id: sensor.front_door_status
+      value_template: '{% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_4_0.state %}
+        {% if states.binary_sensor.ecolink_doorwindow_sensor_sensor_4_0.state == "on" %}
+          Open
+        {% else %}
+          Closed
+        {% endif %}
+        {% else %}
+        n/a
+        {% endif %}'
+      icon_template: >-
+        {%- if states.binary_sensor.ecolink_doorwindow_sensor_sensor_4_0.state == "Open" -%}
+          mdi:window-open
+        {% else %}
+          mdi:logout
+        {%- endif -%}
+      friendly_name: 'Front Door'
