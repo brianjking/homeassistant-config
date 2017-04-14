@@ -10,6 +10,7 @@
       - group.all_automations
       - group.lyft
       - updater.updater
+      - group.doors
   living_room:
     name: Living Room
     icon: mdi:sofa
@@ -134,4 +135,7 @@
   Droplets:
     entities:
       - switch.eebrianjkingcom
-      - binary_sensor.eebrianjkingcom  
+      - binary_sensor.eebrianjkingcom
+  Doors:
+    entities:
+      - binary_sensor.ecolink_doorwindow_sensor_sensor_4_0  
