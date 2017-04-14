@@ -1,6 +1,6 @@
 - platform: template
   sensors:
     office_motion_battery:
-      friendly_name: 'Office Motion Sensor Battery Level'
+      friendly_name: 'Office Motion Sensor Battery'
       value_template: '{{ states.zwave.ecolink_pir_motion_sensor_2.attributes.battery_level }}'
       unit_of_measurement: '%'
