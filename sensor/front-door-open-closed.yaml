@@ -14,7 +14,7 @@
           {%- if states.binary_sensor.ecolink_doorwindow_sensor_sensor_4_0 == "Open" -%}
             mdi:window-open
           {% else %}
-            mdi:window-closed
+            mdi:logout
           {%- endif -%}
         friendly_name: 'Front Door'
 
