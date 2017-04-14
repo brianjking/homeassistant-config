@@ -138,4 +138,5 @@
       - binary_sensor.eebrianjkingcom
   Doors:
     entities:
-      - binary_sensor.ecolink_doorwindow_sensor_sensor_4_0  
+      - binary_sensor.ecolink_doorwindow_sensor_sensor_4_0
+      - sensor.front_door_status  
