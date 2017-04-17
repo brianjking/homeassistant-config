@@ -61,4 +61,8 @@
       icon: 'mdi:battery'
     sensor.livingroom_sensor_battery:
       icon: 'mdi:battery'
+    sensor.comed_5_minute_price:
+      icon: 'mdi:power-plug'
+    sensor.comed_current_hour_average_price:
+      icon: 'mdi:power-plug'
 
