@@ -38,7 +38,7 @@ automation:
   - alias: Generate graph
     trigger:
       platform: homeassistant
-      event_type: start
+      event: start
     action:
       - service: shell_command.generate_graph
  ```
