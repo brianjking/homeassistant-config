@@ -132,6 +132,7 @@
   Battery:
     entities: 
       - sensor.office_motion_battery
+      - sensor.front_door_sensor_battery
   Droplets:
     entities:
       - switch.eebrianjkingcom
