@@ -57,4 +57,6 @@
       icon: 'mdi:server'
     switch.eebrianjkingcom:
       icon: 'mdi:server'
+    sensor.front_door_sensor_battery:
+      icon: 'mdi:battery'
 

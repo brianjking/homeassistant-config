@@ -4,3 +4,10 @@
       friendly_name: 'Office Motion Sensor Battery'
       value_template: '{{ states.zwave.ecolink_pir_motion_sensor_2.attributes.battery_level }}'
       unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+    front_door_sensor_battery:
+      friendly_name: 'Front Door Sensor Battery'
+      value_template: '{{ states.zwave.ecolink_doorwindow_sensor_4.attributes.battery_level }}'
+      unit_of_measurement: '%'
