@@ -59,4 +59,6 @@
       icon: 'mdi:server'
     sensor.front_door_sensor_battery:
       icon: 'mdi:battery'
+    sensor.livingroom_sensor_battery:
+      icon: 'mdi:battery'
 

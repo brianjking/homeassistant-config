@@ -11,3 +11,10 @@
       friendly_name: 'Front Door Sensor Battery'
       value_template: '{{ states.zwave.ecolink_doorwindow_sensor_4.attributes.battery_level }}'
       unit_of_measurement: '%'
+
+- platform: template
+  sensors:
+    livingroom_sensor_battery:
+      friendly_name: 'Living Room Sensor'
+      value_template: '{{ states.zwave.ecolink_unknown_type0004_id0001_3.attributes.battery_level }}'
+      unit_of_measurement: '%'
