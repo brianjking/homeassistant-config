@@ -69,7 +69,8 @@
       - group.system
       - group.crime
       - group.battery
-      - group.droplets  
+      - group.droplets
+      - group.comed  
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -141,4 +142,8 @@
   Doors:
     entities:
       - binary_sensor.ecolink_doorwindow_sensor_sensor_4_0
-      - sensor.front_door_status  
+      - sensor.front_door_status
+  ComEd:
+    entities:
+      - sensor.comed_5_minute_price
+      - sensor.comed_current_hour_average_price  
