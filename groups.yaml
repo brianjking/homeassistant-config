@@ -145,5 +145,4 @@
       - sensor.front_door_status
   ComEd:
     entities:
-      - sensor.comed_5_minute_price
       - sensor.comed_current_hour_average_price  
