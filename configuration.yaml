@@ -82,13 +82,6 @@ notify:
   #client_id: !secret googleclientid
   #client_secret: !secret googleclientsecret
 
-sensor 6:
-  - platform: template
-    sensors: 
-      new_commits:
-        value_template: >
-          {{ states("sensor.new_commits") }}
-
 ############################################
 # LIGHT
 ############################################
