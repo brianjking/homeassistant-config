@@ -1,4 +1,0 @@
-- platform: comed_hourly_pricing
-  name: Comed Energy Pricing
-  monitored_feeds:
-    - type: current_hour_average
