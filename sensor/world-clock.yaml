@@ -1,4 +1,2 @@
 - platform: worldclock
-  time_zone: America/New_York
-  time_zone: America/Chicago
   time_zone: America/Los_Angeles
