@@ -67,12 +67,6 @@ digital_ocean:
   access_token: !secret digitaloceantoken
 
 
-logger:
-  default: warning
-  #logs:
-    #homeassistant.components.automation: info
-    #homeassistant.components.switch.flux: info
-
 notify:
   - name: simplepush
     platform: simplepush

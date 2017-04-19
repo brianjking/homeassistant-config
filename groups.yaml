@@ -70,7 +70,8 @@
       - group.crime
       - group.battery
       - group.droplets
-      - group.comed  
+      - group.comed
+      - input_select.log_level  
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
