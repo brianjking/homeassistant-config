@@ -1,0 +1,15 @@
+- alias: "Update Available Notification"
+  hide_entity: True
+  trigger:
+    platform: state
+    entity_id: updater.updater
+
+  condition:
+    - condition: template
+      value_template: "{{ states('updater.updater') != 'unknown' }}"
+    
+    - service: persistent_notification.create
+      data:
+        title: "Update Available"
+        message: "Home Assistant {{ states('updater.updater') }} is available. - {{ as_timestamp(now()) | timestamp_custom('%I:%M:%S %p %d%b%Y', true) }}"
+        notification_id: "update_available"    

@@ -155,3 +155,5 @@ script: !include_dir_named script/
 binary_sensor: !include_dir_merge_list binary_sensor 
 shell_command: !include_dir_named shell_command/
 group: !include groups.yaml
+input_select: !include_dir_merge_named input_select
+
