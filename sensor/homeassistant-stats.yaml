@@ -10,7 +10,7 @@
 
 - platform: command_line
   name: "HA Uptime"
-  command: echo "$(($(date +%s) - $(date -d "$(head -n1 /home/hass/.homeassistant/home-assistant.log | cut -d' ' -f-2)" +%s)))"
+  command: echo "$(($(date +%s) - $(date -d "$(head -n1 /home/homeassistant/.homeassistant/home-assistant.log | cut -d' ' -f-2)" +%s)))"
   scan_interval: 720
   value_template: >-
     {% set uptime = value | int %}
