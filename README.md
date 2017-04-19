@@ -40,6 +40,8 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * Digital Ocean Sensors
 * Flux Light Adjustment Sensors
 * Crime Reports Sensors
+* FedEx Package Sensors
+
 
 ### Preview
 ![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/images/home-assistant.gif "Home Assistant Preview")
