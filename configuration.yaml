@@ -56,6 +56,9 @@ logbook:
 emulated_hue:
   expose_by_default: true
 
+logger: 
+
+
 tts: 
   - platform: google
 
