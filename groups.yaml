@@ -151,8 +151,8 @@
       - sensor.comed_current_hour_average_price
   Home Assistant:
     entities:
-      - sensor.ha_uptime
-      - sensor.ha_installed_version
+      - sensor.homeassistant_uptime
+      - sensor.homeassistant_version
       - input_select.log_level
   Home Assistant Log Level:
     entities:

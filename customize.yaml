@@ -63,8 +63,8 @@
       icon: 'mdi:battery'
     sensor.comed_current_hour_average_price:
       icon: 'mdi:power-plug'
-    sensor.ha_uptime:
+    sensor.homeassistant_uptime:
       icon: 'mdi:clock'
-    sensor.ha_installed_version:
+    sensor.homeassistant_version:
       icon: 'mdi:github-circle'
 
