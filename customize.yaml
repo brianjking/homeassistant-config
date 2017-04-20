@@ -15,6 +15,7 @@
       friendly_name: Living Room Lights
       icon: 'mdi:lightbulb'
       emulated_hue: true
+      emulated_hue_name: Living Room
     switch.tribot:
       icon: 'mdi:lightbulb'
     group.all_devices:
@@ -71,6 +72,5 @@
     light.ge_unknown_type4c42_id3031_level_5_0:
       friendly_name: Tribot
       emulated_hue: true
-    group.living_room:
-      emulated_hue: true
+
 
