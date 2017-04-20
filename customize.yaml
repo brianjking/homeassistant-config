@@ -69,4 +69,5 @@
       icon: 'mdi:github-circle'
     light.ge_unknown_type4c42_id3031_level_5_0:
       friendly_name: Tribot
+      emulated_hue: true
 
