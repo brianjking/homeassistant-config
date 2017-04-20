@@ -147,4 +147,9 @@
       - sensor.front_door_status
   ComEd:
     entities:
-      - sensor.comed_current_hour_average_price  
+      - sensor.comed_current_hour_average_price
+  Home Assistant:
+    entities:
+      - sensor.ha_uptime
+      - sensor.ha_installed_version
+        
