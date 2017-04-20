@@ -3,10 +3,21 @@
     platform: state
     entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_4_0
     to: 'on'
-    for:
-      minutes: 5
   action:
     service: homeassistant.turn_on
     entity_id: light.entrybot
+
+- alias: Front Door Entryway WatchDog
+  trigger:
+    - platform: state
+      entity_id:
+        - light.entrybot
+      state: 'on'
+      for:
+        minutes: 5
+  action:
+    - service: light.turn_off
+      data_template:
+        entity_id: "{{ trigger.entity_id }}"
 
 
