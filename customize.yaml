@@ -14,6 +14,7 @@
     group.livingroom_lights:
       friendly_name: Living Room Lights
       icon: 'mdi:lightbulb'
+      emulated_hue: true
     switch.tribot:
       icon: 'mdi:lightbulb'
     group.all_devices:
