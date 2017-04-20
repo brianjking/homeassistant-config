@@ -63,4 +63,10 @@
       icon: 'mdi:battery'
     sensor.comed_current_hour_average_price:
       icon: 'mdi:power-plug'
+    switch.eebrianjkingcom:
+      icon: 'mdi:server-network'
+    sensor.ha_uptime:
+      icon: 'mdi:clock'
+    sensor.ha_installed_version:
+      icon: 'mdi:github-circle'
 
