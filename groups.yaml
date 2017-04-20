@@ -71,7 +71,8 @@
       - group.battery
       - group.droplets
       - group.comed
-      - input_select.log_level  
+      - input_select.log_level
+      - group.home_assistant  
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -152,4 +153,7 @@
     entities:
       - sensor.ha_uptime
       - sensor.ha_installed_version
-        
+  Home Assistant Log Level:
+    entities:
+      - input_select.log_level
+
