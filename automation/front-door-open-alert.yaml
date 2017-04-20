@@ -2,7 +2,7 @@ alias: Front Door Open Notification
 trigger:
   platform: state
   entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_4_0
-  state: 'off'
+  state: 'on'
   for:
     seconds: 15
 action:
