@@ -39,7 +39,19 @@ recorder:
       - sensor.octoprint_current_state
       - sensor.octoprint_job_percentage
       - sensor.octoprint_target_bed_temp
-      - sensor.octoprint_target_tool0_temp 
+      - sensor.octoprint_target_tool0_temp
+      - sensor.date__time
+      - sensor.date
+      - sensor.internet_time
+      - sensor.time_utc
+      - sensor.time__date
+      - sensor.date 
+      - sensor.average_load_15m
+      - sensor.average_load_5m 
+      - sensor.worldclock_sensor
+      - sensor.homeassistant_uptime
+      - sensor.homeassistant_version
+       
   
 history:  
 # Enables the frontend
