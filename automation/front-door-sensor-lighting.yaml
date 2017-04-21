@@ -14,7 +14,7 @@
         - light.entrybot
       state: 'on'
       for:
-        minutes: 5
+        minutes: 3
   action:
     - service: light.turn_off
       data_template:
