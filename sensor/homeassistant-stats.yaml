@@ -3,6 +3,10 @@
 ###############################################################
 
 - platform: command_line
+  command: python3 -c "import requests; print(requests.get('https://pypi.python.org/pypi/homeassistant/json').json()['info']['version'])"
+  name: Current Home Assistant Version
+
+- platform: command_line
   name: HomeAssistant Version
   command: >-
       cat /home/homeassistant/.homeassistant/.HA_VERSION
