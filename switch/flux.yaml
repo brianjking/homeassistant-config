@@ -2,6 +2,7 @@
   lights:
     - light.officebot
     - light.officebotfloor
+    - light.kitchen
   name: Fluxer
   start_time: '7:00'
   stop_time: '23:59'
