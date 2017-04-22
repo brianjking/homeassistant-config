@@ -69,7 +69,7 @@
       icon: 'mdi:clock'
     sensor.homeassistant_version:
       icon: 'mdi:github-circle'
-    light.__level_7_0:
+    light.__level_8_0:
       friendly_name: Tribot
       emulated_hue: true
 
