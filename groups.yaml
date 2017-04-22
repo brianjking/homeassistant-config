@@ -152,6 +152,7 @@
   Home Assistant:
     entities:
       - sensor.homeassistant_uptime
+      - sensor.current_home_assistant_version
       - sensor.homeassistant_version
       - input_select.log_level
   Home Assistant Log Level:
