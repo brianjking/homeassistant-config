@@ -4,7 +4,7 @@
     entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor_4_0
     state: 'on'
     for:
-      seconds: 15
+      seconds: 25
   action:
   - service: notify.simplepush
     data_template:
