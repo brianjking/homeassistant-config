@@ -97,6 +97,10 @@ notify:
 light:
   - platform: lifx
     broadcast: 192.168.1.255
+
+scene:
+  platform: lifx_cloud
+  token: !secret lifxapitoken
 ############################################
 # MEDIA PLAYERS
 ############################################
