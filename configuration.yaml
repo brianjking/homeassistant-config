@@ -51,6 +51,7 @@ recorder:
       - sensor.worldclock_sensor
       - sensor.homeassistant_uptime
       - sensor.homeassistant_version
+      - sensor.time
        
   
 history:  
