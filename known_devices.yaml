@@ -2,7 +2,7 @@
   hide_if_away: false
   mac: 6C:40:08:AA:2C:AE
   name: Brian MacBook Pro
-  picture:
+  picture: /local/mbp.png
   track: true
   vendor:
 
@@ -14,7 +14,7 @@ c0eefbde5ce7:
   picture:
   gravatar: brianjosephking@gmail.com
   consider_home: 180 
-  track: true
+  track: false
   vendor:
 
 8871e5fadf1a:
@@ -121,3 +121,44 @@ d073d510e1d0:
   picture:
   track: false
   vendor: Slim Devices, Inc.
+
+d073d5108e64:
+  hide_if_away: false
+  mac: D0:73:D5:10:8E:64
+  name: d073d5108e64
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+d073d5144f77:
+  hide_if_away: false
+  mac: D0:73:D5:14:4F:77
+  name: d073d5144f77
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+wmdxyokj_brian_oneplus:
+  hide_if_away: false
+  mac: C0:EE:FB:DE:5C:E7
+  name: Brian OnePlus3
+  picture:
+  gravatar: brianjosephking@gmail.com
+  track: true
+  vendor:
+
+9cb6d0d9fd3b:
+  hide_if_away: false
+  mac: 9C:B6:D0:D9:FD:3B
+  name: 9cb6d0d9fd3b
+  picture:
+  track: false
+  vendor: Rivet Networks
+
+002608ea7c42:
+  hide_if_away: false
+  mac: 00:26:08:EA:7C:42
+  name: 002608ea7c42
+  picture:
+  track: false
+  vendor: Apple, Inc.
