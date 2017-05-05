@@ -1,4 +1,5 @@
-- alias: SimplePush Package Delivery 
+- alias: SimplePush Package Delivery
+  hide_entity: True 
   trigger:
       platform: state
       entity_id: sensor.deliveries_today

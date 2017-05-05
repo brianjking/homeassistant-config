@@ -1,4 +1,5 @@
 - alias: 'Battery Low Alert - Office Motion Sensors'
+  hide_entity: True
   trigger:
     platform: numeric_state
     entity_id: sensor.office_motion_battery
