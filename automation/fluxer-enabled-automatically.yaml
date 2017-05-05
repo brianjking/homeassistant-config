@@ -1,4 +1,5 @@
 - alias: Fluxer Switch On By Default
+  hide_entity: True
   trigger: 
     platform: homeassistant
     event: start
