@@ -1,2 +1,2 @@
 - platform: cert_expiry
-  host: !secrets fakehost 
+  host: !secret fakehost 

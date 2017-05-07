@@ -68,7 +68,7 @@
     sensor.homeassistant_uptime:
       icon: 'mdi:clock'
     sensor.homeassistant_version:
-      icon: 'mdi:github-circle'
+      icon: 'mdi:home-assistant'
     light.ge_unknown_type4c42_id3031_level_10_0:
       friendly_name: Tribot
       emulated_hue: true
