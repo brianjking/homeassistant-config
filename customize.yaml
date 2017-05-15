@@ -71,7 +71,7 @@
       icon: 'mdi:home-assistant'
     sensor.current_home_assistant_version:
       icon: 'mdi:home-assistant'
-    light.ge_unknown_type4c42_id3031_level_10_0:
+    light.ge_unknown_type4c42_id3031_level_11_0:
       friendly_name: Tribot
       emulated_hue: true
 

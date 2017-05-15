@@ -7,7 +7,7 @@
 ## Checking The Build 
 
 * [Visit Travis-CI](https://travis-ci.org/brianjking/hass-config) or view the build badge:
-[![Build Status](https://travis-ci.org/brianjking/hass-config.svg?branch=master)](https://travis-ci.org/brianjking/hass-config)
+[![Build Status](https://travis-ci.org/brianjking/homeassistant-config.svg?branch=master)](https://travis-ci.org/brianjking/homeassistant-config)
 
 ### How does it work?
 
