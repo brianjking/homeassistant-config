@@ -9,7 +9,7 @@
             Open
         {% endif %}
       icon_template: >-
-        {% if is_state('binary_sensor.ecolink_doorwindow_sensor_sensor_4_0', 'off') %}
+        {% if is_state('binary_sensor.ecolink_doorwindow_sensor_sensor_4_0', 'on') %}
           mdi:window-open
         {% else %}
           mdi:logout

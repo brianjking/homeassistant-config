@@ -9,4 +9,4 @@ log_level:
     - info
     - debug
     - notset
-  initial: warn
+  initial: error
