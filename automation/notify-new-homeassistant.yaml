@@ -1,4 +1,5 @@
 - alias: New Home Assistant Version Notifier
+  hide_entity: True
   trigger:
     platform: state
     entity_id: updater.updater
