@@ -27,6 +27,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [TP-Link Archer C7 AC1750 Router](http://amzn.to/2l1rfJB)
 * [TP-Link HS-100 Smart Plug](http://amzn.to/2kxkzDR)
 * [Ecolink Z-Wave Door/Window Sensor](http://amzn.to/2outQ1r)
+* Z-Wave Light Bulb
 
 ### Sensors
 
@@ -36,8 +37,8 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [Raspberry Pi System Resources](https://home-assistant.io/components/sensor.systemmonitor/)
 * [USPS Packages](https://home-assistant.io/components/sensor.usps/)
 * Z-Wave Motion Sensors
-* Z-Wave Door Sensors
-* Digital Ocean Sensors
+* Z-Wave Door/Window Sensors
+* Digital Ocean Droplet Sensors
 * Flux Light Adjustment Sensors
 * Crime Reports Sensors
 * FedEx Package Sensors
@@ -48,7 +49,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 
 #### To-Do
 
-* Check the [issues](https://github.com/brianjking/hass-config/issues) for anything not working properly in my config or that I plan to implement. 
+* Check the [issues](https://github.com/brianjking/hass-config/issues) for anything not working properly in my config or that I plan to implement.
 
 #### Getting Help
 
