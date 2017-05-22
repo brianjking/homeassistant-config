@@ -18,6 +18,7 @@
       emulated_hue_name: Living Room
     switch.tribot:
       icon: 'mdi:lightbulb'
+      emulated_hue: true
     group.all_devices:
       hidden: false
       friendly_name: Family
@@ -71,8 +72,7 @@
       icon: 'mdi:home-assistant'
     sensor.current_home_assistant_version:
       icon: 'mdi:home-assistant'
-    light.ge_unknown_type4c42_id3031_level_12_0:
-      friendly_name: Tribot
-      emulated_hue: true
+
+     
 
 
