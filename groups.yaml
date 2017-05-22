@@ -108,7 +108,7 @@
     - sensor.packages_in_transit
   livingroom_lights:
     entities:  
-    - light.ge_unknown_type4c42_id3031_level_11_0
+    - light.ge_unknown_type4c42_id3031_level_12_0
     - light.couchbot 
   office_lights:
     entities:  
