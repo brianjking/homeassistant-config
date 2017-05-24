@@ -73,7 +73,7 @@
     sensor.current_home_assistant_version:
       icon: 'mdi:home-assistant'
     light.ge_unknown_type4c42_id3031_level_13_0:
-      name: Kitchen Sink
+      friendly_name: Kitchen Sink
       emulated_hue: true
       icon: 'mdi:lightbulb-on'
 
