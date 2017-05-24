@@ -50,6 +50,7 @@
     view: yes
     entities: 
       - light.kitchen
+      - light.ge_unknown_type4c42_id3031_level_13_0
       - automation.kitchen_light_on_at_sunset     
   printer:
     name: 3D

@@ -3,6 +3,7 @@
     - light.officebot
     - light.officebotfloor
     - light.kitchen
+    - light.ge_unknown_type4c42_id3031_level_13_0
   name: Fluxer
   start_time: '7:00'
   stop_time: '23:59'
