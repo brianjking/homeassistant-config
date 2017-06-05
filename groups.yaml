@@ -105,6 +105,7 @@
     entities:  
     - sensor.usps_mail
     - sensor.usps_packages
+    - sensor.usps
     - sensor.fedex
     - sensor.deliveries_today
     - sensor.packages_in_transit
