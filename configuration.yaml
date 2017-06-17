@@ -59,6 +59,7 @@ history:
 frontend:
 # Enables the HASS Updater
 updater:
+  include_used_components: true
 # Enables frontend configuration assistance
 config:
 # Discover some devices automatically
