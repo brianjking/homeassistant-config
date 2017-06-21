@@ -107,6 +107,7 @@
     - sensor.usps_packages
     - sensor.usps
     - sensor.fedex
+    - sensor.ups
     - sensor.deliveries_today
     - sensor.packages_in_transit
   livingroom_lights:
