@@ -1,7 +1,7 @@
 - alias: Office Lights Motion (On)
   trigger:
     platform: state
-    entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
+    entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor
     to: 'on'
   condition: 
     condition: time
@@ -17,7 +17,7 @@
 - alias: Office Lights Motion (Off)
   trigger:
     - platform: state
-      entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor_2_0
+      entity_id: binary_sensor.ecolink_pir_motion_sensor_sensor
       to: 'off'
       for:
         minutes: 15
