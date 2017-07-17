@@ -93,6 +93,14 @@ notify:
   #client_id: !secret googleclientid
   #client_secret: !secret googleclientsecret
 
+frontend:
+  themes:
+    happy:
+      primary-color: pink
+    sad:
+      primary-color: blue
+
+
 ############################################
 # LIGHT
 ############################################
