@@ -73,7 +73,8 @@
       - group.droplets
       - group.comed
       - input_select.log_level
-      - group.home_assistant  
+      - group.home_assistant
+      - input_select.theme_select  
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
