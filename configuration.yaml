@@ -57,6 +57,11 @@ recorder:
 history:  
 # Enables the frontend
 frontend:
+    themes:
+    happy:
+      primary-color: pink
+    sad:
+      primary-color: blue
 # Enables the HASS Updater
 updater:
   include_used_components: true
@@ -93,12 +98,7 @@ notify:
   #client_id: !secret googleclientid
   #client_secret: !secret googleclientsecret
 
-frontend:
-  themes:
-    happy:
-      primary-color: pink
-    sad:
-      primary-color: blue
+
 
 
 ############################################
