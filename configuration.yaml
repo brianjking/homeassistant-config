@@ -62,6 +62,9 @@ frontend:
       primary-color: pink
     sad:
       primary-color: blue
+    night:
+      primary-color: black
+
 # Enables the HASS Updater
 updater:
   include_used_components: true

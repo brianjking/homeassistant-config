@@ -1,0 +1,7 @@
+theme_select:
+  name: Theme Select
+  options:
+    - happy
+    - sad
+    - night
+  initial: happy
