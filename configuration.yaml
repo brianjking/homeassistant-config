@@ -58,10 +58,10 @@ history:
 # Enables the frontend
 frontend:
   themes:
-  happy:
-    primary-color: pink
-  sad:
-    primary-color: blue
+    happy:
+      primary-color: pink
+    sad:
+      primary-color: blue
 # Enables the HASS Updater
 updater:
   include_used_components: true
