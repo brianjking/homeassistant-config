@@ -8,6 +8,6 @@
     platform: state
     entity_id: input_select.theme_select
   action:
-    service: frontend.theme
+    service: frontend.set_theme
     data_template:
       homeassistant.components: "{{ trigger.to_state.state }}"
