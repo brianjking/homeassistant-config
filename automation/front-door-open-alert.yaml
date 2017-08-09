@@ -2,7 +2,7 @@
   trigger:
     platform: state
     entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor
-    state: 'on'
+    to: 'on'
     for:
       seconds: 25
   action:

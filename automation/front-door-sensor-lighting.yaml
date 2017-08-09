@@ -12,7 +12,7 @@
     - platform: state
       entity_id:
         - light.entrybot
-      state: 'on'
+      to: 'on'
       for:
         minutes: 3
   action:
