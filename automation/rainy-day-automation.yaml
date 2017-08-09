@@ -6,7 +6,7 @@
   condition:
     - condition: state
       entity_id: group.all_devices
-      to: 'home'
+      state: 'home'
     - condition: time
       after: '14:00'
       before: '23:00'
