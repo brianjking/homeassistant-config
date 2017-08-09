@@ -5,7 +5,7 @@
     to: 'on'
   condition: 
     condition: time
-    after: '07:30'
+    at: '07:30'
     before: '23:30'
   action:
     service: homeassistant.turn_on
