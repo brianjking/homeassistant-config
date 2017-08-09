@@ -4,6 +4,9 @@
     entity_id: sensor.weather_precip_intensity
     to: 'rain'
   condition:
+    - condition: state
+      entity_id: group.all_devices
+      state: 'home'
     - condition: time
       after: '14:00'
       before: '23:00'
@@ -19,7 +22,6 @@
   condition:
     - condition: sun
       after: 'sunset'
-      offset: '-01:00:00'
   action:
     service: homeassistant.turn_off
     entity_id: group.livingroom_lights 
