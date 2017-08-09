@@ -118,7 +118,9 @@ emulated_hue:
   expose_by_default: true
 
 logger: 
-
+  default: critical
+  logs: 
+    homeassistant.components.http: warning
 
 tts: 
   - platform: google
