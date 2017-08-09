@@ -2,11 +2,11 @@
   trigger:
     platform: state
     entity_id: sensor.weather_precip_intensity
-    state: 'rain'
+    to: 'rain'
   condition:
     - condition: state
       entity_id: group.all_devices
-      state: 'home'
+      to: 'home'
     - condition: time
       after: '14:00'
       before: '23:00'
@@ -18,7 +18,7 @@
   trigger:
     - platform: state
       entity_id: sensor.weather_precip_intensity
-      state: 'None'
+      to: 'None'
   condition:
     - condition: sun
       after: 'sunset'
