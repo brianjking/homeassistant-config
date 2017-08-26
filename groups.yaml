@@ -111,6 +111,7 @@
     - sensor.ups
     - sensor.deliveries_today
     - sensor.packages_in_transit
+    - camera.usps_mail
   livingroom_lights:
     entities:  
     - switch.tribot
