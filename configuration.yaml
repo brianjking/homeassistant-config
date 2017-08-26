@@ -118,9 +118,7 @@ emulated_hue:
   expose_by_default: true
 
 logger: 
-  default: critical
-  logs: 
-    homeassistant.components.http: warning
+
 
 tts: 
   - platform: google
@@ -170,6 +168,11 @@ media_player 3:
   
 # Track the sun
 sun:
+
+
+camera:
+  - platform: usps
+    scan_interval: 5
 ################################
 # Z-WAVE #######################
 ################################
