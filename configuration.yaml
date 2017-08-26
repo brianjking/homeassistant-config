@@ -169,6 +169,10 @@ media_player 3:
 # Track the sun
 sun:
 
+usps:
+  username: !secret usps_username
+  password: !secret usps_password
+  name: 'USPS'
 
 camera:
   - platform: usps
