@@ -226,25 +226,11 @@ frontend:
       paper-slider-active-color: "#ff084a"
       paper-slider-secondary-color: "#ff93ac"
 
-group:
-  Frontend Theme:
-    entities:
-      - input_select.home_assistant_themes
-      - sensor.current_frontend_theme
 
-input_select:
-  home_assistant_themes:
-    name: Select Frontend Theme
-    options:
-      - default
-      - light_beach
-      - light_green
-      - light_pink
-      - dark_cyan
-      - dark_red
-      - dark_orange
-      - dark_teal
-    initial: default
+
+
+
+
 
 
 

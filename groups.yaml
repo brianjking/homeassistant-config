@@ -174,4 +174,8 @@
   Home Assistant Log Level:
     entities:
       - input_select.log_level
+  Frontend Theme:
+    entities:
+      - input_select.home_assistant_themes
+      - sensor.current_frontend_theme
 
