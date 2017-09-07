@@ -1,6 +1,6 @@
 - platform: rest
   name: pollen
-  resource: !secret weather_pollen_url
+  resource: https://www.pollen.com/api/forecast/current/pollen/60640
   value_template: "{{value_json.Location.periods[1].Index}}"
   scan_interval: 21600
   headers:
@@ -8,7 +8,7 @@
 
 - platform: rest
   name: cold_flu
-  resource: !secret weather_cold_flu_url
+  resource: https://www.pollen.com/api/forecast/extended/cold/60640
   value_template: "{{value_json.Location.periods[0].Index}}"
   scan_interval: 21600
   headers:
