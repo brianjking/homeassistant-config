@@ -83,6 +83,12 @@
   Weather:
     entities:  
     - sensor.weather_apparent_temperature
+    - sensor.weather_apparent_daily_low_temperature
+    - sensor.weather_apparent_daily_high_temperature
+    - sensor.weather_precip
+    - sensor.weather_nearest_storm_distance
+    - sensor.weather_nearest_storm_bearing
+    - sensor.weather_ozone
     - sensor.weather_humidity
     - sensor.weather_icon
     - sensor.weather_precip_intensity
@@ -93,6 +99,8 @@
     - sensor.weather_daily_summary
     - sensor.weather_wind_speed
     - sun.sun
+    - sensor.pollen
+    - sensor.cold_flu
   System:
     entities:  
     - sensor.cpu_use
