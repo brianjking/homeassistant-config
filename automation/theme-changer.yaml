@@ -1,0 +1,30 @@
+  - alias: Theme Selection Changed
+    initial_state: true
+    hide_entity: true
+    trigger:
+      platform: state
+      entity_id: input_select.home_assistant_themes
+    action:
+      - service: frontend.set_theme
+        data_template:
+          name: '{{ trigger.to_state.state }}'
+
+  - alias: Random Darker Theme At Sunset
+    initial_state: true
+    trigger:
+      platform: sun
+      event: sunset
+    action:
+      - service: frontend.set_theme
+        data_template:
+          name: '{{ ["dark_cyan", "dark_red", "dark_orange", "dark_cyan"] | random  }}'
+
+  - alias: Random Lighter Theme At Sunrise
+    initial_state: true
+    trigger:
+      platform: sun
+      event: sunrise
+    action:
+      - service: frontend.set_theme
+        data_template:
+          name: '{{ ["light_beach", "light_green", "light_pink", "default"] | random  }}'

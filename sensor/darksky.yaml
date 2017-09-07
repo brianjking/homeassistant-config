@@ -3,6 +3,8 @@
   api_key: !secret skydark 
   monitored_conditions:
     - apparent_temperature
+    - apparent_temperature_max
+    - apparent_temperature_min
     - temperature
     - humidity
     - icon
@@ -12,4 +14,8 @@
     - wind_speed
     - hourly_summary
     - daily_summary
+    - nearest_storm_distance
+    - nearest_storm_bearing
+    - precip_type
+    - ozone
   update_interval: '00:30'
