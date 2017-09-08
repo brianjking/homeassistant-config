@@ -1,47 +1,159 @@
-- platform: rest
-  name: pollen
-  resource: https://www.pollen.com/api/forecast/current/pollen/60640
-  value_template: "{{value_json.Location.periods[1].Index}}"
-  scan_interval: 21600
-  headers:
-    Referer: "https://www.pollen.com"
+sensor:
+  # Today's Pollen Index
+  - platform: rest
+    name: 'Pollen Index'
+    resource: https://www.pollen.com/api/forecast/current/pollen/60640
+    value_template: "{{value_json.Location.periods[1].Index}}"
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
 
-- platform: rest
-  name: cold_flu
-  resource: https://www.pollen.com/api/forecast/extended/cold/60640
-  value_template: "{{value_json.Location.periods[0].Index}}"
-  scan_interval: 21600
-  headers:
-    Referer: "https://www.pollen.com"      
-
-    pollen_level:
+  # Today's Pollen Level
+  - platform: template
+    sensors:
+      pollen_level:
         friendly_name: 'Pollen Level'
+        entity_id: sensor.pollen_index
         value_template: >-
-          {%- if states.sensor.pollen.state|float <= 2.4 %}
+          {%- if states.sensor.pollen_index.state|float <= 2.4 %}
               Low
-          {%- elif states.sensor.pollen.state|float <= 4.8 %}
-              Medium-Low
-          {%- elif states.sensor.pollen.state|float <= 7.2 %}
-              Medium
-          {%- elif states.sensor.pollen.state|float <= 9.6 %}
-              Medium-High
-          {%- elif states.sensor.pollen.state|float <= 12.0 %}
+          {%- elif states.sensor.pollen_index.state|float <= 4.8 %}
+              Med/Low
+          {%- elif states.sensor.pollen_index.state|float <= 7.2 %}
+              Med
+          {%- elif states.sensor.pollen_index.state|float <= 9.6 %}
+              Med/High
+          {%- elif states.sensor.pollen_index.state|float <= 12.0 %}
               High
           {% else %}
               Unknown
           {%- endif %}
-    cold_flu_risk:
-        friendly_name: 'Cold & Flu Risk'
+
+  # Tomorrow's Pollen Index Forecast
+  - platform: rest
+    name: 'Pollen Index Forecast'
+    resource: https://www.pollen.com/api/forecast/current/pollen/60640
+    value_template: "{{value_json.Location.periods[2].Index}}"
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+
+  # Tomorrow's Pollen Level Forecast
+  - platform: template
+    sensors:
+      pollen_level_forecast:
+        friendly_name: 'Pollen Level Forecast'
+        entity_id: sensor.pollen_index
         value_template: >-
-          {%- if states.sensor.cold_flu.state|float <= 2.4 %}
+          {%- if states.sensor.pollen_index_forecast.state|float <= 2.4 %}
               Low
-          {%- elif states.sensor.cold_flu.state|float <= 4.8 %}
-              Medium-Low
-          {%- elif states.sensor.cold_flu.state|float <= 7.2 %}
-              Medium
-          {%- elif states.sensor.cold_flu.state|float <= 9.6 %}
-              Medium-High
-          {%- elif states.sensor.cold_flu.state|float <= 12.0 %}
+          {%- elif states.sensor.pollen_index_forecast.state|float <= 4.8 %}
+              Med/Low
+          {%- elif states.sensor.pollen_index_forecast.state|float <= 7.2 %}
+              Med
+          {%- elif states.sensor.pollen_index_forecast.state|float <= 9.6 %}
+              Med/High
+          {%- elif states.sensor.pollen_index_forecast.state|float <= 12.0 %}
+              High
+          {% else %}
+              Unknown
+          {%- endif %}
+
+  # Today's Top Allergen
+  - platform: rest
+    name: 'Top Allergen 1'
+    resource: https://www.pollen.com/api/forecast/current/pollen/60640
+    value_template: >-
+      {% if value_json.Location.periods[1].Triggers[0] %}
+      {{ value_json.Location.periods[1].Triggers[0].PlantType }}
+      {% else %}
+      -
+      {% endif %}
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+
+  # Today's Second Allergen
+  - platform: rest
+    name: 'Top Allergen 2'
+    resource: https://www.pollen.com/api/forecast/current/pollen/60640
+    value_template: >-
+      {% if value_json.Location.periods[1].Triggers[1] %}
+      {{ value_json.Location.periods[1].Triggers[1].PlantType }}
+      {% else %}
+      -
+      {% endif %}
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+
+  # Today's Third Allergen
+  - platform: rest
+    name: 'Top Allergen 3'
+    resource: https://www.pollen.com/api/forecast/current/pollen/60640
+    value_template: >-
+      {% if value_json.Location.periods[1].Triggers[2] %}
+      {{ value_json.Location.periods[1].Triggers[2].PlantType }}
+      {% else %}
+      -
+      {% endif %}
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+
+  # Pollen Trend
+  - platform: rest
+    name: 'Pollen Trend'
+    resource: https://www.pollen.com/api/forecast/outlook/60640
+    value_template: "{{value_json.Trend}}"
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+
+  # Pollen Outlook
+  - platform: rest
+    name: 'Pollen Outlook'
+    resource: https://www.pollen.com/api/forecast/outlook/60640
+    value_template: "{{value_json.Outlook}}"
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+
+  # Pollen Season
+  - platform: rest
+    name: 'Pollen Season'
+    resource: https://www.pollen.com/api/forecast/outlook/60640
+    value_template: "{{value_json.Season}}"
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+
+  # Today's Cold/Flu Percentage
+  - platform: rest
+    name: 'Cold & Flu Percentage'
+    resource: https://www.pollen.com/api/forecast/extended/cold/60640
+    value_template: "{{value_json.Location.periods[1].Index}}"
+    scan_interval: 21600
+    headers:
+      Referer: "https://www.pollen.com"
+    unit_of_measurement: "%"
+
+  # Today's Cold/Flu Risk
+  - platform: template
+    sensors:
+      cold_flu_risk:
+        friendly_name: 'Cold & Flu Risk'
+        entity_id: sensor.cold__flu_percentage
+        value_template: >-
+          {%- if states.sensor.cold__flu_percentage.state|float <= 2.4 %}
+              Low
+          {%- elif states.sensor.cold__flu_percentage.state|float <= 4.8 %}
+              Med/Low
+          {%- elif states.sensor.cold__flu_percentage.state|float <= 7.2 %}
+              Med
+          {%- elif states.sensor.cold__flu_percentage.state|float <= 9.6 %}
+              Med/High
+          {%- elif states.sensor.cold__flu_percentage.state|float <= 12.0 %}
               High
           {% else %}
               Unknown

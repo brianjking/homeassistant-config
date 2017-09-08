@@ -76,6 +76,30 @@
       friendly_name: Kitchen Sink
       emulated_hue: true
       icon: 'mdi:lightbulb-on'
+    sensor.pollen_index:
+      icon: mdi:flower
+    sensor.pollen_level:
+      icon: mdi:flower
+    sensor.top_allergen_1:
+      icon: mdi:flower
+    sensor.top_allergen_2:
+      icon: mdi:flower
+    sensor.top_allergen_3:
+      icon: mdi:flower
+    sensor.pollen_trend:
+      icon: mdi:flower
+    sensor.pollen_outlook:
+      icon: mdi:flower
+    sensor.pollen_season:
+      icon: mdi:flower
+    sensor.pollen_index_forecast:
+      icon: mdi:flower
+    sensor.pollen_level_forecast:
+      icon: mdi:flower
+    sensor.cold__flu_percentage:
+      icon: mdi:snowflake
+    sensor.cold_flu_risk:
+      icon: mdi:snowflake
 
      
 
