@@ -99,10 +99,17 @@
     - sensor.weather_daily_summary
     - sensor.weather_wind_speed
     - sun.sun
-    - sensor.pollen
-    - sensor.cold_flu
-    - sensor.cold_flu_risk
+    - sensor.pollen_index
     - sensor.pollen_level
+    - sensor.top_allergen_1
+    - sensor.top_allergen_2
+    - sensor.top_allergen_3
+    - sensor.pollen_trend
+    - sensor.pollen_outlook
+    - sensor.pollen_season
+    - sensor.pollen_index_forecast
+    - sensor.cold__flu_percentage
+    - sensor.cold_flu_risk
   System:
     entities:  
     - sensor.cpu_use
