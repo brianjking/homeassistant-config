@@ -99,6 +99,8 @@
     - sensor.weather_daily_summary
     - sensor.weather_wind_speed
     - sun.sun
+    - sensor.pollen 
+    - sensor.cold_flu 
     - sensor.pollen_index
     - sensor.pollen_level
     - sensor.top_allergen_1

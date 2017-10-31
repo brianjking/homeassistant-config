@@ -13,45 +13,45 @@ http:
   server_host: 127.0.0.1
 
 # DATABASE SETUP USING MySQL
-recorder:
-  db_url: !secret db_url
-  purge_days: 5
-  exclude:
-    entities:
-      - sensor.weather_apparent_temperature
-      - sensor.weather_humidity
-      - sensor.weather_icon
-      - sensor.weather_summary
-      - sensor.weather_temperature
-      - sensor.weather_hourly_summary
-      - sensor.weather_daily_summary
-      - sensor.weather_wind_speed
-      - sensor.speedtest_download
-      - sensor.speedtest_upload
-      - sensor.speedtest_ping
-      - sensor.cpu_use
-      - sensor.ram_free
-      - sensor.ram_use
-      - media_player.google_play__blackbox
-      - media_player.raptor
-      - sensor.octoprint_actual_bed_temp
-      - sensor.octoprint_actual_tool0_temp
-      - sensor.octoprint_current_state
-      - sensor.octoprint_job_percentage
-      - sensor.octoprint_target_bed_temp
-      - sensor.octoprint_target_tool0_temp
-      - sensor.date__time
-      - sensor.date
-      - sensor.internet_time
-      - sensor.time_utc
-      - sensor.time__date
-      - sensor.date 
-      - sensor.average_load_15m
-      - sensor.average_load_5m 
-      - sensor.worldclock_sensor
-      - sensor.homeassistant_uptime
-      - sensor.homeassistant_version
-      - sensor.time
+#recorder:
+  #db_url: !secret db_url
+  #purge_days: 5
+  #exclude:
+    #entities:
+      #- sensor.weather_apparent_temperature
+      #- sensor.weather_humidity
+      #- sensor.weather_icon
+      #- sensor.weather_summary
+      #- sensor.weather_temperature
+      #- sensor.weather_hourly_summary
+      #- sensor.weather_daily_summary
+      #- sensor.weather_wind_speed
+      #- sensor.speedtest_download
+      #- sensor.speedtest_upload
+      #- sensor.speedtest_ping
+      #- sensor.cpu_use
+      #- sensor.ram_free
+      #- sensor.ram_use
+      #- media_player.google_play__blackbox
+      #- media_player.raptor
+      #- sensor.octoprint_actual_bed_temp
+      #- sensor.octoprint_actual_tool0_temp
+      #- sensor.octoprint_current_state
+      #- sensor.octoprint_job_percentage
+      #- sensor.octoprint_target_bed_temp
+      #- sensor.octoprint_target_tool0_temp
+      #- sensor.date__time
+      #- sensor.date
+      #- sensor.internet_time
+      #- sensor.time_utc
+      #- sensor.time__date
+      #- sensor.date 
+      #- sensor.average_load_15m
+      #- sensor.average_load_5m 
+      #- sensor.worldclock_sensor
+      #- sensor.homeassistant_uptime
+      #- sensor.homeassistant_version
+      #- sensor.time
        
   
 history:  
