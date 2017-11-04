@@ -13,8 +13,8 @@ http:
   server_host: 127.0.0.1
 
 # DATABASE SETUP USING MySQL
-#recorder:
-  #db_url: !secret db_url
+recorder:
+  db_url: !secret db_url
   #purge_days: 5
   #exclude:
     #entities:
