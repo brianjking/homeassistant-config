@@ -253,9 +253,9 @@ logger:
 tts: 
   - platform: google
 
-octoprint:
-  host: 192.168.1.111
-  api_key: !secret octoprint 
+#octoprint:
+#  host: 192.168.1.111
+#  api_key: !secret octoprint 
 
 digital_ocean:
   access_token: !secret digitaloceantoken
