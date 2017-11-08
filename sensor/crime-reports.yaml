@@ -1,4 +1,4 @@
 - platform: crimereports
-  radius: 2500
+  radius: 8000
   name: crimereports 
   exclude: ['Community Policing']
