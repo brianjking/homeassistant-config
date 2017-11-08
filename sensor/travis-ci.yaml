@@ -1,0 +1,2 @@
+- platform: travisci
+  api_key: !secret travisapi
