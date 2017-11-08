@@ -2,3 +2,8 @@
   api_key: !secret travisapi
   scan_interval: 3600
   repository: homeassistant-config
+  monitored_conditions: 
+    - last_build_state
+    - last_build_id
+    - last_build_duration
+    - state 
