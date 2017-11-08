@@ -11,7 +11,7 @@
       - group.lyft
       - updater.updater
       - group.doors
-      - sensor.home_to_kinna_work
+      - group.travel_time
   living_room:
     name: Living Room
     icon: mdi:sofa
@@ -82,6 +82,8 @@
     - sensor.speedtest_upload
     - sensor.speedtest_ping
 
+  Travel Time:
+    - sensor.home_to_kinna_work
   Weather:
     entities:  
     - sensor.weather_apparent_temperature

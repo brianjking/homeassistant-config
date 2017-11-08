@@ -100,6 +100,8 @@
       icon: 'mdi:snowflake'
     sensor.cold_flu_risk:
       icon: 'mdi:snowflake'
+    sensor.home_to_kinna_work:
+      icon: 'mdi:train'
 
      
 
