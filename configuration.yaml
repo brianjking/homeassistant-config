@@ -52,7 +52,11 @@ recorder:
       #- sensor.homeassistant_uptime
       #- sensor.homeassistant_version
       #- sensor.time
-       
+
+no_ip:
+  domain: !secret noip
+  username: !secret noipusername
+  password: !secret noippassword     
   
 history:  
 # Enables the frontend
