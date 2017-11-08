@@ -1,2 +1,4 @@
 - platform: travisci
   api_key: !secret travisapi
+  scan_interval: 3600
+  repository: homeassistant-config
