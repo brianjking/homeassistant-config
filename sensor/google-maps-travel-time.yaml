@@ -1,0 +1,8 @@
+- platform: google_travel_time
+  api_key: !secret gmaps
+  origin: !secret homelocation
+  destination: !secret kwork
+  name: Home to Kinna Work
+  options:
+    mode: transit
+    
