@@ -6,3 +6,10 @@
   options:
     mode: transit
 
+- platform: google_travel_time
+  name: Kinna Work to Home 
+  api_key: !secret gmaps
+  origin: !secret kwork
+  destination: !secret homelocation 
+  options:
+    mode: transit

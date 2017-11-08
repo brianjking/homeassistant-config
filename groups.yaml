@@ -53,6 +53,12 @@
       - light.kitchen
       - light.ge_unknown_type4c42_id3031_level_13_0
       - automation.kitchen_light_on_at_sunset     
+  Travel:
+    name: Travel 
+    icon: mdi:train 
+    view: yes
+    entities: 
+      - group.travel_time
   printer:
     name: 3D
     icon: mdi:printer-3d
@@ -84,6 +90,7 @@
 
   Travel Time:
     - sensor.home_to_kinna_work
+    - sensor.kinna_work_to_home
   Weather:
     entities:  
     - sensor.weather_apparent_temperature
