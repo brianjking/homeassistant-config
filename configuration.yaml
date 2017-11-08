@@ -18,7 +18,7 @@ recorder:
   purge_days: 5
   exclude:
     entities:
-      #- sensor.weather_apparent_temperature
+      - sensor.weather_apparent_temperature
       #- sensor.weather_humidity
       #- sensor.weather_icon
       #- sensor.weather_summary
