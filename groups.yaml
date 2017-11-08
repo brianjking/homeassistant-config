@@ -126,8 +126,9 @@
   System:
     entities:  
     - sensor.cpu_use
-    - sensor.ram_free
-    - sensor.ram_use
+    - sensor.cpu_used
+    - sensor.ram_used
+    - sensor.ram_available
     - sensor.average_load_5m
     - sensor.average_load_15m
     - sensor.disk_free_home

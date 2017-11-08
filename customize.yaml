@@ -102,6 +102,12 @@
       icon: 'mdi:snowflake'
     sensor.home_to_kinna_work:
       icon: 'mdi:train'
+    sensor.kinna_work_to_home:
+      icon: 'mdi:train'
+    sensor.pollen:
+      icon: 'mdi:flower'
+    sensor.cold_flu:
+      icon: 'mdi:thermometer-lines'
 
      
 
