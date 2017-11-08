@@ -11,6 +11,7 @@
       - group.lyft
       - updater.updater
       - group.doors
+      - sensor.google_travel_time
   living_room:
     name: Living Room
     icon: mdi:sofa
