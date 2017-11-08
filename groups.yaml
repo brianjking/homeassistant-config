@@ -75,7 +75,7 @@
       - input_select.log_level
       - group.home_assistant
       - input_select.theme_select
-      - group.travis-ci  
+      - group.travisci  
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -188,7 +188,7 @@
     entities:
       - input_select.home_assistant_themes
       - sensor.current_frontend_theme
-  Travis-CI: 
+  TravisCI: 
     entities: 
       - sensor.brianjkinghomeassistantconfig_state
       - sensor.brianjkinghomeassistantconfig_last_build_state
