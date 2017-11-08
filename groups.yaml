@@ -74,7 +74,8 @@
       - group.comed
       - input_select.log_level
       - group.home_assistant
-      - input_select.theme_select  
+      - input_select.theme_select
+      - group.travis-ci  
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -180,7 +181,6 @@
       - sensor.current_home_assistant_version
       - sensor.homeassistant_version
       - input_select.log_level
-      - sensor.travisci
   Home Assistant Log Level:
     entities:
       - input_select.log_level
@@ -188,4 +188,12 @@
     entities:
       - input_select.home_assistant_themes
       - sensor.current_frontend_theme
+  Travis-CI: 
+    entities: 
+      - sensor.brianjkinghomeassistantconfig_state
+      - sensor.brianjkinghomeassistantconfig_last_build_state
+      - sensor.brianjkinghomeassistantconfig_last_build_started_at
+      - sensor.brianjkinghomeassistantconfig_last_build_id
+      - sensor.brianjkinghomeassistantconfig_last_build_finished_at
+      - sensor.brianjkinghomeassistantconfig_last_build_duration
 

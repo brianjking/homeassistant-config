@@ -15,9 +15,9 @@ http:
 # DATABASE SETUP USING MySQL
 recorder:
   db_url: !secret db_url
-  #purge_days: 5
-  #exclude:
-    #entities:
+  purge_days: 5
+  exclude:
+    entities:
       #- sensor.weather_apparent_temperature
       #- sensor.weather_humidity
       #- sensor.weather_icon
