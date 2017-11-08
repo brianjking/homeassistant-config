@@ -180,6 +180,7 @@
       - sensor.current_home_assistant_version
       - sensor.homeassistant_version
       - input_select.log_level
+      - sensor.travisci
   Home Assistant Log Level:
     entities:
       - input_select.log_level
