@@ -11,6 +11,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 ## Current Configuration
 
 * RaspberryPi 3 using the [Hassbian](https://home-assistant.io/docs/installation/hassbian/) installation method. 
+* NGINX with Let's Encrypt with no-ip.com used. 
 
 ### Devices
 
