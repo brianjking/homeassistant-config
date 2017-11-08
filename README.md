@@ -10,11 +10,11 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 
 ## Current Configuration
 
-* RaspberryPi 3 using [Fabric All-In-One Installer](https://github.com/home-assistant/fabric-home-assistant) method.
+* RaspberryPi 3 using the [Hassbian](https://home-assistant.io/docs/installation/hassbian/) installation method. 
 
 ### Devices
 
-* [LIFX White 800 Lightbulbs](http://lifx.refr.cc/F6NXQNK) (Quantity: 4)
+* [LIFX White 800 Lightbulbs](http://lifx.refr.cc/F6NXQNK) (Quantity: 5)
 * [LIFX Color 1000 Lightbulbs](http://lifx.refr.cc/F6NXQNK) (Quantity: 2)
 * [Google Chromecast](https://www.google.com/intl/en_us/chromecast/?utm_source=chromecast.com)
 * OctoPrint & [Monoprice Select Mini 3D Printer](https://www.amazon.com/gp/product/B01FL49VZE/ref=as_li_tl?ie=UTF8&tag=brianjking-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01FL49VZE&linkId=76e68ae7b7e1da100d3b710dd8ac260e)
@@ -43,6 +43,9 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * Crime Reports Sensors
 * FedEx Package Sensors
 
+### Automations 
+
+* TODO: Outline automations here. 
 
 ### Preview
 ![Home Assistant Logo](https://github.com/brianjking/hass-config/blob/master/images/home-assistant.gif "Home Assistant Preview")
@@ -58,7 +61,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [Message @brianjking on Twitter](https://twitter.com/brianjking)
 * [Home Assistant Homepage](https://home-assistant.io/)
 * [Home Assistant Forums](https://community.home-assistant.io/)
-* [Home Assistant Chat](https://gitter.im/home-assistant/home-assistant)
+* [Home Assistant Discord Chat](https://discord.gg/c5DvZ4e)
 * [Other Featured Home Assistant Configurations](https://home-assistant.io/cookbook/)
 * [Home Assistant GitHub Source Repository](https://github.com/home-assistant/home-assistant)
 * [Official Home Assistant Demo](https://home-assistant.io/demo/)
