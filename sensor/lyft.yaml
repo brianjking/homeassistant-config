@@ -7,3 +7,10 @@
   end_longitude: !secret endlongitudelyft
   product_ids:
     - 'lyft'
+
+- platform: template
+  sensors:
+    lyft_home_to_kinna_work:
+      friendly_name: "Lyft From Home to Kinna's Work"
+      value_template: {{ states.sensor.lyft_price.state }} USD,  available in {{ (states.sensor.lyft_price.attributes["Pickup time estimate (in seconds)"] | int)/60 }} minutes, estimated duration {{ (states.sensor.lyft_price.attributes['Trip duration (in seconds)'] | int )/60 }} minutes.
+
