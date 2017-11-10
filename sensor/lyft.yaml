@@ -12,4 +12,5 @@
   sensors:
     lyft_home_to_kinna_work:
       friendly_name: "Home to Kinna's Work"
-      value_template: '{{ states.sensor.lyft_price.state }} USD,  available in {{ (states.sensor.lyft_price.attributes["Pickup time estimate (in seconds)"] | int)/60 }} minutes, estimated duration {{ (states.sensor.lyft_price.attributes["Trip duration (in seconds)"] | int )/60 |round}} minutes.'
+      value_template: '{{ states.sensor.lyft_price.state }} USD,  available in {{ (states.sensor.lyft_price.attributes["Pickup time estimate (in seconds)"] | int)/60 }} minutes, estimated duration {{ "%0.2f" % ((states.sensor.lyft_price.attributes["Trip duration (in seconds)"] | int )/60 |float) }}
+
