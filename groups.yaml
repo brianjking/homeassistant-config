@@ -89,6 +89,7 @@
   Travel Time:
     - sensor.home_to_kinna_work
     - sensor.kinna_work_to_home
+    - sensor.lyft_home_to_kinna_work
   Weather:
     entities:  
     - sensor.weather_apparent_temperature
@@ -164,10 +165,6 @@
     entities:
       - sensor.new_commits
       - script.get_latest_config
-  Lyft:
-    entities: 
-      - sensor.lyft_time
-      - sensor.lyft_price
   Battery:
     entities: 
       - sensor.office_motion_battery
