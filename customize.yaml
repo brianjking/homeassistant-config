@@ -108,6 +108,8 @@
       icon: 'mdi:flower'
     sensor.cold_flu:
       icon: 'mdi:thermometer-lines'
+    sensor.lyft_home_to_kinna_work:
+      icon: 'mdi:taxi'
 
      
 
