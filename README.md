@@ -43,6 +43,8 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * Flux Light Adjustment Sensors
 * Crime Reports Sensors
 * FedEx Package Sensors
+* Google Maps Travel Time Sensors
+* 
 
 ### Automations 
 
