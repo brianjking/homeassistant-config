@@ -1,0 +1,21 @@
+android_ip_webcam:
+  - host: 192.168.1.107
+    name: Tabletcam
+    scan_interval: 60
+    port: 8000
+    sensors:
+      - battery_level
+      - battery_temp
+      - battery_voltage
+      - light
+      - motion
+      - pressure
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
