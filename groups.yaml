@@ -80,7 +80,8 @@
       - input_select.log_level
       - group.home_assistant
       - input_select.theme_select
-      - group.travisci  
+      - group.travisci
+      - group.camera
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -202,4 +203,7 @@
       - sensor.brianjkinghomeassistantconfig_last_build_id
       - sensor.brianjkinghomeassistantconfig_last_build_finished_at
       - sensor.brianjkinghomeassistantconfig_last_build_duration
+  Camera: 
+    entities:
+      - camera.mjpeg_camera
 
