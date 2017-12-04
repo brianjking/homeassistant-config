@@ -1,10 +1,10 @@
 ###############################################################
 ## * Special HASS related sensors - Thanks @torn8o & @CCOSTAN
 ###############################################################
-
-- platform: command_line
-  command: python3 -c "import requests; print(requests.get('https://pypi.python.org/pypi/homeassistant/json').json()['info']['version'])"
-  name: Current Home Assistant Version
+# Disabling as command is failing repeatedly on Hassbian, not sure why.
+#- platform: command_line
+#  command: python3 -c "import requests; print(requests.get('https://pypi.python.org/pypi/homeassistant/json').json()['info']['version'])"
+#  name: Current Home Assistant Version
 
 - platform: command_line
   name: HomeAssistant Version
