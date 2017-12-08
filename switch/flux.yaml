@@ -3,12 +3,12 @@
     - light.officebot
     - light.officebotfloor
     - light.kitchen
-    - light.ge_unknown_type4c42_id3031_level_13_0
   name: Fluxer
   start_time: '7:00'
   stop_time: '23:59'
-  start_colortemp: 3200
-  sunset_colortemp: 2600
-  stop_colortemp: 2500
+  start_colortemp: 3100
+  sunset_colortemp: 2700
+  stop_colortemp: 2700
   disable_brightness_adjust: True 
-  mode: mired
+  mode: xy
+  #mode: mired

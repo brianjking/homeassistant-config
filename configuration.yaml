@@ -267,6 +267,7 @@ logger:
     homeassistant.exceptions: info
     py.warnings: error
     root: warn
+    homeassistant.components.switch.flux: info
 
 
 tts: 
