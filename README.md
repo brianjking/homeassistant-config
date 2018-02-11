@@ -29,6 +29,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [TP-Link HS-100 Smart Plug](http://amzn.to/2kxkzDR)
 * [Ecolink Z-Wave Door/Window Sensor](http://amzn.to/2outQ1r)
 * Z-Wave Light Bulb
+* [Google Home Mini](https://store.google.com/us/product/google_home_mini?hl=en-US)
 
 ### Sensors
 
@@ -44,7 +45,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * Crime Reports Sensors
 * FedEx Package Sensors
 * Google Maps Travel Time Sensors
-* 
+
 
 ### Automations 
 
