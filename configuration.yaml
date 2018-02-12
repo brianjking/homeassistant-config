@@ -327,8 +327,8 @@ usps:
 camera:
   - platform: usps
     scan_interval: 5
-  - platform: mjpeg
-    mjpeg_url: https://192.168.1.107:8000/video
+#  - platform: mjpeg
+#    mjpeg_url: https://192.168.1.107:8000/video
 ################################
 # Z-WAVE #######################
 ################################
