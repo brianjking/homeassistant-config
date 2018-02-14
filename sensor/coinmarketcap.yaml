@@ -1,1 +1,3 @@
 - platform: coinmarketcap
+  display_currency: USD
+  currency: bitcoin
