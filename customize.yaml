@@ -110,6 +110,8 @@
       icon: 'mdi:thermometer-lines'
     sensor.lyft_home_to_kinna_work:
       icon: 'mdi:taxi'
+    media_player.small_googles:
+      icon: 'mdi:google-home'
 
      
 
