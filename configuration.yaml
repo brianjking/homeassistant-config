@@ -236,8 +236,9 @@ frontend:
 
 
 
-
-
+# Enable Map
+map: 
+  
 # Enables the HASS Updater
 updater:
   include_used_components: true
