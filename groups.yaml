@@ -31,6 +31,7 @@
       - group.internet
       - group.weather
       - group.packages
+      - group.finance
       - media_player.google_play__blackbox
       - group.all_devices
       - switch.wake_on_lan
@@ -204,5 +205,8 @@
   Finance:
     entities:
       - sensor.bitcoin 
-      - 
+      - sensor.ethereum
+      - sensor.nano
+      - sensor.monero
+      - sensor.binancecoin
 

@@ -112,6 +112,9 @@
       icon: 'mdi:taxi'
     media_player.small_googles:
       icon: 'mdi:google-home'
+    group.finance:
+      icon: 'mdi:finance'
+      hidden: false
 
      
 
