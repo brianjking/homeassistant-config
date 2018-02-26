@@ -201,4 +201,8 @@
   Camera: 
     entities:
       - camera.mjpeg_camera
+  Finance:
+    entities:
+      - sensor.bitcoin 
+      - 
 
