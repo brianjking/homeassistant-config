@@ -8,3 +8,13 @@
   action:
     service: homeassistant.turn_on
     entity_id: light.kitchen
+
+- alias: Kitchen Off at Midnight
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '23:59'
+  action: 
+    service: homeassistant.turn_off
+    entity_id: light.kitchen
