@@ -1,5 +1,5 @@
 - platform: pollen
-  zip_code: 60640
+  zip_code: "60640"
   monitored_conditions: 
     - allergy_average_forecasted
     - allergy_average_historical
