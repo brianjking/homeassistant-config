@@ -10,7 +10,7 @@
     entity_id: light.kitchen
 
 - alias: Kitchen Off at Midnight
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
