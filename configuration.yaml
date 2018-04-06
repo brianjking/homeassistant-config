@@ -320,15 +320,15 @@ media_player 3:
 # Track the sun
 sun:
 
-usps:
-  username: !secret usps_username
-  password: !secret usps_password
-  driver: phantomjs
-  name: 'USPS'
+#usps:
+#  username: !secret usps_username
+#  password: !secret usps_password
+ # driver: phantomjs
+#  name: 'USPS'
 
-camera:
-  - platform: usps
-    scan_interval: 5
+#camera:
+ # - platform: usps
+ #   scan_interval: 5
 #  - platform: mjpeg
 #    mjpeg_url: https://192.168.1.107:8000/video
 ################################
