@@ -2,7 +2,7 @@ alias: "Get Latest Config"
 sequence:
   - service: shell_command.update_new_commits_sensor
     data:
-      api_password: !secret api_password
+      api_password: !secret http_password
   - condition: numeric_state
     entity_id: sensor.new_commits
     above: 0
