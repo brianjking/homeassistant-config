@@ -1,0 +1,219 @@
+6c4008aa2cae:
+  hide_if_away: false
+  mac: 6C:40:08:AA:2C:AE
+  name: Brian MacBook Pro
+  picture: /local/mbp.png
+  track: false
+  vendor:
+
+
+c0eefbde5ce7:
+  hide_if_away: false
+  mac: C0:EE:FB:DE:5C:E7
+  name: Brian
+  picture:
+  gravatar: brianjosephking@gmail.com
+  consider_home: 180
+  track: false
+  vendor:
+
+8871e5fadf1a:
+  hide_if_away: false
+  mac: 88:71:E5:FA:DF:1A
+  name: 8871e5fadf1a
+  picture:
+  track: false
+  vendor: Amazon Technologies Inc.
+
+50c7bf15cf17:
+  hide_if_away: false
+  mac: 50:C7:BF:15:CF:17
+  name: 50c7bf15cf17
+  picture:
+  track: false
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+d073d5110e6b:
+  hide_if_away: false
+  mac: D0:73:D5:11:0E:6B
+  name: d073d5110e6b
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+6cadf857d48a:
+  hide_if_away: false
+  mac: 6C:AD:F8:57:D4:8A
+  name: 6cadf857d48a
+  picture:
+  track: false
+  vendor: AzureWave Technology Inc.
+
+d073d510fd00:
+  hide_if_away: false
+  mac: D0:73:D5:10:FD:00
+  name: d073d510fd00
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+d073d5121431:
+  hide_if_away: false
+  mac: D0:73:D5:12:14:31
+  name: d073d5121431
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+d073d510e1d0:
+  hide_if_away: false
+  mac: D0:73:D5:10:E1:D0
+  name: d073d510e1d0
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+4c664139557f:
+  hide_if_away: false
+  mac: 4C:66:41:39:55:7F
+  name: Kinna Galaxy S7
+  picture:
+  gravatar: kinna3@outlook.com
+  track: true
+  vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
+
+340286642b8e:
+  hide_if_away: false
+  mac: 34:02:86:64:2B:8E
+  name: 340286642b8e
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+60e3271ea164:
+  hide_if_away: false
+  mac: 60:E3:27:1E:A1:64
+  name: 60e3271ea164
+  picture:
+  track: false
+  vendor: TP-LINK TECHNOLOGIES CO.,LTD.
+
+60128b8fb22e:
+  hide_if_away: false
+  mac: 60:12:8B:8F:B2:2E
+  name: 60128b8fb22e
+  picture:
+  track: false
+  vendor: CANON INC.
+
+142d274aecfd:
+  hide_if_away: false
+  mac: 14:2D:27:4A:EC:FD
+  name: 142d274aecfd
+  picture:
+  track: false
+  vendor: Hon Hai Precision Ind. Co.,Ltd.
+
+000420ec1978:
+  hide_if_away: false
+  mac: 00:04:20:EC:19:78
+  name: 000420ec1978
+  picture:
+  track: false
+  vendor: Slim Devices, Inc.
+
+d073d5108e64:
+  hide_if_away: false
+  mac: D0:73:D5:10:8E:64
+  name: d073d5108e64
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+d073d5144f77:
+  hide_if_away: false
+  mac: D0:73:D5:14:4F:77
+  name: d073d5144f77
+  picture:
+  track: false
+  vendor: LIFI LABS MANAGEMENT PTY LTD
+
+wmdxyokj_brian_oneplus:
+  hide_if_away: true
+  mac: C0:EE:FB:DE:5C:E7
+  name: Brian OnePlus3
+  picture:
+  gravatar: brianjosephking@gmail.com
+  track: false
+  vendor:
+
+9cb6d0d9fd3b:
+  hide_if_away: false
+  mac: 9C:B6:D0:D9:FD:3B
+  name: 9cb6d0d9fd3b
+  picture:
+  track: false
+  vendor: Rivet Networks
+
+002608ea7c42:
+  hide_if_away: false
+  mac: 00:26:08:EA:7C:42
+  name: 002608ea7c42
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+6069443f46e7:
+  hide_if_away: false
+  icon:
+  mac: 60:69:44:3F:46:E7
+  name: 6069443f46e7
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+404e36865a04:
+  hide_if_away: false
+  icon:
+  mac: 40:4E:36:86:5A:04
+  name: Brian Pixel 2
+  gravatar: brianjosephking@gmail.com
+  picture:
+  track: true
+  vendor: HTC Corporation
+
+94513d1342e9:
+  hide_if_away: false
+  icon:
+  mac: 94:51:3D:13:42:E9
+  name: 94513d1342e9
+  picture:
+  track: false
+  vendor: iSmart Alarm, Inc.
+
+e4f04222921c:
+  hide_if_away: false
+  icon:
+  mac: E4:F0:42:22:92:1C
+  name: e4f04222921c
+  picture:
+  track: false
+  vendor: Google, Inc.
+
+3ccf5b673642:
+  hide_if_away: false
+  icon:
+  mac: 3C:CF:5B:67:36:42
+  name: 3ccf5b673642
+  picture:
+  track: false
+  vendor: ICOMM HK LIMITED
+
+704f57c99574:
+  hide_if_away: false
+  icon:
+  mac: 70:4F:57:C9:95:74
+  name: 704f57c99574
+  picture:
+  track: false
+  vendor: unknown
