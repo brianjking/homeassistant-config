@@ -7,3 +7,4 @@ secrets.yaml
 /deps/*
 .uuid
 /bin/update_new_commits_sensor.sh
+known_devices.yaml
