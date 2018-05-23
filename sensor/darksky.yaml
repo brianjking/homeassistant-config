@@ -18,4 +18,5 @@
     - nearest_storm_bearing
     - precip_type
     - ozone
+    - cloud_cover
   update_interval: '00:30'
