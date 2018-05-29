@@ -4,9 +4,6 @@
     entity_id: sensor.weather_precip_intensity
     to: 'rain'
   condition:
-    - condition: state
-      entity_id: group.all_devices
-      state: 'home'
     - condition: time
       after: '14:00'
       before: '23:00'

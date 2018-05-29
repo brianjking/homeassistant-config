@@ -3,7 +3,7 @@
   mac: 6C:40:08:AA:2C:AE
   name: Brian MacBook Pro
   picture: /local/mbp.png
-  track: true
+  track: false
   vendor:
 
 
@@ -13,7 +13,7 @@ c0eefbde5ce7:
   name: Brian
   picture:
   gravatar: brianjosephking@gmail.com
-  consider_home: 180 
+  consider_home: 180
   track: false
   vendor:
 
@@ -76,8 +76,8 @@ d073d510e1d0:
 4c664139557f:
   hide_if_away: false
   mac: 4C:66:41:39:55:7F
-  name: Kinna
-  picture: 
+  name: Kinna Galaxy S7
+  picture:
   gravatar: kinna3@outlook.com
   track: true
   vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
@@ -139,12 +139,12 @@ d073d5144f77:
   vendor: LIFI LABS MANAGEMENT PTY LTD
 
 wmdxyokj_brian_oneplus:
-  hide_if_away: false
+  hide_if_away: true
   mac: C0:EE:FB:DE:5C:E7
   name: Brian OnePlus3
   picture:
   gravatar: brianjosephking@gmail.com
-  track: true
+  track: false
   vendor:
 
 9cb6d0d9fd3b:
@@ -162,3 +162,58 @@ wmdxyokj_brian_oneplus:
   picture:
   track: false
   vendor: Apple, Inc.
+
+6069443f46e7:
+  hide_if_away: false
+  icon:
+  mac: 60:69:44:3F:46:E7
+  name: 6069443f46e7
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+404e36865a04:
+  hide_if_away: false
+  icon:
+  mac: 40:4E:36:86:5A:04
+  name: Brian Pixel 2
+  gravatar: brianjosephking@gmail.com
+  picture:
+  track: true
+  vendor: HTC Corporation
+
+94513d1342e9:
+  hide_if_away: false
+  icon:
+  mac: 94:51:3D:13:42:E9
+  name: 94513d1342e9
+  picture:
+  track: false
+  vendor: iSmart Alarm, Inc.
+
+e4f04222921c:
+  hide_if_away: false
+  icon:
+  mac: E4:F0:42:22:92:1C
+  name: e4f04222921c
+  picture:
+  track: false
+  vendor: Google, Inc.
+
+3ccf5b673642:
+  hide_if_away: false
+  icon:
+  mac: 3C:CF:5B:67:36:42
+  name: 3ccf5b673642
+  picture:
+  track: false
+  vendor: ICOMM HK LIMITED
+
+704f57c99574:
+  hide_if_away: false
+  icon:
+  mac: 70:4F:57:C9:95:74
+  name: 704f57c99574
+  picture:
+  track: false
+  vendor: unknown
