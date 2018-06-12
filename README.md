@@ -9,11 +9,6 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 [![Build Status](https://travis-ci.org/brianjking/homeassistant-config.svg?branch=master)](https://travis-ci.org/brianjking/homeassistant-config)
 
 
-[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg?style=plastic)](https://github.com/brianjking/homeassistant-config/commits/master)
-
-
-[![GitHub stars](https://img.shields.io/github/stars/badges/shields.svg?style=plastic&label=Stars)](https://github.com/brianjking/homeassistant-config/stargazers)
-
 ## Current Configuration
 
 * RaspberryPi 3 using the [Hassbian](https://home-assistant.io/docs/installation/hassbian/) installation method. 

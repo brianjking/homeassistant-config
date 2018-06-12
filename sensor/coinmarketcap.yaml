@@ -1,3 +1,0 @@
-- platform: coinmarketcap
-  display_currency: USD
-  currency: bitcoin, ethereum, nano, neo, monero, binancecoin
