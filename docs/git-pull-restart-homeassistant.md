@@ -5,6 +5,8 @@
 
 **Thank you to [Tommatheussen's Home Assistant Configuration for the scripts & configuration files](https://github.com/Tommatheussen/Home-Assistant-Configuration).**
 
+**Thank you to [@mf-social](https://github.com/mf-social) for providing [this pull request](https://github.com/brianjking/homeassistant-config/pull/134) which allows feeding the [api_password](https://github.com/brianjking/homeassistant-config/blob/master/configuration.yaml#L12) in from your `secrets.yaml`. 
+
 ## Introduction
 
 The `yaml` configuration files and `shell scripts` for [Home Assistant](https://home-assistant.io) below simplify using [GitHub](https://github.com) to manage your Home Assistant Configurations.
@@ -24,22 +26,9 @@ The `yaml` configuration files and `shell scripts` for [Home Assistant](https://
 
 ### Customizations Necessary 
 
-* You may need to adjust the path of the various files based on where your Home Assistant is configured.
-* If using the `api_password` in the [http component](https://home-assistant.io/components/http/) you will need to adjust the [update_new_commits_sensor.sh](https://github.com/brianjking/hass-config/blob/master/bin/update_new_commits_sensor.sh) command. **FILE FROM REPOSITORY IS BELOW** 
-```bash
-#!/bin/bash
-
-cd "/home/homeassistant/.homeassistant"
-git fetch
-commits="$(git rev-list --count master..origin/master)"
-
-curl -X POST -H "x-ha-access: $1" -H "Content-Type: application/json" http://127.0.0.1:8123/api/states/sensor.new_commits -d "{\"state\": \"$commits\"}"
+* You may need to adjust the path of the various files based on where your Home Assistant is configured.  [update_new_commits_sensor.yaml](https://github.com/brianjking/homeassistant-config/blob/master/shell_command/update_new_commits_sensor.yaml)
 ```
-
-* If using the `api_password` option once you create the `update_new_commits_sensor.sh` on your Raspberry Pi it you should edit the `curl` command accordingly. **Example:**
-
-```bash
-curl -X POST -H "x-ha-access: $1" -H "Content-Type: application/json" https://my.domain.com/api/states/sensor.new_commits?api_password=MyPassword -d "{\"state\": \"$commits\"}"
+bash /home/homeassistant/.homeassistant/bin/update_new_commits_sensor.sh "{{ api_password }}"
 ```
 
 ### Using The Update From GitHub Service
@@ -52,13 +41,15 @@ curl -X POST -H "x-ha-access: $1" -H "Content-Type: application/json" https://my
 alias: "Get Latest Config"
 sequence:
   - service: shell_command.update_new_commits_sensor
+    data:
+      api_password: !secret http_password
   - condition: numeric_state
     entity_id: sensor.new_commits
-    above: 1
+    above: 0
   - service: shell_command.update_config_from_github
   - service: homeassistant.restart
  ```
-* Checks for new commits, `git pull` new commits from GitHub, restart the Home Assistant service.
+* Checks for new commits, if there are new commits it will execute a `git pull` to obtain the new commits from GitHub, and finally it will restart the Home Assistant service.
 
 #### Questions
 * [Message me on Twitter](https://twitter.com/brianjking)
