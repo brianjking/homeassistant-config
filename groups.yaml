@@ -87,6 +87,7 @@
       - input_select.theme_select
       - group.travisci
       - group.camera
+      - group.uptimerobot
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -124,6 +125,17 @@
     - sensor.us_air_pollution_level
     - sensor.us_air_quality_index
     - sensor.us_main_pollutant
+
+  UptimeRobot:
+    entities:
+      - binary_sensor.1up_brianjkingme
+      - binary_sensor.1upkeyboardscom
+      - binary_sensor.brianjkingcom
+      - binary_sensor.brianjkingio 
+      - binary_sensor.eebrianjkingcom_ip
+      - binary_sensor.hass 
+      - binary_sensor.robotberame
+
 
   System:
     entities:  
