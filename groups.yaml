@@ -116,11 +116,11 @@
     - sensor.weather_wind_speed
     - sensor.weather_cloud_coverage
     - sun.sun
-    - sensor.allergy_index_forecasted_average
-    - sensor.allergy_index_historical_average
+    - sensor.allergy_index_forecasted_average_2
+    - sensor.allergy_index_historical_average_2
+    - sensor.cold__flu_forecasted_average_2
     - sensor.allergy_index_today
     - sensor.allergy_index_tomorrow
-    - sensor.cold__flu_forecasted_average
   System:
     entities:  
     - sensor.processor_use

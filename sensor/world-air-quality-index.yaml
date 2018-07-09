@@ -1,0 +1,5 @@
+- platform: waqi
+  name: World Air Quality Index
+  token: !secret worldairqual_api
+  locations: 
+    - chicago
