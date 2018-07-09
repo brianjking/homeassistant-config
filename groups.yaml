@@ -121,6 +121,10 @@
     - sensor.cold__flu_forecasted_average_2
     - sensor.allergy_index_today
     - sensor.allergy_index_tomorrow
+    - sensor.us_air_pollution_level
+    - sensor.us_air_quality_index
+    - sensor.us_main_pollutant
+
   System:
     entities:  
     - sensor.processor_use

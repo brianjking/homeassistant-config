@@ -46,6 +46,9 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * Crime Reports Sensors
 * FedEx Package Sensors
 * Google Maps Travel Time Sensors
+* Air Quality Index Sensor
+* Air Visual Air Quality Sensor
+
 
 
 ### Automations 
