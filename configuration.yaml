@@ -11,6 +11,10 @@ homeassistant:
 http:
   api_password: !secret http_password
   server_host: 127.0.0.1
+  use_x_forwarded_for: True
+  trusted_proxies: 
+    - 127.0.0.1
+    - ::1
 
 # DATABASE SETUP USING MySQL
 recorder:
