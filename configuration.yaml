@@ -8,6 +8,7 @@ homeassistant:
   customize: !include customize.yaml
   auth_providers: homeassistant
     - type: legacy_api_password
+auth:
 
 # FRONTEND HTTP PASSWORD PROTECTION SETUP
 http:
