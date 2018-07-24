@@ -6,9 +6,7 @@ homeassistant:
   unit_system: imperial
   time_zone: America/Chicago
   customize: !include customize.yaml
-  auth_providers: homeassistant
-    - type: legacy_api_password
-auth:
+
 
 # FRONTEND HTTP PASSWORD PROTECTION SETUP
 http:
