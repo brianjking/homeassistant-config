@@ -1,0 +1,3 @@
+- platform: pi_hole
+  host: 192.168.1.111
+  
