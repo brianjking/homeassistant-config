@@ -48,7 +48,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * Google Maps Travel Time Sensors
 * Air Quality Index Sensor
 * Air Visual Air Quality Sensor
-
+* Pi-Hole 
 
 
 ### Automations 
