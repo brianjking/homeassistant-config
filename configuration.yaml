@@ -64,11 +64,7 @@ no_ip:
   password: !secret noippassword     
   
 history:  
-# Enables the frontend
-###############################################################################
-# Feel free to add/modify and customize the themes below to your heart's content
-# Some of the themes I made, some I stole from online :) 
-
+  
 frontend:
   themes: !include themes.yaml
 
