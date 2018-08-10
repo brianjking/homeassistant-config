@@ -88,6 +88,7 @@
       - group.travisci
       - group.camera
       - group.uptimerobot
+      - group.pihole 
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -226,4 +227,9 @@
       - sensor.nano
       - sensor.monero
       - sensor.binancecoin
+  PiHole:
+    entities: 
+      - sensor.pihole_ads_blocked_today
+      - sensor.pihole_dns_queries_today
+      - sensor.pihole_queries_cached
 
