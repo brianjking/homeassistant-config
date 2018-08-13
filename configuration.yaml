@@ -6,9 +6,9 @@ homeassistant:
   unit_system: imperial
   time_zone: America/Chicago
   customize: !include customize.yaml
-    auth_providers:
-      - type: homeassistant
-      - type: legacy_api_password
+  auth_providers:
+    - type: homeassistant
+    - type: legacy_api_password
 
 # Enables Auth Component 
 auth: 
