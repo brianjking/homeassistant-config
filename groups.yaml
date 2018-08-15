@@ -51,9 +51,12 @@
     name: Kitchen
     icon: mdi:fridge
     view: yes
-    entities: 
+    entities:
+      - group.kitchen_lights  
       - light.kitchen
-      - light.ge_unknown_type4c42_id3031_level_13_0
+      - light.kitchen_sink
+      - automation.kitchen_off_at_midnight
+      - automation.make_kitchen_less_dark
       - automation.kitchen_light_on_at_sunset     
   Travel:
     name: Travel 
@@ -165,6 +168,10 @@
     entities:  
     - light.officebot
     - light.officebotfloor
+  kitchen_lights:
+    entities:
+      - light.kitchen
+      - light.kitchen_sink
   3D_print:
     entities:  
     - sensor.octoprint_actual_bed_temp
