@@ -117,7 +117,7 @@
       hidden: false
     group.kitchen_lights:
       icon: 'mdi:lightbulb'
-      friendly_name: mdi:lightbulb
+      friendly_name: Kitchen Lights
       emulated_hue_name: Kitchen 
 
      

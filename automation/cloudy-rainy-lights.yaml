@@ -52,7 +52,7 @@
   action:
     - service: light.turn_on
       entity_id:
-        - light.kitchen
+        - group.kitchen_lights
    # - service: input_boolean.turn_on
      # entity_id:
       #  - input_boolean.daylight_override

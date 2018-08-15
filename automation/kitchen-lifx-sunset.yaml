@@ -7,7 +7,7 @@
     offset: "-01:00:00"
   action:
     service: homeassistant.turn_on
-    entity_id: light.kitchen
+    entity_id: group.kitchen_lights
 
 - alias: Kitchen Off at Midnight
   initial_state: False
@@ -17,4 +17,4 @@
     at: '23:59'
   action: 
     service: homeassistant.turn_off
-    entity_id: light.kitchen
+    entity_id: group.kitchen_lights
