@@ -115,6 +115,10 @@
     group.finance:
       icon: 'mdi:finance'
       hidden: false
+    group.kitchen_lights:
+      icon: `mdi:lightbulb'
+      friendly_name: mdi:lightbulb
+      emulated_hue_name: Kitchen 
 
      
 
