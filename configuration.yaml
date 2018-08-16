@@ -85,9 +85,23 @@ config:
 discovery:
 # View all events in a logbook
 logbook:
+  exclude: 
+    entities:
+      - sensor.brianjkinghomeassistantconfig_last_build_duration
+      - sensor.brianjkinghomeassistantconfig_last_build_id
+      - sensor.brianjkinghomeassistantconfig_last_build_state
+      - sensor.brianjkinghomeassistantconfig_state
+      - switch.eebrianjkingcom
+      - sensor.us_air_pollution_level
+      - sensor.us_air_quality_index
+      - sensor.us_main_pollutant
+
+
 # Make a fake Hue for Alexa
 emulated_hue:
   expose_by_default: true
+
+# Set Logging Levels
 
 logger: 
   default: info
@@ -99,7 +113,7 @@ logger:
     homeassistant.components.http: warn
     homeassistant.components.media_player: warn
     homeassistant.components.recorder: error
-    homeassistant.components.zwave: warn
+    homeassistant.components.zwave: debug
     homeassistant.helpers.script: info
     homeassistant.helpers.entity: critical
     homeassistant.exceptions: info
@@ -117,7 +131,7 @@ tts:
 digital_ocean:
   access_token: !secret digitaloceantoken
 
-
+# Setup push notifications using the Simplepush service
 notify:
   - name: simplepush
     platform: simplepush
@@ -217,4 +231,3 @@ binary_sensor: !include_dir_merge_list binary_sensor
 shell_command: !include_dir_named shell_command/
 group: !include groups.yaml
 input_select: !include_dir_merge_named input_select
-
