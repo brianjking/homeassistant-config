@@ -13,8 +13,6 @@ homeassistant:
 # Enables Auth Component 
 auth: 
 
-
-
 # FRONTEND HTTP PASSWORD PROTECTION SETUP
 http:
   api_password: !secret http_password
@@ -75,14 +73,6 @@ history:
 frontend:
   themes: !include themes.yaml
 
-
-
-
-
-
-
-
-
 # Enable Map
 map: 
   
@@ -117,7 +107,6 @@ logger:
     root: warn
     homeassistant.components.switch.flux: info
 
-
 tts: 
   - platform: google
 
@@ -137,9 +126,6 @@ notify:
 #google:
   #client_id: !secret googleclientid
   #client_secret: !secret googleclientsecret
-
-
-
 
 ############################################
 # LIGHT
@@ -220,13 +206,12 @@ mqtt:
 ############################################
 weblink:
   entities:
-    name: 'Router'
-    icon: mdi:router-wireless
-    url: 'http://192.168.1.1'
-  modem:
-    title: 'Modem Admin'
-    icon: mdi:router-wireless
-    url: 'http://10.0.0.1'
+    - name: Router Admin
+      icon: mdi:router-wireless
+      url: http://192.168.1.1
+    - name: Modem Admin
+      icon: mdi:router-wireless
+      url: http://10.0.0.1
 
 ############################################       
 # Includes
