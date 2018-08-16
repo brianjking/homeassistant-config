@@ -187,19 +187,12 @@ device_tracker:
 #########################################
 # MQTT
 ##########################################
-mqtt:
-  broker: !secret mqttbroker
-  port: 19742
-  username: !secret mqttuser
-  password: !secret mqttpassword
-############################################
-# Panels
-############################################
-# Need to rebuild this at some point.
-  graph:
-    title: Graph
-    icon: mdi:vector-polyline
-    url: "https://raptorbot.ddns.net/local/graph.html"
+# Temporarily disabled.
+#mqtt:
+  #broker: !secret mqttbroker
+  #port: 19742
+  #username: !secret mqttuser
+  #password: !secret mqttpassword
 
 ############################################
 # Weblink
