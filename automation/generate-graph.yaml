@@ -1,5 +1,6 @@
 - alias: Generate Configuration Graph
-  hide_entity: True 
+  hide_entity: True
+  initial_state: false 
   trigger:
     platform: homeassistant
     event: start
