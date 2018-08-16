@@ -158,7 +158,7 @@ scene:
 # Google Play Music - Brian Desktop
 media_player 2:
   platform: gpmdp
-  host: 192.168.1.114
+  host: 192.168.1.110
   name: Google Play - Blackbox
 
 media_player 3:
@@ -209,20 +209,25 @@ mqtt:
 ############################################
 # Panels
 ############################################
-# These are broken due to HTTP loading on HTTPS connection.
-panel_iframe:
-  router:
-    title: 'Router'
+# Need to rebuild this at some point.
+  graph:
+    title: Graph
+    icon: mdi:vector-polyline
+    url: "https://raptorbot.ddns.net/local/graph.html"
+
+############################################
+# Weblink
+############################################
+weblink:
+  entities:
+    name: 'Router'
     icon: mdi:router-wireless
     url: 'http://192.168.1.1'
   modem:
     title: 'Modem Admin'
     icon: mdi:router-wireless
-    url: 'http://192.168.100.1'
-  graph:
-    title: Graph
-    icon: mdi:vector-polyline
-    url: "https://raptorbot.ddns.net/local/graph.html"
+    url: 'http://10.0.0.1'
+
 ############################################       
 # Includes
 ############################################
