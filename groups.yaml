@@ -65,12 +65,6 @@
     entities: 
       - group.travel_time
       - group.lyft 
-  printer:
-    name: 3D
-    icon: mdi:printer-3d
-    view: yes
-    entities: 
-      - group.3d_print
   control:
     name: control
     icon: mdi:robot
@@ -91,7 +85,14 @@
       - group.travisci
       - group.camera
       - group.uptimerobot
-      - group.pihole 
+      - group.pihole
+      - group.network
+  printer:
+    name: 3D
+    icon: mdi:printer-3d
+    view: yes
+    entities: 
+      - group.3d_print 
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -239,4 +240,9 @@
       - sensor.pihole_ads_blocked_today
       - sensor.pihole_dns_queries_today
       - sensor.pihole_queries_cached
+  Network:
+    entities: 
+      - weblink.router_admin
+      - weblink.modem_admin
+
 
