@@ -114,13 +114,13 @@ logger:
     homeassistant.components.http: warn
     homeassistant.components.media_player: warn
     homeassistant.components.recorder: error
-    homeassistant.components.zwave: debug
+    homeassistant.components.zwave: warn
     homeassistant.helpers.script: info
     homeassistant.helpers.entity: critical
     homeassistant.exceptions: info
     py.warnings: error
     root: warn
-    homeassistant.components.switch.flux: info
+    homeassistant.components.switch.flux: debug
 
 tts: 
   - platform: google
