@@ -245,6 +245,7 @@
     entities: 
       - weblink.router_admin
       - weblink.modem_admin
+      - weblink.access_point_admin
 
 
 
