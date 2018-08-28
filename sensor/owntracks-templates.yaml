@@ -1,0 +1,7 @@
+- platform: template
+  sensors:
+    pixel_battery:
+      friendly_name: Pixel of Paulus
+      unit_of_measurement: "%"
+      value_template: '{{ states.device_tracker.paulus_pixel.attributes.battery|int }}'
+      device_class: battery
