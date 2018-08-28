@@ -92,6 +92,13 @@ recorder:
       - sensor.us_air_pollution_level
       - sensor.us_air_quality_index
       - sensor.us_main_pollutant
+      - sensor.brianjkinghomeassistantconfig_state
+      - sensor.brianjkinghomeassistantconfig_last_build_state
+      - sensor.brianjkinghomeassistantconfig_last_build_started_at
+      - sensor.brianjkinghomeassistantconfig_last_build_id
+      - sensor.brianjkinghomeassistantconfig_last_build_finished_at
+      - sensor.brianjkinghomeassistantconfig_last_build_duration
+
 
 no_ip:
   domain: !secret noip
@@ -234,6 +241,11 @@ device_tracker:
     #password: !secret router_password 
     #interval_seconds: 10
     #consider_home: 180
+
+#########################################
+# WAKE ON LAN SUPPORT - TESTING
+##########################################
+wake_on_lan:
     
 #########################################
 # MQTT
