@@ -1,5 +1,5 @@
   platform: wake_on_lan
   mac_address: "D8-CB-8A-E2-03-A2"
-  host: 192.168.1.110
-  broadcast_address: "255.255.255.0"
+  host: "192.168.1.110"
+  broadcast_address: "192.168.1.255"
   name: 'brianpc'

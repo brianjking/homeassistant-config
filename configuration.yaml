@@ -245,9 +245,8 @@ device_tracker:
 #########################################
 # WAKE ON LAN SUPPORT - TESTING
 ##########################################
-#wake_on_lan:
-  #mac: "D8-CB-8A-E2-03-A2"
- # broadcast_address: "255.255.255.0"
+wake_on_lan:
+  broadcast_address: "255.255.255.0"
     
 #########################################
 # MQTT
