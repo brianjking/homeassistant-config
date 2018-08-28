@@ -248,8 +248,8 @@ device_tracker:
 # API
 ##########################################
 
-api:
-websocket_api: 
+#api:
+#websocket_api: 
 
 ############################################
 # Weblink
