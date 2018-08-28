@@ -272,6 +272,9 @@ weblink:
     - name: Router Admin
       icon: mdi:router-wireless
       url: http://192.168.1.1
+    - name: Access Point Admin
+      icon: mdi:router-wireless
+      url: http://192.168.1.254
     - name: Modem Admin
       icon: mdi:router-wireless
       url: http://10.0.0.1
