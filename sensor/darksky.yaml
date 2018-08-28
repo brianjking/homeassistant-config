@@ -3,8 +3,6 @@
   api_key: !secret skydark 
   monitored_conditions:
     - apparent_temperature
-    - apparent_temperature_max
-    - apparent_temperature_min
     - temperature
     - humidity
     - icon
