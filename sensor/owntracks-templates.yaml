@@ -1,7 +1,7 @@
 - platform: template
   sensors:
     pixel_battery:
-      friendly_name: Pixel of Paulus
+      friendly_name: Brian Pixel 2 Battery
       unit_of_measurement: "%"
       value_template: '{{ states.device_tracker.brian_pixel2.attributes.battery|int }}'
       device_class: battery
