@@ -63,6 +63,35 @@ recorder:
       - sensor.lyft_home_to_kinna_work
       - sensor.lyft_price
       - sensor.lyft_time
+      - sensor.pihole_ads_blocked_today
+      - sensor.pihole_dns_queries_today
+      - sensor.pihole_queries_cached
+      - sensor.weather_ozone
+      - sensor.brianjkinghomeassistantconfig_state
+      - sensor.brianjkinghomeassistantconfig_last_build_state
+      - sensor.brianjkinghomeassistantconfig_last_build_started_at
+      - sensor.brianjkinghomeassistantconfig_last_build_id
+      - sensor.brianjkinghomeassistantconfig_last_build_finished_at
+      - sensor.brianjkinghomeassistantconfig_last_build_duration
+      - binary_sensor.1up_brianjkingme
+      - binary_sensor.1upkeyboardscom
+      - binary_sensor.brianjkingcom
+      - binary_sensor.brianjkingio 
+      - binary_sensor.eebrianjkingcom_ip
+      - binary_sensor.hass 
+      - binary_sensor.robotberame
+      - sensor.load_5m
+      - sensor.load_15m
+      - sensor.memory_free
+      - sensor.memory_use_percent
+      - sensor.allergy_index_forecasted_average_2
+      - sensor.allergy_index_historical_average_2
+      - sensor.cold__flu_forecasted_average_2
+      - sensor.allergy_index_today
+      - sensor.allergy_index_tomorrow
+      - sensor.us_air_pollution_level
+      - sensor.us_air_quality_index
+      - sensor.us_main_pollutant
 
 no_ip:
   domain: !secret noip
@@ -177,8 +206,8 @@ sun:
 #camera:
  # - platform: usps
  #   scan_interval: 5
-#  - platform: mjpeg
-#    mjpeg_url: https://192.168.1.107:8000/video
+ #  - platform: mjpeg
+ #    mjpeg_url: https://192.168.1.107:8000/video
 ################################
 # Z-WAVE #######################
 ################################
@@ -191,7 +220,7 @@ zwave:
 # Device Tracker
 ############################################
 device_tracker:
-  #- platform: owntracks
+  - platform: owntracks_http
   - platform: tplink
     host: 192.168.1.1
     username: !secret router_username
