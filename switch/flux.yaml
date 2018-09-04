@@ -8,5 +8,4 @@
   sunset_colortemp: 3000
   stop_colortemp: 2000
   disable_brightness_adjust: True 
-  mode: xy
-  #mode: mired
+  mode: mired
