@@ -1,0 +1,11 @@
+- name: Home
+  latitude: !secret homelatitude
+  longitude: !secret homelongitude
+  radius: 100
+  icon: mdi:home-circle
+
+- name: KT Work
+  latitude: !secret kworklatitude
+  longitude: !secret kworklongitude
+  radius: 250
+  icon: mdi:briefcase
