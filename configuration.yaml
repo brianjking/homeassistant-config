@@ -200,6 +200,11 @@ media_player 2:
 
 media_player 3:
   platform: cast
+
+media_player 4:
+ platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
   
 # Track the sun
 sun:
@@ -273,9 +278,6 @@ weblink:
     - name: Router Admin
       icon: mdi:router-wireless
       url: http://192.168.1.1
-    - name: Access Point Admin
-      icon: mdi:router-wireless
-      url: http://192.168.1.254
     - name: Modem Admin
       icon: mdi:router-wireless
       url: http://10.0.0.1

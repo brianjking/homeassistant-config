@@ -197,6 +197,7 @@
   Droplets:
     entities:
       - switch.eebrianjkingcom
+      - switch.ubuntu18
       - binary_sensor.eebrianjkingcom
   Doors:
     entities:
