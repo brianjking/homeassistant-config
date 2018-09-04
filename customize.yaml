@@ -1,12 +1,15 @@
     sensor.speedtest_download:
       friendly_name: Down (Speedtest)
       icon: 'mdi:download'
+      emulated_hue_hidden: true
     sensor.speedtest_upload:
       friendly_name: Up (Speedtest)
       icon: 'mdi:upload'
+      emulated_hue_hidden: true
     sensor.speedtest_ping:
       friendly_name: Ping (Speedtest)
       icon: 'mdi:speedometer'
+      emulated_hue_hidden: true
     group.all_lights:
       hidden: false
       icon: 'mdi:lightbulb-on'
@@ -14,11 +17,11 @@
     group.livingroom_lights:
       friendly_name: Living Room Lights
       icon: 'mdi:lightbulb'
-      emulated_hue: true
+      emulated_hue_hidden: false
       emulated_hue_name: Living Room
     switch.tribot:
       icon: 'mdi:lightbulb'
-      emulated_hue: true
+      emulated_hue_hidden: false
     group.all_devices:
       hidden: false
       friendly_name: Family
@@ -118,7 +121,24 @@
     group.kitchen_lights:
       icon: 'mdi:lightbulb'
       friendly_name: Kitchen Lights
-      emulated_hue_name: Kitchen 
+      emulated_hue_name: Kitchen
+    group.office_lights:
+      icon: 'mdi:lightbulb'
+      friendly_name: Office Lights
+      emulated_hue_name: Office 
+    group.uptimerobot: 
+      emulated_hue_hidden: true
+    automation.log_level:
+      emulated_hue_hidden: true
+    group.home_assistant_log_level:
+      emulated_hue_hidden: true
+    input_select.log_level:
+      emulated_hue_hidden: true
+    group.finance:
+      emulated_hue_hidden: true
+    group.3d_print:
+      emulated_hue_hidden: true
+
 
      
 

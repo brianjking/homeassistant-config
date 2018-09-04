@@ -26,12 +26,12 @@
     icon: mdi:briefcase
     view: yes
     entities:
+      - group.office_lights
       - light.officebotfloor
       - light.officebot
       - group.internet
       - group.weather
       - group.packages
-      - group.finance
       - media_player.google_play__blackbox
       - group.all_devices
       - switch.wake_on_lan
@@ -172,7 +172,7 @@
   kitchen_lights:
     entities:
       - light.kitchen
-      - light.kitchen_sink
+      - light.kitchen_sink  
   3D_print:
     entities:  
     - sensor.octoprint_actual_bed_temp
