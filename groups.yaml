@@ -230,13 +230,6 @@
   Camera: 
     entities:
       - camera.mjpeg_camera
-  Finance:
-    entities:
-      - sensor.bitcoin 
-      - sensor.ethereum
-      - sensor.nano
-      - sensor.monero
-      - sensor.binancecoin
   PiHole:
     entities: 
       - sensor.pihole_ads_blocked_today

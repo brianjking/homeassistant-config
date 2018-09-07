@@ -159,7 +159,6 @@ logger:
     homeassistant.components.scene.lifx_cloud: debug
     py.warnings: error
     root: warn
-    homeassistant.components.switch.flux: debug
 
 tts: 
   - platform: google

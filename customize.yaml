@@ -118,6 +118,7 @@
     group.finance:
       icon: 'mdi:finance'
       hidden: false
+      emulated_hue_hidden: true
     group.kitchen_lights:
       icon: 'mdi:lightbulb'
       friendly_name: Kitchen Lights
@@ -133,8 +134,6 @@
     group.home_assistant_log_level:
       emulated_hue_hidden: true
     input_select.log_level:
-      emulated_hue_hidden: true
-    group.finance:
       emulated_hue_hidden: true
     group.3d_print:
       emulated_hue_hidden: true
