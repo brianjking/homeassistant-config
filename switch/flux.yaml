@@ -1,7 +1,6 @@
   platform: flux
   lights:
     - light.officebotfloor
-  name: Fluxer
   start_time: '7:00'
   stop_time: '23:59'
   #start_colortemp: 3100

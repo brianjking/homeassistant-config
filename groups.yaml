@@ -35,7 +35,7 @@
       - media_player.google_play__blackbox
       - group.all_devices
       - switch.wake_on_lan
-      - switch.fluxer
+      - switch.flux
       - automation.fluxer_switch_on_by_default
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
