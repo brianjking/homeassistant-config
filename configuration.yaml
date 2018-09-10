@@ -38,9 +38,6 @@ recorder:
       - sensor.weather_hourly_summary
       - sensor.weather_daily_summary
       - sensor.weather_wind_speed
-      - sensor.speedtest_download
-      - sensor.speedtest_upload
-      - sensor.speedtest_ping
       - sensor.cpu_use
       - sensor.ram_free
       - sensor.ram_use
