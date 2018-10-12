@@ -262,12 +262,11 @@ wake_on_lan:
 #########################################
 # MQTT
 ##########################################
-# Temporarily disabled.
-#mqtt:
-  #broker: !secret mqttbroker
-  #port: 19742
-  #username: !secret mqttuser
-  #password: !secret mqttpassword
+mqtt:
+  broker: !secret mqttbroker
+  port: 1883
+  username: !secret mqttuser
+  password: !secret mqttpassword
 
 #########################################
 # API
