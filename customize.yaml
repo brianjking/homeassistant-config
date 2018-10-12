@@ -137,6 +137,12 @@
       emulated_hue_hidden: true
     group.3d_print:
       emulated_hue_hidden: true
+    sensor.usps_mail:
+      friendly_name: USPS Mail
+      icon: mdi:email-outline
+    sensor.usps_packages:
+      friendly_name: USPS Packages
+      icon: mdi:package-variant
 
 
      
