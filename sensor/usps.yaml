@@ -1,0 +1,11 @@
+- platform: mqtt
+  name: 'USPS Mail'
+  state_topic: '/usps/mails'
+  value_template: "{{ value }}"
+
+- platform: mqtt
+  name: USPS Packages
+  state_topic: '/usps/packages'
+  value_template: "{{ value }}"
+
+
