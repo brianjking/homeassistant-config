@@ -91,12 +91,6 @@
       - group.uptimerobot
       - group.pihole
       - group.network
-  printer:
-    name: 3D
-    icon: mdi:printer-3d
-    view: yes
-    entities: 
-      - group.3d_print 
   Internet: 
     - sensor.speedtest_download
     - sensor.speedtest_upload
@@ -180,14 +174,6 @@
     entities:
       - light.kitchen
       - light.kitchen_sink  
-  3D_print:
-    entities:  
-    - sensor.octoprint_actual_bed_temp
-    - sensor.octoprint_actual_tool0_temp
-    - sensor.octoprint_current_state
-    - sensor.octoprint_job_percentage
-    - sensor.octoprint_target_bed_temp
-    - sensor.octoprint_target_tool0_temp
   Crime:
     entities: 
     - sensor.crimereports
