@@ -238,6 +238,9 @@ device_tracker:
   - platform: tile
     username: !secret tilelogin
     password: !secret tilepass
+    monitored_variables:
+      - tile
+      - phone
   #- platform: owntracks_http
   #- platform: nmap_tracker
     #hosts: 
