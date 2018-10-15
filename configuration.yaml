@@ -246,12 +246,7 @@ device_tracker:
   - platform: tile
     username: !secret tilelogin
     password: !secret tilepass
-  #- platform: tplink
-    #host: 192.168.1.1
-    #username: !secret router_username
-    #password: !secret router_password 
-    #interval_seconds: 10
-    #consider_home: 180
+ 
 
 #########################################
 # WAKE ON LAN SUPPORT - TESTING
@@ -262,11 +257,11 @@ wake_on_lan:
 #########################################
 # MQTT
 ##########################################
-mqtt:
-  broker: !secret mqttbroker
-  port: 1883
-  username: !secret mqttuser
-  password: !secret mqttpassword
+#mqtt:
+#  broker: !secret mqttbroker
+#  port: 1883
+#  username: !secret mqttuser
+#  password: !secret mqttpassword
 
 #########################################
 # API
