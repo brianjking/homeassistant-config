@@ -186,7 +186,6 @@
       - sensor.office_motion_battery
       - sensor.front_door_sensor_battery
       - sensor.livingroom_sensor_battery
-      - sensor.pixel_battery
   Droplets:
     entities:
       - switch.eebrianjkingcom
