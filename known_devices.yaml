@@ -168,7 +168,7 @@ wmdxyokj_brian_oneplus:
   name: Brian Pixel 2
   gravatar: brianjosephking@gmail.com
   picture:
-  track: true
+  track: false
   vendor: HTC Corporation
 
 94513d1342e9:
@@ -206,3 +206,78 @@ e4f04222921c:
   picture:
   track: false
   vendor: unknown
+
+d073d5350227:
+  hide_if_away: false
+  icon:
+  mac: D0:73:D5:35:02:27
+  name: d073d5350227
+  picture:
+  track: false
+
+e894f6a31364:
+  hide_if_away: false
+  icon:
+  mac: E8:94:F6:A3:13:64
+  name: e894f6a31364
+  picture:
+  track: false
+
+a42bb0a50946:
+  hide_if_away: false
+  icon:
+  mac: A4:2B:B0:A5:09:46
+  name: a42bb0a50946
+  picture:
+  track: false
+
+b827eb1f4483:
+  hide_if_away: false
+  icon:
+  mac: B8:27:EB:1F:44:83
+  name: b827eb1f4483
+  picture:
+  track: false
+
+brian_pixel2:
+  hide_if_away: false
+  icon:
+  mac: 40:4E:36:86:5A:04
+  gravatar: brianjosephking@gmail.com 
+  name: Brian Pixel 2
+  picture:
+  track: true
+
+tile_pbf363105b9ab0786472c2a2a9a0a2b11:
+  hide_if_away: false
+  icon: mdi:view-grid
+  mac:
+  name: tile pbf363105b9ab0786472c2a2a9a0a2b11
+  picture:
+  track: false
+
+tile_66a49a40e93404a1:
+   hide_if_away: false
+   icon: mdi:view-grid
+   mac:
+   gravatar: brianjosephking@gmail.com 
+   name: Brian (Tile)
+   picture: 
+   track: true
+
+tile_7017a692a386c2f3:
+  hide_if_away: false
+  icon: mdi:view-grid
+  mac:
+  name: Kinna (Tile)
+  gravatar: kinna3@outlook.com
+  picture:
+  track: true
+
+tile_29dee6a939728d74:
+  hide_if_away: false
+  icon: mdi:shopping
+  mac:
+  name: Brian (bag)
+  picture:
+  track: true
