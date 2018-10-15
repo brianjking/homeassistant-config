@@ -67,7 +67,7 @@ d073d510e1d0:
   mac: 4C:66:41:39:55:7F
   name: Kinna Galaxy S7
   picture:
-  gravatar: kinna3@outlook.com
+  gravatar: !secret kgravatar
   track: true
   vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
 
