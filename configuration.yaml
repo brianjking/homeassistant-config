@@ -238,9 +238,9 @@ device_tracker:
   - platform: tile
     username: !secret tilelogin
     password: !secret tilepass
+    show_inactive: true
     monitored_variables:
       - TILE 
-      - PHONE
   #- platform: owntracks_http
   #- platform: nmap_tracker
     #hosts: 
