@@ -161,10 +161,6 @@ logger:
 tts: 
   - platform: google
 
-#octoprint:
-#  host: 192.168.1.111
-#  api_key: !secret octoprint 
-
 digital_ocean:
   access_token: !secret digitaloceantoken
 
@@ -239,20 +235,21 @@ zwave:
 # Device Trackers
 ############################################
 device_tracker:
-  - platform: owntracks_http
+  - platform: tile
+    username: !secret tilelogin
+    password: !secret tilepass
+    show_inactive: true
+    monitored_variables:
+      - TILE 
   - platform: nmap_tracker
     hosts: 
       - 192.168.1.104
       - 192.168.1.105
     home_interval: 25
     new_device_defaults:
-      track_new_devices: False
-  #- platform: tplink
-    #host: 192.168.1.1
-    #username: !secret router_username
-    #password: !secret router_password 
-    #interval_seconds: 10
-    #consider_home: 180
+      track_new_devices: True
+  
+ 
 
 #########################################
 # WAKE ON LAN SUPPORT - TESTING
@@ -263,11 +260,11 @@ wake_on_lan:
 #########################################
 # MQTT
 ##########################################
-mqtt:
-  broker: !secret mqttbroker
-  port: 1883
-  username: !secret mqttuser
-  password: !secret mqttpassword
+#mqtt:
+#  broker: !secret mqttbroker
+#  port: 1883
+#  username: !secret mqttuser
+#  password: !secret mqttpassword
 
 #########################################
 # API
