@@ -260,7 +260,6 @@ tile_66a49a40e93404a1:
    hide_if_away: false
    icon: mdi:key-variant
    mac:
-   gravatar: !secret bgravatar  
    name: Brian (Keys Tile)
    picture: 
    track: true
