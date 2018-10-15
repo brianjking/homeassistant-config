@@ -258,10 +258,10 @@ tile_pbf363105b9ab0786472c2a2a9a0a2b11:
 
 tile_66a49a40e93404a1:
    hide_if_away: false
-   icon: mdi:view-grid
+   icon: mdi:key-variant
    mac:
    gravatar: !secret bgravatar  
-   name: Brian (Tile)
+   name: Brian (Keys Tile)
    picture: 
    track: true
 
@@ -270,7 +270,6 @@ tile_7017a692a386c2f3:
   icon: mdi:shopping
   mac:
   name: Kinna (Tile)
-  gravatar: !secret kgravatar
   picture:
   track: true
 
@@ -278,6 +277,6 @@ tile_29dee6a939728d74:
   hide_if_away: false
   icon: mdi:shopping
   mac:
-  name: Brian (bag)
+  name: Brian (Bag Tile)
   picture:
   track: true
