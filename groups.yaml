@@ -79,12 +79,11 @@
       - group.all_devices
       - group.internet 
       - group.system
-      - group.crime
       - group.battery
       - group.droplets
-      - group.comed
       - input_select.log_level
       - group.home_assistant
+      - group.doors
       - input_select.theme_select
       - group.travisci
       - group.camera
