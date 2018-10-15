@@ -68,7 +68,7 @@ d073d510e1d0:
   name: Kinna Galaxy S7
   picture:
   gravatar: !secret kgravatar
-  track: true
+  track: false
   vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
 
 340286642b8e:
@@ -161,16 +161,6 @@ wmdxyokj_brian_oneplus:
   track: false
   vendor: Apple, Inc.
 
-404e36865a04:
-  hide_if_away: false
-  icon:
-  mac: 40:4E:36:86:5A:04
-  name: Brian Pixel 2
-  gravatar: !secret bgravatar
-  picture:
-  track: false
-  vendor: HTC Corporation
-
 94513d1342e9:
   hide_if_away: false
   icon:
@@ -246,7 +236,7 @@ brian_pixel2:
   gravatar: !secret bgravatar 
   name: Brian Pixel 2
   picture:
-  track: true
+  track: false
 
 tile_pbf363105b9ab0786472c2a2a9a0a2b11:
   hide_if_away: false
