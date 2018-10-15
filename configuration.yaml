@@ -235,17 +235,18 @@ zwave:
 # Device Trackers
 ############################################
 device_tracker:
-  - platform: owntracks_http
-  - platform: nmap_tracker
-    hosts: 
-      - 192.168.1.104
-      - 192.168.1.105
-    home_interval: 25
-    new_device_defaults:
-      track_new_devices: True
   - platform: tile
     username: !secret tilelogin
     password: !secret tilepass
+  #- platform: owntracks_http
+  #- platform: nmap_tracker
+    #hosts: 
+      #- 192.168.1.104
+      #- 192.168.1.105
+    #home_interval: 25
+    #new_device_defaults:
+      #track_new_devices: True
+  
  
 
 #########################################
