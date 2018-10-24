@@ -26,8 +26,8 @@ http:
 # DATABASE SETUP USING MySQL
 recorder:
   db_url: !secret db_url
-  purge_interval: 2
-  purge_keep_days: 3
+  purge_interval: 1
+  purge_keep_days: 10
   exclude:
     entities:
       - sensor.weather_apparent_temperature
@@ -119,6 +119,11 @@ config:
 discovery:
 # View all events in a logbook
 logbook:
+  include:
+    entities: 
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.speedtest_ping
   exclude: 
     entities:
       - sensor.brianjkinghomeassistantconfig_last_build_duration
@@ -283,7 +288,7 @@ weblink:
       url: http://192.168.1.1
     - name: Modem Admin
       icon: mdi:router-wireless
-      url: http://10.0.0.1
+      url: http://192.168.0.1
 
 ############################################       
 # Includes
