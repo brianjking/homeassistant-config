@@ -100,7 +100,8 @@ recorder:
 no_ip:
   domain: !secret noip
   username: !secret noipusername
-  password: !secret noippassword     
+  password: !secret noippassword
+  timeout: 60     
   
 history:  
 
