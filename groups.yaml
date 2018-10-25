@@ -4,6 +4,8 @@
     view: yes
     entities:
       - group.all_lights
+      - group.doors
+      - group.camera
       - media_player.raptor
       - group.weather
       - media_player.google_play__blackbox
@@ -12,7 +14,6 @@
       - media_player.spotify_2
       - group.all_automations
       - updater.updater
-      - group.doors
       - group.travel_time
   living_room:
     name: Living Room
@@ -29,8 +30,7 @@
     view: yes
     entities:
       - group.office_lights
-      - light.officebotfloor
-      - light.officebot
+      - group.camera
       - group.internet
       - media_player.spotify
       - media_player.spotify_2

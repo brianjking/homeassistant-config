@@ -229,6 +229,8 @@ camera:
   - platform: generic
     name: USPS Mail Pictures
     still_image_url: 'https://192.168.1.100:8123/www/todays_mails.gif'
+  - platform: mjpeg
+    mjpeg_url: https://192.168.1.133:8000/video
 ################################
 # Z-WAVE #######################
 ################################
