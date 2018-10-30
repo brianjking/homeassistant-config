@@ -249,8 +249,8 @@ device_tracker:
     monitored_variables:
       - TILE
   - platform: bluetooth_le_tracker
-    track_new_devices: yes
-  - platform: bluetooth_tracker
+    device_id: hci0
+    track_new_devices: True
 
   #- platform: nmap_tracker
     #hosts: 
