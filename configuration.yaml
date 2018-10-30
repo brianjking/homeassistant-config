@@ -248,7 +248,9 @@ device_tracker:
     show_inactive: true
     monitored_variables:
       - TILE
-  - platform: bluetooth_le_tracker 
+  - platform: bluetooth_le_tracker
+    track_new_devices: yes
+
   #- platform: nmap_tracker
     #hosts: 
      # - 192.168.1.104
