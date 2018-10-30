@@ -230,6 +230,8 @@ camera:
     still_image_url: !secret still_image_url
   - platform: mjpeg
     mjpeg_url: http://192.168.1.133:8000/video
+  - platform: mjpeg
+    mjpeg_url: http://192.168.1.105:8000/video
 ################################
 # Z-WAVE #######################
 ################################
