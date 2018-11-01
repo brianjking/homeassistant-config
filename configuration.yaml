@@ -193,15 +193,6 @@ scene:
 # MEDIA PLAYERS
 ############################################
 
-# Google Play Music - Brian Desktop
-media_player 2:
-  platform: gpmdp
-  host: 192.168.1.110
-  name: Google Play - Blackbox
-
-media_player 3:
-  platform: cast
-
 media_player 4:
   platform: spotify
   client_id: !secret spotify_client_id
