@@ -120,11 +120,6 @@ config:
 discovery:
 # View all events in a logbook
 logbook:
-  include:
-    entities: 
-      - sensor.speedtest_download
-      - sensor.speedtest_upload
-      - sensor.speedtest_ping
   exclude: 
     entities:
       - sensor.brianjkinghomeassistantconfig_last_build_duration
