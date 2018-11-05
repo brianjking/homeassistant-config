@@ -137,6 +137,7 @@
       - binary_sensor.eebrianjkingcom_ip
       - binary_sensor.hass 
       - binary_sensor.robotberame
+      - binary_sensor.brianandkinnacom
 
 
   System:
