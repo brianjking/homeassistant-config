@@ -32,7 +32,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * [TP-Link HS-105 Smart Plug](https://smile.amazon.com/gp/product/B01K1JVZOE/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
 * [Ecolink Z-Wave Door/Window Sensor](http://amzn.to/2outQ1r)
 * Z-Wave Light Bulb
-* [Google Home Mini](https://store.google.com/us/product/google_home_mini?hl=en-US)
+* [Google Home Mini](https://store.google.com/us/product/google_home_mini?hl=en-US) (Quantity: 2)
 * [Tile Mate Trackers](http://ssqt.co/mee1Ksr)
 
 
