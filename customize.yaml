@@ -143,6 +143,9 @@
     sensor.usps_packages:
       friendly_name: USPS Packages
       icon: mdi:package-variant
+    media_player.googlehome0619:
+      icon: 'mdi:google-home'
+      name: Kitchen Googles 
 
 
      
