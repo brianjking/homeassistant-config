@@ -43,6 +43,7 @@
       - automation.fluxer_switch_on_by_default
       - automation.office_lights_motion_off
       - automation.office_lights_motion_on
+      - media_player.kitchen_googles
   bedroom:
     name: Bedroom
     icon: mdi:hotel
@@ -62,6 +63,7 @@
       - automation.kitchen_off_at_midnight
       - automation.make_kitchen_less_dark
       - automation.kitchen_light_on_at_sunset     
+      - media_player.kitchen_googles
   Travel:
     name: Travel 
     icon: mdi:train 
