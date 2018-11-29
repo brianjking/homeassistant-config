@@ -1,3 +1,6 @@
  - platform: tplink
    host: 192.168.1.121
    name: Tribot
+ - platform: tplink
+   host: 192.168.1.122
+   name: Christmas Tree  
