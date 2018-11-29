@@ -22,6 +22,9 @@
     switch.tribot:
       icon: 'mdi:lightbulb'
       emulated_hue_hidden: false
+    switch.christmas_tree:
+      icon: 'mdi:lightbulb'
+      emulated_hue_hidden: false
     group.all_devices:
       hidden: false
       friendly_name: Family
