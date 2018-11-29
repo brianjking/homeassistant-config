@@ -164,6 +164,10 @@
     - sensor.usps_mail
     - sensor.usps_packages
     - camera.usps_mail_pictures
+    - sensor.packages_in_transit_2
+    - sensor.packages_ready_to_be_picked_up
+    - sensor.packages_not_found
+    - sensor.packages_ready_to_be_picked_up
   livingroom_lights:
     entities:  
     - switch.tribot
