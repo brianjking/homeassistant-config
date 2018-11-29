@@ -179,6 +179,13 @@ notify:
 # LIGHT
 ############################################
 
+light:
+  - platform: switch
+    name: Tribot
+    entity_id: switch.tribot
+  - platform: switch
+    name: Christmas Tree 
+    entity_id: switch.christmas_tree
    
 
 scene:
