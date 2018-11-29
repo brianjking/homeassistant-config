@@ -34,7 +34,6 @@
       - group.internet
       - media_player.spotify
       - media_player.spotify_2
-      - group.weather
       - group.packages
       - media_player.google_play__blackbox
       - group.all_devices
