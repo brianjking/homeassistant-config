@@ -24,6 +24,9 @@
       - media_player.raptor
       - automation.living_room_lights_on_at_sunset
       - automation.living_room_lights_on
+      - automation.christmas_tree_turn_on
+      - automation.christmas_tree_turn_off
+      - switch.christmas_tree
   office:
     name: Office
     icon: mdi:briefcase
