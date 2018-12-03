@@ -1,0 +1,19 @@
+- alias: Christmas Tree Turn On
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '17:30'
+  action: 
+    service: homeassistant.turn_on
+    entity_id: light.christmas_tree
+
+- alias: Christmas Tree Turn Off
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '01:00'
+  action: 
+    service: homeassistant.turn_off
+    entity_id: light.christmas_tree
