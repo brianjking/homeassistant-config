@@ -49,7 +49,6 @@
     view: yes
     entities:
       - light.sleepbot
-      - group.weather
       - media_player.small_googles
   kitchen: 
     name: Kitchen
@@ -69,7 +68,8 @@
     view: yes
     entities: 
       - group.travel_time
-      - group.lyft 
+      - group.lyft
+      - group.weather 
   control:
     name: control
     icon: mdi:robot
@@ -86,7 +86,6 @@
       - group.home_assistant
       - group.doors
       - input_select.theme_select
-      - group.travisci
       - group.camera
       - group.uptimerobot
       - group.pihole
