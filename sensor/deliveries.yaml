@@ -13,7 +13,7 @@
                0
             {% endif %}
           {% endmacro %}
-          {{in_transit(states.sensor.usps_packages)|int + in_transit(states.sensor.fedex)|int}}
+          {{in_transit(states.sensor.packages_in_transit_2)|int + in_transit(states.sensor.fedex)|int}}
 
       deliveries_today:
         friendly_name: "Today's Deliveries"
@@ -25,4 +25,4 @@
                0
             {% endif %}
           {% endmacro %}
-          {{delivered(states.sensor.usps_packages)|int + delivered(states.sensor.fedex)|int}}
+          {{delivered(states.sensor.packages_delivered)|int + delivered(states.sensor.fedex)|int}}
