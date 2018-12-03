@@ -2,13 +2,13 @@
   hide_entity: True 
   trigger:
       platform: state
-      entity_id: sensor.deliveries_today
+      entity_id: sensor.packages_delivered
   condition:
       - condition: template
         value_template: '{{trigger.to_state.state|int > trigger.from_state.state|int}}'
-      - condition: state
-        entity_id: group.all_devices
-        state: 'home'
+      #- condition: state
+      #  entity_id: group.all_devices
+       # state: 'home'
   action:
       - service: notify.simplepush
         data_template:
