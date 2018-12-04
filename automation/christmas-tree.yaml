@@ -13,7 +13,7 @@
   hide_entity: False
   trigger:
     platform: time
-    at: '01:00'
+    at: '1:10:00'
   action: 
     service: homeassistant.turn_off
     entity_id: light.christmas_tree
