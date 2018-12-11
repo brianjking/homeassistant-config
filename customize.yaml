@@ -149,7 +149,11 @@
     binary_sensor.kinna_tile_boolean:
       icon: mdi:shopping
     binary_sensor.brian_bag_tile_boolean:
-      icon: mdi:shopping 
+      icon: mdi:shopping
+    binary_sensor.brian_keys_tile_boolean:
+      icon: key-variant
+    binary_sensor.spare_keys_tile_boolean:
+      icon: key-variant 
 
 
      

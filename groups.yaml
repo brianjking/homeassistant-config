@@ -241,8 +241,10 @@
       - weblink.modem_admin
       - weblink.access_point_admin
   Family:
-    entities: 
+    entities:
+      - binary_sensor.brian_keys_tile_boolean
       - binary_sensor.kinna_tile_boolean
+      - binary_sensor.spare_keys_tile_boolean 
       - binary_sensor.brian_bag_tile_boolean
 
 
