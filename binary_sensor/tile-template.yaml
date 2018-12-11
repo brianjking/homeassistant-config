@@ -6,7 +6,22 @@
 
 - platform: template
   sensors:
+      brian_keys_tile_boolean:
+        friendly_name: "Brian"
+        value_template: "{{ states.sensor.briankeystile.state == 'true' }}"
+
+- platform: template
+  sensors:
       brian_bag_tile_boolean:
         friendly_name: "Brian Bag Tile"
         value_template: "{{ states.sensor.brianbagtile.state == 'true' }}"
 
+- platform: template
+  sensors:
+      spare_keys_tile_boolean:
+        friendly_name: "Spare Keys Tile"
+        value_template: "{{ states.sensor.sparekeystile.state == 'true' }}"
+
+
+
+sensor.
