@@ -25,9 +25,6 @@
     switch.christmas_tree:
       icon: 'mdi:lightbulb'
       emulated_hue_hidden: false
-    group.all_devices:
-      hidden: false
-      friendly_name: Family
     binary_sensor.__sensor_2_0:
       friendly_name: Motion Sensor
     binary_sensor.ecolink_pir_motion_sensor_sensor_2_0:

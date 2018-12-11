@@ -39,7 +39,7 @@
       - media_player.spotify_2
       - group.packages
       - media_player.google_play__blackbox
-      - group.all_devices
+      - group.family
       - switch.wake_on_lan
       - switch.flux
       - automation.fluxer_switch_on_by_default
@@ -80,7 +80,7 @@
     entities: 
       - script.get_latest_config
       - group.commits
-      - group.all_devices
+      - group.family
       - group.internet 
       - group.system
       - group.battery
@@ -240,6 +240,9 @@
       - weblink.router_admin
       - weblink.modem_admin
       - weblink.access_point_admin
+  Family:
+    entities: 
+      - binary_sensor.kinna_tile_boolean
 
 
 
