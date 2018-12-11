@@ -21,7 +21,3 @@
       spare_keys_tile_boolean:
         friendly_name: "Spare Keys Tile"
         value_template: "{{ states.sensor.sparekeystile.state == 'true' }}"
-
-
-
-sensor.
