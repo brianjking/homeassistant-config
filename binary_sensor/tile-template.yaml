@@ -1,5 +1,5 @@
 - platform: template
   sensors:
       kinna_tile_boolean:
-        friendly_name: "Kinna Tile Location"
+        friendly_name: "Kinna"
         value_template: "{{ states.sensor.kinnatile.state == 'true' }}"

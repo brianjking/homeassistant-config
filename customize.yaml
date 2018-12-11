@@ -145,7 +145,10 @@
       icon: mdi:package-variant
     media_player.googlehome0619:
       icon: 'mdi:google-home'
-      name: Kitchen Googles 
+      name: Kitchen Googles
+    binary_sensor.kinna_tile_boolean:
+      icon: mdi:shopping
+       
 
 
      
