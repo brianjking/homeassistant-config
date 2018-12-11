@@ -1,3 +1,3 @@
 - platform: rest
   name: KinnaTile
-  resource: http://192.168.1.100:5000/api/search/c8:31:53:38:c9:f1
+  resource: http://0.0.0.0:5000/api/search/c8:31:53:38:c9:f1
