@@ -5,3 +5,11 @@
 - platform: rest
   name: BrianBagTile
   resource: http://0.0.0.0:5000/api/search/d5:a8:5b:68:b3:92
+
+- platform: rest
+  name: BrianKeysTile
+  resource: http://0.0.0.0:5000/api/search/d3:a5:72:80:83:6a 
+
+- platform: rest
+  name: SpareKeysTile
+  resource: http://0.0.0.0:5000/api/search/d7:57:d9:9d:8c:b4 
