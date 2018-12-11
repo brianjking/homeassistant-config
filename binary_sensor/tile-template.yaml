@@ -1,0 +1,5 @@
+- platform: template
+  sensors:
+      car_keys_boolean:
+        friendly_name: "Kinna Tile Location"
+        value_template: "{{ states.sensor.kinnatile.state == 'true' }}"
