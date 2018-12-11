@@ -151,9 +151,9 @@
     binary_sensor.brian_bag_tile_boolean:
       icon: mdi:shopping
     binary_sensor.brian_keys_tile_boolean:
-      icon: key-variant
+      icon: mdi:key-variant
     binary_sensor.spare_keys_tile_boolean:
-      icon: key-variant 
+      icon: mdi:key-variant 
 
 
      
