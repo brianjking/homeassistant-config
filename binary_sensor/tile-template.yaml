@@ -3,3 +3,10 @@
       kinna_tile_boolean:
         friendly_name: "Kinna"
         value_template: "{{ states.sensor.kinnatile.state == 'true' }}"
+
+- platform: template
+  sensors:
+      brian_bag_tile_boolean:
+        friendly_name: "Brian Bag Tile"
+        value_template: "{{ states.sensor.brianbagtile.state == 'true' }}"
+
