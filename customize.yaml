@@ -148,7 +148,8 @@
       name: Kitchen Googles
     binary_sensor.kinna_tile_boolean:
       icon: mdi:shopping
-       
+    binary_sensor.brian_bag_tile_boolean:
+      icon: mdi:shopping 
 
 
      

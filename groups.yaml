@@ -243,6 +243,7 @@
   Family:
     entities: 
       - binary_sensor.kinna_tile_boolean
+      - binary_sensor.brian_bag_tile_boolean
 
 
 
