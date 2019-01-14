@@ -1,5 +1,5 @@
 - alias: Christmas Tree Turn On
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
@@ -9,7 +9,7 @@
     entity_id: light.christmas_tree
 
 - alias: Christmas Tree Turn Off
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: time
