@@ -16,15 +16,16 @@ auth:
 # FRONTEND HTTP PASSWORD PROTECTION SETUP
 http:
   api_password: !secret http_password
-  ssl_certificate: !secret duckdnscert
-  ssl_key: !secret duckdnskey
-  base_url: !secret fakehost2
-  #server_host: 127.0.0.1
-  #use_x_forwarded_for: True
-  #base_url: !secret fakehost
-  #trusted_proxies: 
-   # - 127.0.0.1
-   #- ::1
+  server_host: 127.0.0.1
+  use_x_forwarded_for: True
+  base_url: !secret fakehost
+  trusted_proxies: 
+    - 127.0.0.1
+   - ::1
+  trusted_networks:
+    - 127.0.0.1
+    - ::1
+    - 192.168.1.0/24
 
 # DATABASE SETUP USING MySQL
 recorder:
