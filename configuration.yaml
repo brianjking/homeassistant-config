@@ -21,7 +21,7 @@ http:
   base_url: !secret fakehost
   trusted_proxies: 
     - 127.0.0.1
-   - ::1
+    - ::1
   trusted_networks:
     - 127.0.0.1
     - ::1
