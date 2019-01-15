@@ -18,7 +18,7 @@ http:
   api_password: !secret http_password
   ssl_certificate: !secret duckdnscert
   ssl_key: !secret duckdnskey
-  base_url: !fakehost2
+  base_url: !secret fakehost2
   #server_host: 127.0.0.1
   #use_x_forwarded_for: True
   #base_url: !secret fakehost
