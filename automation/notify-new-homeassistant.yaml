@@ -1,4 +1,5 @@
 - alias: New Home Assistant Version Notifier
+  initial_state: True
   hide_entity: True
   trigger:
     platform: state

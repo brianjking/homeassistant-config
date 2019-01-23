@@ -17,7 +17,7 @@
     action:
       - service: frontend.set_theme
         data_template:
-          name: '{{ ["dark_cyan", "dark_red", "dark_orange", "dark_cyan"] | random  }}'
+          name: '{{ ["midnight", "dark_cyan"] | random  }}'
 
   - alias: Random Lighter Theme At Sunrise
     initial_state: true
@@ -27,4 +27,4 @@
     action:
       - service: frontend.set_theme
         data_template:
-          name: '{{ ["light_beach", "light_green", "light_pink", "default"] | random  }}'
+          name: '{{ ["default"] | random  }}'

@@ -1,4 +1,5 @@
 - alias: Front Door Entryway Light
+  initial_state: True
   trigger:
     platform: state
     entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor
@@ -8,6 +9,7 @@
     entity_id: light.entrybot
 
 - alias: Front Door Entryway WatchDog
+  initial_state: True
   trigger:
     - platform: state
       entity_id:

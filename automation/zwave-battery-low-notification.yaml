@@ -1,9 +1,10 @@
 - alias: 'Battery Low Alert - Office Motion Sensors'
+  initial_state: True
   hide_entity: True
   trigger:
     platform: numeric_state
     entity_id: sensor.office_motion_battery
-    below: 5
+    below: 15
   action:
     service: notify.simplepush
     data:

@@ -1,5 +1,6 @@
 - alias: Home Assistant Startup
   hide_entity: True
+  initial_state: True
   trigger:
     platform: homeassistant
     event: start

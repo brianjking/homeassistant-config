@@ -1,4 +1,5 @@
 - alias: Rainy Day
+  initial_state: True
   trigger:
     platform: state
     entity_id: sensor.weather_precip_intensity
@@ -12,6 +13,7 @@
     entity_id: group.livingroom_lights
 
 - alias: Rain is over
+  initial_state: True
   trigger:
     - platform: state
       entity_id: sensor.weather_precip_intensity
