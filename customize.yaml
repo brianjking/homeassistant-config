@@ -25,8 +25,6 @@
     switch.christmas_tree:
       icon: 'mdi:lightbulb'
       emulated_hue_hidden: false
-    binary_sensor.__sensor_2_0:
-      friendly_name: Motion Sensor
     binary_sensor.ecolink_pir_motion_sensor_sensor_2_0:
       friendly_name: Motion Sensor Ecolink
     group.all_automations:
@@ -99,8 +97,6 @@
       icon: 'mdi:flower'
     sensor.pollen_level_forecast:
       icon: 'mdi:flower'
-    sensor.cold__flu_percentage:
-      icon: 'mdi:snowflake'
     sensor.cold_flu_risk:
       icon: 'mdi:snowflake'
     sensor.home_to_kinna_work:
