@@ -103,8 +103,6 @@
   Weather:
     entities:  
     - sensor.weather_apparent_temperature
-    - sensor.weather_apparent_daily_low_temperature
-    - sensor.weather_apparent_daily_high_temperature
     - sensor.weather_precip
     - sensor.weather_nearest_storm_distance
     - sensor.weather_nearest_storm_bearing
@@ -120,8 +118,6 @@
     - sensor.weather_wind_speed
     - sensor.weather_cloud_coverage
     - sun.sun
-    - sensor.allergy_index_forecasted_average_2
-    - sensor.allergy_index_historical_average_2
     - sensor.allergy_index_today
     - sensor.allergy_index_tomorrow
     - sensor.us_air_pollution_level
@@ -130,14 +126,7 @@
 
   UptimeRobot:
     entities:
-      - binary_sensor.1up_brianjkingme
-      - binary_sensor.1upkeyboardscom
-      - binary_sensor.brianjkingcom
-      - binary_sensor.brianjkingio 
-      - binary_sensor.eebrianjkingcom_ip
       - binary_sensor.hass 
-      - binary_sensor.robotberame
-      - binary_sensor.brianandkinnacom
 
 
   System:
@@ -151,17 +140,8 @@
     - updater.updater
   Packages:
     entities:  
-    - sensor.usps_mail
-    - sensor.usps_packages
-    - sensor.usps
-    - sensor.fedex
-    - sensor.ups
     - sensor.deliveries_today
     - sensor.packages_in_transit
-    - camera.usps_mail
-    - sensor.usps_mail
-    - sensor.usps_packages
-    - camera.usps_mail_pictures
     - sensor.packages_in_transit_2
     - sensor.packages_delivered
     - sensor.packages_ready_to_be_picked_up
@@ -194,7 +174,6 @@
   Droplets:
     entities:
       - switch.eebrianjkingcom
-      - switch.ubuntu18
       - binary_sensor.eebrianjkingcom
   Doors:
     entities:
@@ -224,9 +203,6 @@
       - sensor.brianjkinghomeassistantconfig_last_build_id
       - sensor.brianjkinghomeassistantconfig_last_build_finished_at
       - sensor.brianjkinghomeassistantconfig_last_build_duration
-  Camera: 
-    entities:
-      - camera.mjpeg_camera
   PiHole:
     entities: 
       - sensor.pihole_ads_blocked_today
@@ -236,7 +212,6 @@
     entities: 
       - weblink.router_admin
       - weblink.modem_admin
-      - weblink.access_point_admin
   Family:
     entities:
       - binary_sensor.brian_keys_tile_boolean
