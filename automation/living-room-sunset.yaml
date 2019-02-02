@@ -1,5 +1,5 @@
 - alias: Living Room Lights On At Sunset
-  initial_state: True
+  initial_state: False
   hide_entity: False
   trigger:
     platform: sun
