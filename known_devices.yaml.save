@@ -67,8 +67,8 @@ d073d510e1d0:
   mac: 4C:66:41:39:55:7F
   name: Kinna Galaxy S7
   picture:
-  gravatar: !secret kgravatar
-  track: false
+  gravatar: kinna3@outlook.com
+  track: true
   vendor: SAMSUNG ELECTRO-MECHANICS(THAILAND)
 
 340286642b8e:
@@ -132,7 +132,7 @@ wmdxyokj_brian_oneplus:
   mac: C0:EE:FB:DE:5C:E7
   name: Brian OnePlus3
   picture:
-  gravatar: !secret bgravatar
+  gravatar: brianjosephking@gmail.com
   track: false
   vendor:
 
@@ -160,6 +160,16 @@ wmdxyokj_brian_oneplus:
   picture:
   track: false
   vendor: Apple, Inc.
+
+404e36865a04:
+  hide_if_away: false
+  icon:
+  mac: 40:4E:36:86:5A:04
+  name: Brian Pixel 2
+  gravatar: brianjosephking@gmail.com
+  picture:
+  track: false
+  vendor: HTC Corporation
 
 94513d1342e9:
   hide_if_away: false
@@ -233,56 +243,15 @@ brian_pixel2:
   hide_if_away: false
   icon:
   mac: 40:4E:36:86:5A:04
-  gravatar: !secret bgravatar 
-  name: Brian Pixel 2
+  gravatar: brianjosephking@gmail.com 
+  name: Brian
   picture:
-  track: false
+  track: true
 
 tile_pbf363105b9ab0786472c2a2a9a0a2b11:
   hide_if_away: false
   icon: mdi:view-grid
   mac:
-  name: tile pbf363105b9ab0786472c2a2a9a0a2b11
-  picture:
-  track: false
-
-tile_66a49a40e93404a1:
-   hide_if_away: false
-   icon: mdi:key-variant
-   mac:
-   name: Brian (Keys Tile)
-   picture: 
-   track: true
-
-tile_7017a692a386c2f3:
-  hide_if_away: false
-  icon: mdi:shopping
-  mac:
-  name: Kinna (Tile)
-  picture:
-  track: true
-
-tile_29dee6a939728d74:
-  hide_if_away: false
-  icon: mdi:shopping
-  mac:
-  name: Brian (Bag Tile)
-  picture:
-  track: false
-
-
-tile_2baabd1d55beeb4d:
-  hide_if_away: false
-  icon: mdi:key-variant
-  mac:
-  name: Spare Keys
-  picture:
-  track: true
-
-bk_pixel_2:
-  hide_if_away: false
-  icon:
-  mac:
-  name: bk pixel 2
+  name: tile pixel 2	
   picture:
   track: true
