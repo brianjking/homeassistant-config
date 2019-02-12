@@ -1,7 +1,7 @@
 - alias: Let's Encrypt Certificate Expiry Notification
-    trigger:
-      platform: numeric_state
-      entity_id: sensor.ssl_certificate_expiry
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.ssl_certificate_expiry
       below: 30
     action:
       service: persistent_notification.create
