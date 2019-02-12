@@ -205,9 +205,9 @@
       - sensor.brianjkinghomeassistantconfig_last_build_duration
   PiHole:
     entities: 
-      - sensor.pihole_ads_blocked_today
-      - sensor.pihole_dns_queries_today
-      - sensor.pihole_queries_cached
+      - sensor.pi_hole_ads_blocked_today
+      - sensor.pi_hole_dns_queries_cached
+      - sensor.pi_hole_dns_queries_today
   Network:
     entities: 
       - weblink.router_admin
