@@ -2,7 +2,7 @@
   initial_state: True
   trigger:
     platform: state
-    entity_id: binary_sensor.ecolink_doorwindow_sensor_sensor
+    entity_id: binary_sensor.ecolink_door_window_sensor_sensor
     to: 'on'
   action:
     service: homeassistant.turn_on

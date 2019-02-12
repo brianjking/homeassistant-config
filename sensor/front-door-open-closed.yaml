@@ -2,5 +2,5 @@
   sensors:
     front_door_status:
       friendly_name: 'Front Door'
-      value_template: '{% if is_state("binary_sensor.ecolink_doorwindow_sensor_sensor", "off") %}Closed{% else %}Open{% endif %}'
-      icon_template: '{% if is_state("binary_sensor.ecolink_doorwindow_sensor_sensor", "off") %}mdi:door-closed{% else %}mdi:door-open{% endif %}'
+      value_template: '{% if is_state("binary_sensor.ecolink_door_window_sensor_sensor", "off") %}Closed{% else %}Open{% endif %}'
+      icon_template: '{% if is_state("binary_sensor.ecolink_door_window_sensor_sensor", "off") %}mdi:door-closed{% else %}mdi:door-open{% endif %}'
