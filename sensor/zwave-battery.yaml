@@ -9,7 +9,7 @@
   sensors:
     front_door_sensor_battery:
       friendly_name: 'Front Door Sensor Battery'
-      value_template: '{{ states.zwave.ecolink_doorwindow_sensor.attributes.battery_level }}'
+      value_template: '{{ states.zwave.ecolink_door_window_sensor.attributes.battery_level }}'
       unit_of_measurement: '%'
 
 - platform: template
