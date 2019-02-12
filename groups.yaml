@@ -154,10 +154,10 @@
   office_lights:
     entities:  
     - light.officebot
-    - light.officebotfloor
+    - light.officebot_floor
   kitchen_lights:
     entities:
-      - light.kitchen
+      - light.kitchen_counter
       - light.kitchen_sink  
   Crime:
     entities: 
