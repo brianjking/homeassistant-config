@@ -253,6 +253,7 @@ device_tracker:
     #new_device_defaults:
       #track_new_devices: True
   
+system_health: 
  
 
 #########################################
