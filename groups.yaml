@@ -62,7 +62,7 @@
       - automation.kitchen_off_at_midnight
       - automation.make_kitchen_less_dark
       - automation.kitchen_light_on_at_sunset     
-      - media_player.kitchen_googles
+      - media_player.kitchen_speaker
   Travel:
     name: Travel 
     icon: mdi:train 
@@ -159,9 +159,6 @@
     entities:
       - light.kitchen_counter
       - light.kitchen_sink  
-  Crime:
-    entities: 
-    - sensor.crimereports
   Commits:
     entities:
       - sensor.new_commits
@@ -173,14 +170,11 @@
       - sensor.livingroom_sensor_battery
   Droplets:
     entities:
-      - switch.eebrianjkingcom
-      - binary_sensor.eebrianjkingcom
+      - switch.ee_brianjking_com
+      - binary_sensor.ee_brianjking_com
   Doors:
     entities:
       - sensor.front_door_status
-  ComEd:
-    entities:
-      - sensor.comed_current_hour_average_price
   Home Assistant:
     entities:
       - sensor.homeassistant_uptime
