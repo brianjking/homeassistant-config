@@ -120,9 +120,9 @@
     - sun.sun
     - sensor.allergy_index_today
     - sensor.allergy_index_tomorrow
-    - sensor.us_air_pollution_level
-    - sensor.us_air_quality_index
-    - sensor.us_main_pollutant
+    - sensor.u_s_air_pollution_level
+    - sensor.u_s_air_pollution_level
+    - sensor.u_s_air_quality_index
 
   UptimeRobot:
     entities:
