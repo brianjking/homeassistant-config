@@ -159,6 +159,16 @@ logger:
     py.warnings: error
     root: warn
 
+# Speedtest as per 0.88 release changes
+speedtestdotnet:
+  scan_interval:
+    minutes: 0
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+
 tts: 
   - platform: google
 
