@@ -160,7 +160,7 @@ logger:
     root: warn
 
 # People Tracking 0.88
-people: 
+person: 
 
 
 tts: 
