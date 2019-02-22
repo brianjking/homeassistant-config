@@ -17,4 +17,4 @@
     - precip_type
     - ozone
     - cloud_cover
-  update_interval: '00:30'
+  scan_interval: '00:30'
