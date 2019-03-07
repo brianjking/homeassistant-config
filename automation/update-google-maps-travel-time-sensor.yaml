@@ -3,7 +3,7 @@
   initial_state: 'on'
   trigger:
     - platform: time_pattern
-      minutes: '/10'
+      minutes: '/15'
   condition:
     - condition: time
       after: '09:30:00'
@@ -25,7 +25,7 @@
   initial_state: 'on'
   trigger:
     - platform: time_pattern
-      minutes: '/10'
+      minutes: '/15'
   condition:
     - condition: time
       after: '17:00:00'
