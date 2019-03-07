@@ -1,0 +1,43 @@
+- id: update_morning_commute_sensor
+  alias: "Commute - Update morning commute sensor"
+  initial_state: 'on'
+  trigger:
+    - platform: time_pattern
+      minutes: '/10'
+  condition:
+    - condition: time
+      after: '09:30:00'
+      before: '11:30:00'
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: homeassistant.update
+      data:
+        entity_id: sensor.home_to_kinna_work
+
+- id: update_evening_commute_sensor
+  alias: "Commute - Update evening commute sensor"
+  initial_state: 'on'
+  trigger:
+    - platform: time_pattern
+      minutes: '/10'
+  condition:
+    - condition: time
+      after: '17:00:00'
+      before: '18:30:00'
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+  action:
+    - service: homeassistant.update
+      data:
+        entity_id: sensor.kinna_work_to_home
