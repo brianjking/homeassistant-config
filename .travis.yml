@@ -3,7 +3,7 @@ python:
   - "3.5.3"
   - "3.6.4"
 install:
-  - pip3 install homeassistant
+  - pip3 install homeassistant colorlog
 script:
   - hass -c . --script check_config --info all
 before_install:
