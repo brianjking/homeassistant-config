@@ -170,8 +170,8 @@
       - sensor.livingroom_sensor_battery
   Droplets:
     entities:
-      - switch.ee_brianjking_com
-      - binary_sensor.ee_brianjking_com
+      - switch.webinoly18
+      - binary_sensor.webinoly18
   Doors:
     entities:
       - sensor.front_door_status
