@@ -1,4 +1,4 @@
  - platform: digital_ocean
    droplets:
-      - 'ee.brianjking.com'
+      - 'webinoly18'
 
