@@ -175,6 +175,16 @@ notify:
     platform: simplepush
     device_key: !secret simplepushkey
 
+# Speedtest
+speedtestdotnet:
+  scan_interval:
+    minutes: 90
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+
 #google:
   #client_id: !secret googleclientid
   #client_secret: !secret googleclientsecret
