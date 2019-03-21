@@ -4,10 +4,6 @@
     entity_id: sensor.ssl_certificate_expiry
     below: 30
   action:
-    service: persistent_notification.create
-    data:
-      message: "Renew Let's Encrypt Certificate"
-  action:
     service: notify.simplepush
     data_template:
         message: "Let's Encrypt Certificate Expires in {{ states.sensor.ssl_certificate_expiry.state }}  days."
