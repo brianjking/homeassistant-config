@@ -1,3 +1,4 @@
 - platform: seventeentrack
   username: !secret seventeentrackemail
   password: !secret seventeentrackpassword
+  show_delivered: true
