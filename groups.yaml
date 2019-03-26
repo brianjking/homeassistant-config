@@ -140,13 +140,8 @@
     - updater.updater
   Packages:
     entities:  
-    - sensor.deliveries_today
-    - sensor.packages_in_transit
-    - sensor.packages_in_transit_2
-    - sensor.packages_delivered
-    - sensor.packages_ready_to_be_picked_up
-    - sensor.packages_not_found
-    - sensor.packages_ready_to_be_picked_up
+    - sensor.seventeentrack_packages_delivered
+    - sensor.seventeentrack_packages_in_transit
   livingroom_lights:
     entities:  
     - switch.tribot
