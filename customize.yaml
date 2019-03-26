@@ -151,8 +151,10 @@
     binary_sensor.spare_keys_tile_boolean:
       icon: mdi:key-variant 
     sensor.seventeentrack_packages_delivered:
+      friendly_name: Packages Delivered
       icon: package-variant
     sensor.seventeentrack_packages_in_transit:
       icon: package-variant
+      friendly_name: Packages in Transit
 
 
