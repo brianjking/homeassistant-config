@@ -152,9 +152,9 @@
       icon: mdi:key-variant 
     sensor.seventeentrack_packages_delivered:
       friendly_name: Packages Delivered
-      icon: package-variant
+      icon: mdi:mailbox
     sensor.seventeentrack_packages_in_transit:
-      icon: package-variant
+      icon: mdi:truck-delivery
       friendly_name: Packages in Transit
 
 
