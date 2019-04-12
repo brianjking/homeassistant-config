@@ -74,6 +74,7 @@ Configuration files for [Brian's](https://twitter.com/brianjking) & [Kinna's](ht
 * Send push notification when there is a new version of Home Assistant released - [automation](https://github.com/brianjking/homeassistant-config/blob/master/automation/notify-new-homeassistant.yaml)
 * Send push notification when Home Assistant starts up - [automation](https://github.com/brianjking/homeassistant-config/blob/master/automation/hass-started.yaml)
 * Turn kitchen lights off at midnight *(useful for when away on holiday, etc)* - [automation](https://github.com/brianjking/homeassistant-config/blob/master/automation/kitchen-lifx-sunset.yaml)
+* Send notification via SimplePush when Let's Encrypt Certificate is below 31 days - [automation](https://github.com/brianjking/homeassistant-config/blob/master/automation/notify-lets-encrypt-expiry.yaml)
  
 
 
