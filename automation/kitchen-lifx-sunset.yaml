@@ -18,3 +18,13 @@
   action: 
     service: homeassistant.turn_off
     entity_id: group.kitchen_lights
+
+- alias: Kitchen Off at 5am
+  initial_state: True
+  hide_entity: False
+  trigger:
+    platform: time
+    at: '05:00'
+  action: 
+    service: homeassistant.turn_off
+    entity_id: group.kitchen_lights
