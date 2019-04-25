@@ -164,7 +164,8 @@ person:
 
 
 tts: 
-  - platform: google
+  - platform: google_translate
+    language: 'en'
 
 digital_ocean:
   access_token: !secret digitaloceantoken
