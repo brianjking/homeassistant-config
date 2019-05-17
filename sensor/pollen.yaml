@@ -1,4 +1,4 @@
-- platform: pollen
+- platform: iqvia
   zip_code: "60640"
   monitored_conditions: 
     - allergy_average_forecasted
