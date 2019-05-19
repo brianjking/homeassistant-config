@@ -11,7 +11,7 @@ homeassistant:
     - type: legacy_api_password
       api_password: !secret http_password
 
-lovelace:
+#lovelace:
 
 # Enables Auth Component 
 auth: 
