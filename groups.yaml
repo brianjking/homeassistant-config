@@ -118,11 +118,17 @@
     - sensor.weather_wind_speed
     - sensor.weather_cloud_coverage
     - sun.sun
-    - sensor.allergy_index_today
-    - sensor.allergy_index_tomorrow
-    - sensor.u_s_air_pollution_level
-    - sensor.u_s_air_pollution_level
-    - sensor.u_s_air_quality_index
+    - allergy_average_forecasted
+    - allergy_index_today
+    - allergy_index_tomorrow
+    - allergy_index_yesterday
+    - asthma_average_forecasted
+    - asthma_index_today
+    - asthma_index_tomorrow
+    - asthma_index_yesterday
+    - disease_average_forecasted
+    - disease_index_today
+    - disease_index_yesterday
 
   UptimeRobot:
     entities:
