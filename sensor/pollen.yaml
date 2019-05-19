@@ -1,6 +1,6 @@
-- platform: iqvia
+iqvia:
   zip_code: "60640"
-  monitored_conditions: 
+  monitored_conditions:
     - allergy_average_forecasted
     - allergy_index_today
     - allergy_index_tomorrow
