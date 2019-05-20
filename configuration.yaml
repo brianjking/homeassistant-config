@@ -11,8 +11,7 @@ homeassistant:
     - type: legacy_api_password
       api_password: !secret http_password
 
-lovelace:
-  mode: yaml
+
 
 
 # Enables Auth Component 
@@ -244,7 +243,7 @@ sun:
 # Z-WAVE #######################
 ################################
 zwave:
-  usb_path: /dev/zwave
+  usb_path: /dev/ttyACM0
   autoheal: false
   #config_path: /srv/homeassistant/homeassistant_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
   
