@@ -19,12 +19,12 @@ auth:
 
 # FRONTEND HTTP PASSWORD PROTECTION SETUP
 http:
-  server_host: 127.0.0.1
-  use_x_forwarded_for: True
-  base_url: !secret fakehost
-  trusted_proxies: 
-    - 127.0.0.1
-    - ::1
+  #server_host: 127.0.0.1
+  #use_x_forwarded_for: True
+  #base_url: !secret fakehost
+  #trusted_proxies: 
+    #- 127.0.0.1
+    #- ::1
   #trusted_networks:
    # - 127.0.0.1
    # - ::1
