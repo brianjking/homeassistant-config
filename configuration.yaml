@@ -12,7 +12,7 @@ homeassistant:
       api_password: !secret http_password
 
 lovelace:
-  mode: yaml
+  #mode: yaml
 
 
 # Enables Auth Component 
