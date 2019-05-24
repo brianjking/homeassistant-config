@@ -25,7 +25,6 @@ Weather:
     - sensor.weather_wind_speed
     - sensor.weather_cloud_coverage
     - sun.sun
-
 UptimeRobot:
   entities:
     - binary_sensor.hass 
