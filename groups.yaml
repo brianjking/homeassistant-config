@@ -1,14 +1,14 @@
-  Internet: 
-    - sensor.speedtest_download
-    - sensor.speedtest_upload
-    - sensor.speedtest_ping
+Internet: 
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+  - sensor.speedtest_ping
 
-  Travel Time:
-    - sensor.home_to_kinna_work
-    - sensor.kinna_work_to_home
-    - sensor.lyft_home_to_kinna_work
-  Weather:
-    entities:  
+Travel Time:
+  - sensor.home_to_kinna_work
+  - sensor.kinna_work_to_home
+  - sensor.lyft_home_to_kinna_work
+Weather:
+  entities:  
     - sensor.weather_apparent_temperature
     - sensor.weather_precip
     - sensor.weather_nearest_storm_distance
@@ -37,89 +37,78 @@
     - disease_index_today
     - disease_index_yesterday
 
-  UptimeRobot:
-    entities:
-      - binary_sensor.hass 
+UptimeRobot:
+  entities:
+    - binary_sensor.hass 
 
 
-  System:
-    entities:  
-    - sensor.processor_use
-    - sensor.memory_free
-    - sensor.memory_use_percent
-    - sensor.load_5m
-    - sensor.load_15m
-    - sensor.disk_free_home
-    - updater.updater
-  Packages:
-    entities:  
-    - sensor.seventeentrack_packages_delivered
-    - sensor.seventeentrack_packages_in_transit
-  livingroom_lights:
-    entities:  
-    - switch.tribot
-    - light.couchbot 
-  office_lights:
-    entities:  
-    - light.officebot
-    - light.officebot_floor
-  kitchen_lights:
-    entities:
-      - light.kitchen_counter
-      - light.kitchen_sink  
-  Commits:
-    entities:
-      - sensor.new_commits
-      - script.get_latest_config
-  Battery:
-    entities: 
-      - sensor.office_motion_battery
-      - sensor.front_door_sensor_battery
-      - sensor.livingroom_sensor_battery
-  Droplets:
-    entities:
-      - switch.webinoly18
-      - binary_sensor.webinoly18
-  Doors:
-    entities:
-      - sensor.front_door_status
-  Home Assistant:
-    entities:
-      - sensor.homeassistant_uptime
-      - sensor.ssl_certificate_expiry
-      - sensor.current_home_assistant_version
-      - sensor.homeassistant_version
-      - input_select.log_level
-  Home Assistant Log Level:
-    entities:
-      - input_select.log_level
-  Frontend Theme:
-    entities:
-      - input_select.home_assistant_themes
-      - sensor.current_frontend_theme
-  TravisCI: 
-    entities: 
-      - sensor.brianjkinghomeassistantconfig_state
-      - sensor.brianjkinghomeassistantconfig_last_build_state
-      - sensor.brianjkinghomeassistantconfig_last_build_started_at
-      - sensor.brianjkinghomeassistantconfig_last_build_id
-      - sensor.brianjkinghomeassistantconfig_last_build_finished_at
-      - sensor.brianjkinghomeassistantconfig_last_build_duration
-  PiHole:
-    entities: 
-      - sensor.pi_hole_ads_blocked_today
-      - sensor.pi_hole_dns_queries_cached
-      - sensor.pi_hole_dns_queries_today
-  Network:
-    entities: 
-      - weblink.router_admin
-      - weblink.modem_admin
-  Family:
-    entities:
-      - binary_sensor.brian_keys_tile_boolean
-      - binary_sensor.kinna_tile_boolean
-      - binary_sensor.spare_keys_tile_boolean 
-      - binary_sensor.brian_bag_tile_boolean
-
-
-
+System:
+  entities:  
+  - sensor.processor_use
+  - sensor.memory_free
+  - sensor.memory_use_percent
+  - sensor.load_5m
+  - sensor.load_15m
+  - sensor.disk_free_home
+  - updater.updater
+Packages:
+  entities:  
+  - sensor.seventeentrack_packages_delivered
+  - sensor.seventeentrack_packages_in_transit
+livingroom_lights:
+  entities:  
+  - switch.tribot
+  - light.couchbot 
+office_lights:
+  entities:  
+  - light.officebot
+  - light.officebot_floor
+kitchen_lights:
+  entities:
+    - light.kitchen_counter
+    - light.kitchen_sink  
+Commits:
+  entities:
+    - sensor.new_commits
+    - script.get_latest_config
+Battery:
+  entities: 
+    - sensor.office_motion_battery
+    - sensor.front_door_sensor_battery
+    - sensor.livingroom_sensor_battery
+Droplets:
+  entities:
+    - switch.webinoly18
+    - binary_sensor.webinoly18
+Doors:
+  entities:
+    - sensor.front_door_status
+Home Assistant:
+  entities:
+    - sensor.homeassistant_uptime
+    - sensor.ssl_certificate_expiry
+    - sensor.current_home_assistant_version
+    - sensor.homeassistant_version
+    - input_select.log_level
+Home Assistant Log Level:
+  entities:
+    - input_select.log_level
+Frontend Theme:
+  entities:
+    - input_select.home_assistant_themes
+    - sensor.current_frontend_theme
+PiHole:
+  entities: 
+    - sensor.pi_hole_ads_blocked_today
+    - sensor.pi_hole_dns_queries_cached
+    - sensor.pi_hole_dns_queries_today
+Network:
+  entities: 
+    - weblink.router_admin
+    - weblink.modem_admin
+Family:
+  entities:
+    - binary_sensor.brian_keys_tile_boolean
+    - binary_sensor.kinna_tile_boolean
+    - binary_sensor.spare_keys_tile_boolean 
+    - binary_sensor.brian_bag_tile_boolean
