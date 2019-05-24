@@ -9,3 +9,4 @@ secrets.yaml
 /bin/update_new_commits_sensor.sh
 /private/*
 
+.vscode/settings.json
