@@ -229,7 +229,7 @@ sun:
 #  name: 'USPS'
 
 camera:
-  - platform: generic
+  - platform: ffmpeg
     name: Kitchen Camera
     stream_source: !secret wyzeurl   
 
