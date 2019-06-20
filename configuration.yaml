@@ -231,7 +231,7 @@ sun:
 camera:
   - platform: ffmpeg
     name: Kitchen Camera
-    stream_source: !secret wyzeurl   
+    input: !secret wyzeurl   
 
 ################################
 # Z-WAVE #######################
