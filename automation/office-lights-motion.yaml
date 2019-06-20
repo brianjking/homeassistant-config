@@ -6,8 +6,8 @@
     to: 'on'
   condition: 
     condition: time
-    after: '07:30'
-    before: '23:30'
+    after: '09:30'
+    before: '23:59'
   action:
     service: homeassistant.turn_on
     entity_id: group.office_lights
