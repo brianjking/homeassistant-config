@@ -265,7 +265,7 @@ device_tracker:
   
 system_health: 
  
-
+stream:
 #########################################
 # WAKE ON LAN SUPPORT - TESTING
 ##########################################
