@@ -34,7 +34,71 @@ http:
 # DATABASE SETUP USING MySQL
 recorder:
   db_url: !secret db_url
-
+  purge_interval: 1
+  purge_keep_days: 10
+  exclude:
+    entities:
+      - sensor.weather_apparent_temperature
+      - sensor.weather_humidity
+      - sensor.weather_icon
+      - sensor.weather_summary
+      - sensor.weather_temperature
+      - sensor.weather_hourly_summary
+      - sensor.weather_daily_summary
+      - sensor.weather_wind_speed
+      - sensor.cpu_use
+      - sensor.ram_free
+      - sensor.ram_use
+      - media_player.raptor
+      - sensor.date
+      - sensor.internet_time
+      - sensor.time_utc
+      - sensor.date 
+      - sensor.average_load_15m
+      - sensor.average_load_5m 
+      - sensor.worldclock_sensor
+      - sensor.homeassistant_uptime
+      - sensor.homeassistant_version
+      - sensor.time
+      - sensor.home_to_kinna_work
+      - sensor.kinna_work_to_home
+      - sensor.lyft_home_to_kinna_work
+      - sensor.lyft_price
+      - sensor.lyft_time
+      - sensor.pihole_ads_blocked_today
+      - sensor.pihole_dns_queries_today
+      - sensor.pihole_queries_cached
+      - sensor.weather_ozone
+      - sensor.brianjkinghomeassistantconfig_state
+      - sensor.brianjkinghomeassistantconfig_last_build_state
+      - sensor.brianjkinghomeassistantconfig_last_build_started_at
+      - sensor.brianjkinghomeassistantconfig_last_build_id
+      - sensor.brianjkinghomeassistantconfig_last_build_finished_at
+      - sensor.brianjkinghomeassistantconfig_last_build_duration
+      - binary_sensor.1up_brianjkingme
+      - binary_sensor.1upkeyboardscom
+      - binary_sensor.brianjkingcom
+      - binary_sensor.brianjkingio 
+      - binary_sensor.eebrianjkingcom_ip
+      - binary_sensor.hass 
+      - binary_sensor.robotberame
+      - sensor.load_5m
+      - sensor.load_15m
+      - sensor.memory_free
+      - sensor.memory_use_percent
+      - sensor.allergy_index_forecasted_average_2
+      - sensor.allergy_index_historical_average_2
+      - sensor.allergy_index_today
+      - sensor.allergy_index_tomorrow
+      - sensor.us_air_pollution_level
+      - sensor.us_air_quality_index
+      - sensor.us_main_pollutant
+      - sensor.brianjkinghomeassistantconfig_state
+      - sensor.brianjkinghomeassistantconfig_last_build_state
+      - sensor.brianjkinghomeassistantconfig_last_build_started_at
+      - sensor.brianjkinghomeassistantconfig_last_build_id
+      - sensor.brianjkinghomeassistantconfig_last_build_finished_at
+      - sensor.brianjkinghomeassistantconfig_last_build_duration
 
 
 no_ip:
@@ -248,5 +312,3 @@ shell_command: !include_dir_named shell_command/
 group: !include groups.yaml
 input_select: !include_dir_merge_named input_select
 zone: !include zone.yaml
-
-
